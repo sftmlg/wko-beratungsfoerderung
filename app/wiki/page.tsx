@@ -62,7 +62,7 @@ export default function WikiIndexPage() {
               <h1 className="text-3xl font-semibold tracking-tight mb-1">
                 Wissensdatenbank
               </h1>
-              <p className="text-stone-400">
+              <p className="text-stone-500">
                 {allArticles.length} Artikel zur WKO Beratungsförderung
               </p>
             </div>
@@ -129,7 +129,7 @@ export default function WikiIndexPage() {
                 <p className="text-stone-600 font-light leading-relaxed">
                   Kompakter Überblick für Unternehmen. Ideal als Einstieg in das Förderprogramm.
                 </p>
-                <div className="flex items-center gap-2 mt-3 text-sm text-stone-400">
+                <div className="flex items-center gap-2 mt-3 text-sm text-stone-500">
                   <span>PDF</span>
                   <span>•</span>
                   <span>256 KB</span>
@@ -232,7 +232,7 @@ export default function WikiIndexPage() {
             <h2 className="text-xl font-light text-white mb-2 relative">
               Noch Fragen?
             </h2>
-            <p className="text-stone-400 font-light mb-6 max-w-xs relative">
+            <p className="text-stone-500 font-light mb-6 max-w-xs relative">
               Der KI-Assistent durchsucht alle Dokumente.
             </p>
             <Link

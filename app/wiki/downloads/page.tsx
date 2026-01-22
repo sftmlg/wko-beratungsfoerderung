@@ -53,7 +53,7 @@ export default function DownloadsPage() {
           </div>
         </div>
         <div className="max-w-4xl mx-auto px-6 py-12 relative z-10">
-          <nav className="flex items-center gap-2 text-sm text-stone-400 mb-6">
+          <nav className="flex items-center gap-2 text-sm text-stone-500 mb-6">
             <Link href="/wiki" className="hover:text-white transition-colors">
               Wissensdatenbank
             </Link>
@@ -75,7 +75,7 @@ export default function DownloadsPage() {
               <h1 className="text-3xl font-semibold tracking-tight mb-1">
                 Download Portal
               </h1>
-              <p className="text-stone-400">
+              <p className="text-stone-500">
                 Original-Dokumente der WKO Tirol zur Beratungsförderung
               </p>
             </div>
@@ -150,8 +150,8 @@ export default function DownloadsPage() {
                 </p>
               </div>
               <div className="flex items-center gap-2 flex-shrink-0">
-                <span className="text-xs text-stone-400">PDF · 256 KB</span>
-                <Download className="w-4 h-4 text-stone-400 group-hover:text-stone-600 transition-colors" />
+                <span className="text-xs text-stone-500">PDF · 256 KB</span>
+                <Download className="w-4 h-4 text-stone-500 group-hover:text-stone-600 transition-colors" />
               </div>
             </div>
           </a>

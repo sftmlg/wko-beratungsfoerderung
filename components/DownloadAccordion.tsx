@@ -182,9 +182,9 @@ export function DownloadAccordion() {
                 <p className="text-sm text-stone-500">{category.description}</p>
               </div>
               <div className="flex items-center gap-2 flex-shrink-0">
-                <span className="text-xs text-stone-400">{category.documents.length} Dokumente</span>
+                <span className="text-xs text-stone-500">{category.documents.length} Dokumente</span>
                 <ChevronDown
-                  className={`w-5 h-5 text-stone-400 transition-transform duration-200 ${
+                  className={`w-5 h-5 text-stone-500 transition-transform duration-200 ${
                     isOpen ? 'rotate-180' : ''
                   }`}
                 />
@@ -222,7 +222,7 @@ export function DownloadAccordion() {
                       <span className={`hidden sm:inline text-xs px-2 py-0.5 rounded font-medium ${getTypeBadgeColor(doc.type)}`}>
                         {doc.type}
                       </span>
-                      <span className="text-[10px] sm:text-xs text-stone-400">
+                      <span className="text-[10px] sm:text-xs text-stone-500">
                         {doc.size}
                       </span>
                       <Download className="w-4 h-4 text-stone-300 group-hover:text-orange-500 transition-colors" />

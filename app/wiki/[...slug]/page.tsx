@@ -177,26 +177,26 @@ export default async function WikiArticlePage({ params }: WikiPageProps) {
         <div className="grid grid-cols-1 lg:grid-cols-4 gap-12">
           {/* Article Content */}
           <article className="lg:col-span-3">
-            <div className="bg-white rounded-2xl shadow-sm border border-slate-200 p-8 md:p-12">
-              <div className="prose prose-lg prose-slate max-w-none
-                prose-headings:font-semibold prose-headings:text-slate-900
-                prose-h1:text-3xl prose-h1:mb-8 prose-h1:mt-10 prose-h1:first:mt-0
-                prose-h2:text-2xl prose-h2:mb-6 prose-h2:mt-12 prose-h2:border-b prose-h2:border-slate-200 prose-h2:pb-4
-                prose-h3:text-xl prose-h3:mb-4 prose-h3:mt-8
-                prose-h4:text-lg prose-h4:mb-3 prose-h4:mt-6
-                prose-p:text-slate-700 prose-p:leading-relaxed prose-p:mb-5
-                prose-li:text-slate-700 prose-li:my-1.5
-                prose-ul:my-6 prose-ul:space-y-1
-                prose-ol:my-6 prose-ol:space-y-1
-                prose-strong:text-slate-900 prose-strong:font-semibold
-                prose-a:text-orange-600 prose-a:no-underline hover:prose-a:underline prose-a:font-medium
-                prose-table:border-collapse prose-table:w-full prose-table:my-8
-                prose-th:bg-slate-100 prose-th:text-left prose-th:p-4 prose-th:border prose-th:border-slate-200 prose-th:font-semibold
-                prose-td:p-4 prose-td:border prose-td:border-slate-200 prose-td:align-top
-                prose-tr:even:bg-slate-50
-                prose-hr:border-slate-200 prose-hr:my-10
-                prose-code:bg-slate-100 prose-code:px-2 prose-code:py-1 prose-code:rounded-md prose-code:text-sm prose-code:font-mono prose-code:before:content-none prose-code:after:content-none
-                prose-blockquote:border-l-4 prose-blockquote:border-orange-500 prose-blockquote:bg-orange-50 prose-blockquote:py-3 prose-blockquote:px-6 prose-blockquote:not-italic prose-blockquote:my-8
+            <div className="bg-white rounded-2xl shadow-sm border border-slate-200 p-6 sm:p-10 md:p-14">
+              <div className="prose prose-slate max-w-none
+                prose-headings:font-bold prose-headings:text-slate-900 prose-headings:tracking-tight
+                prose-h1:text-2xl prose-h1:sm:text-3xl prose-h1:mb-6 prose-h1:mt-0 prose-h1:first:mt-0 prose-h1:leading-tight
+                prose-h2:text-xl prose-h2:sm:text-2xl prose-h2:mb-5 prose-h2:mt-14 prose-h2:pt-8 prose-h2:border-t prose-h2:border-slate-200 prose-h2:first:mt-0 prose-h2:first:pt-0 prose-h2:first:border-0
+                prose-h3:text-lg prose-h3:sm:text-xl prose-h3:mb-4 prose-h3:mt-10 prose-h3:text-slate-800
+                prose-h4:text-base prose-h4:sm:text-lg prose-h4:mb-3 prose-h4:mt-8 prose-h4:text-slate-700
+                prose-p:text-slate-600 prose-p:leading-relaxed prose-p:mb-4 prose-p:text-[15px] prose-p:sm:text-base
+                prose-li:text-slate-600 prose-li:my-2 prose-li:text-[15px] prose-li:sm:text-base prose-li:leading-relaxed
+                prose-ul:my-5 prose-ul:pl-5
+                prose-ol:my-5 prose-ol:pl-5
+                prose-strong:text-slate-800 prose-strong:font-semibold
+                prose-a:text-orange-600 prose-a:no-underline hover:prose-a:underline prose-a:font-medium prose-a:transition-colors
+                prose-table:border-collapse prose-table:w-full prose-table:my-8 prose-table:text-sm
+                prose-th:bg-slate-50 prose-th:text-left prose-th:p-3 prose-th:sm:p-4 prose-th:border prose-th:border-slate-200 prose-th:font-semibold prose-th:text-slate-700
+                prose-td:p-3 prose-td:sm:p-4 prose-td:border prose-td:border-slate-200 prose-td:align-top prose-td:text-slate-600
+                prose-tr:even:bg-slate-50/50
+                prose-hr:border-slate-100 prose-hr:my-0 prose-hr:hidden
+                prose-code:bg-orange-50 prose-code:text-orange-700 prose-code:px-2 prose-code:py-0.5 prose-code:rounded prose-code:text-sm prose-code:font-medium prose-code:before:content-none prose-code:after:content-none
+                prose-blockquote:border-l-4 prose-blockquote:border-orange-400 prose-blockquote:bg-orange-50/50 prose-blockquote:py-4 prose-blockquote:px-6 prose-blockquote:not-italic prose-blockquote:my-8 prose-blockquote:rounded-r-lg
               ">
                 <ReactMarkdown remarkPlugins={[remarkGfm]}>{content}</ReactMarkdown>
               </div>

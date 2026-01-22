@@ -198,32 +198,28 @@ export default function DownloadsPage() {
             href="/docs/kunden-leitfaden.pdf"
             target="_blank"
             rel="noopener noreferrer"
-            className="block bg-white border-2 border-orange-200 rounded-2xl p-6 hover:border-orange-300 hover:bg-orange-50/30 transition-all group"
+            className="block bg-white border border-stone-200 rounded-xl p-5 hover:border-stone-300 hover:shadow-sm transition-all group"
           >
-            <div className="flex items-start gap-5">
-              <div className="p-3 bg-orange-100 rounded-xl group-hover:bg-orange-200 transition-colors">
-                <Sparkles className="w-8 h-8 text-orange-600" />
+            <div className="flex items-center gap-4">
+              <div className="p-2.5 bg-stone-100 rounded-lg group-hover:bg-stone-200 transition-colors flex-shrink-0">
+                <FileText className="w-5 h-5 text-stone-600" />
               </div>
               <div className="flex-1 min-w-0">
-                <div className="flex items-center gap-2 mb-1">
-                  <span className="text-xs font-medium bg-orange-100 text-orange-700 px-2 py-0.5 rounded">
+                <div className="flex items-center gap-2 mb-0.5">
+                  <h2 className="font-semibold text-stone-900">
+                    Kunden-Leitfaden
+                  </h2>
+                  <span className="text-xs font-medium bg-stone-100 text-stone-600 px-1.5 py-0.5 rounded">
                     Empfohlen
                   </span>
                 </div>
-                <h2 className="text-xl font-bold text-stone-900 mb-2">
-                  Kunden-Leitfaden WKO Beratungsförderung
-                </h2>
-                <p className="text-stone-600 text-sm mb-4 leading-relaxed">
-                  Kompakter Überblick für Unternehmen: Alles Wichtige zu Förderung, Ablauf und
-                  Voraussetzungen auf einen Blick. Ideal als Einstieg in das Förderprogramm.
+                <p className="text-stone-500 text-sm">
+                  Kompakter Überblick für Unternehmen
                 </p>
-                <div className="flex items-center gap-3">
-                  <span className="inline-flex items-center gap-1.5 text-sm font-medium text-orange-600 group-hover:text-orange-700">
-                    <Download className="w-4 h-4" />
-                    PDF herunterladen
-                  </span>
-                  <span className="text-stone-400 text-xs">256 KB</span>
-                </div>
+              </div>
+              <div className="flex items-center gap-2 flex-shrink-0">
+                <span className="text-xs text-stone-400">PDF · 256 KB</span>
+                <Download className="w-4 h-4 text-stone-400 group-hover:text-stone-600 transition-colors" />
               </div>
             </div>
           </a>

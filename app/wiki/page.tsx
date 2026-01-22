@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { ArrowRight, Download } from 'lucide-react';
+import { ArrowRight, Download, Sparkles, FileSpreadsheet } from 'lucide-react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { getAllArticles } from '@/lib/articles';
@@ -8,6 +8,24 @@ export const metadata = {
   title: 'Wissensdatenbank | WKO Beratungsförderung',
   description: 'Alle Informationen zur WKO Beratungsförderung - Richtlinien, Prozesse und Anforderungen.',
 };
+
+// Templates for practical use
+const templates = [
+  {
+    title: 'Leistungsnachweis',
+    description: 'Vorlage für Stundenerfassung.',
+    path: '/docs/leistungsnachweis.doc',
+    type: 'DOC',
+    size: '48 KB',
+  },
+  {
+    title: 'Rechnungsmuster',
+    description: 'Vorlage für die Abrechnung.',
+    path: '/docs/rechnungsmuster.docx',
+    type: 'DOCX',
+    size: '22 KB',
+  },
+];
 
 export default function WikiIndexPage() {
   const allArticles = getAllArticles();
@@ -34,6 +52,36 @@ export default function WikiIndexPage() {
       {/* Content */}
       <main className="flex-1 max-w-3xl mx-auto px-6 py-10 w-full">
 
+        {/* Featured: Kunden-Leitfaden */}
+        <section className="mb-10">
+          <a
+            href="/docs/kunden-leitfaden.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="block bg-gradient-to-br from-orange-500 to-orange-600 rounded-xl p-5 text-white hover:from-orange-600 hover:to-orange-700 transition-all group shadow-md hover:shadow-lg"
+          >
+            <div className="flex items-center gap-4">
+              <div className="p-2.5 bg-white/20 rounded-xl group-hover:bg-white/30 transition-colors">
+                <Sparkles className="w-6 h-6" />
+              </div>
+              <div className="flex-1 min-w-0">
+                <div className="flex items-center gap-2 mb-0.5">
+                  <span className="text-xs font-medium bg-white/20 px-2 py-0.5 rounded">
+                    Empfohlen
+                  </span>
+                </div>
+                <h2 className="text-lg font-bold">
+                  Kunden-Leitfaden
+                </h2>
+                <p className="text-orange-100 text-sm">
+                  Kompakter Überblick für Unternehmen
+                </p>
+              </div>
+              <Download className="w-5 h-5 text-orange-200 group-hover:text-white transition-colors" />
+            </div>
+          </a>
+        </section>
+
         {/* All Articles */}
         <section className="mb-12">
           <div className="divide-y divide-stone-200">
@@ -57,6 +105,46 @@ export default function WikiIndexPage() {
           </div>
         </section>
 
+        {/* Templates */}
+        <section className="mb-12">
+          <h2 className="text-sm font-semibold text-stone-500 uppercase tracking-wide mb-4">
+            Vorlagen
+          </h2>
+          <div className="bg-white border border-stone-200 rounded-lg divide-y divide-stone-100">
+            {templates.map((template, idx) => (
+              <a
+                key={idx}
+                href={template.path}
+                download
+                className="flex items-center justify-between p-4 hover:bg-stone-50 transition-colors group"
+              >
+                <div className="flex items-center gap-3 min-w-0">
+                  <div className="p-2 bg-stone-100 rounded group-hover:bg-blue-100 transition-colors">
+                    <FileSpreadsheet className="w-4 h-4 text-blue-600" />
+                  </div>
+                  <div className="min-w-0">
+                    <h3 className="text-stone-900 font-medium text-sm group-hover:text-orange-600 transition-colors">
+                      {template.title}
+                    </h3>
+                    <p className="text-stone-500 text-xs truncate">
+                      {template.description}
+                    </p>
+                  </div>
+                </div>
+                <div className="flex items-center gap-3 ml-4 flex-shrink-0">
+                  <span className="text-xs px-2 py-0.5 rounded font-medium bg-blue-100 text-blue-700">
+                    {template.type}
+                  </span>
+                  <span className="text-xs text-stone-400">
+                    {template.size}
+                  </span>
+                  <Download className="w-4 h-4 text-stone-300 group-hover:text-orange-500 transition-colors" />
+                </div>
+              </a>
+            ))}
+          </div>
+        </section>
+
         {/* Downloads Link */}
         <section className="mb-12">
           <Link
@@ -69,10 +157,10 @@ export default function WikiIndexPage() {
               </div>
               <div>
                 <h3 className="font-medium text-stone-900 group-hover:text-orange-600 transition-colors">
-                  Offizielle Quellen
+                  Alle Downloads
                 </h3>
                 <p className="text-sm text-stone-500">
-                  Basierend auf aktuellen WKO-Dokumenten und Richtlinien
+                  11 Dokumente · PDF, DOC, DOCX
                 </p>
               </div>
             </div>

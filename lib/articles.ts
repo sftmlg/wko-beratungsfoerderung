@@ -95,3 +95,96 @@ export function getAllArticles() {
 export function getArticle(slug: string) {
   return articles[slug] || null;
 }
+
+// Source document metadata with PDF paths
+export interface SourceDocument {
+  title: string;
+  description: string;
+  pdfPath: string;
+  type: 'PDF' | 'DOC' | 'DOCX';
+  size: string;
+}
+
+// Map source names to their PDF files
+export const sourceDocuments: Record<string, SourceDocument> = {
+  'Richtlinie Tiroler Beratungsförderung': {
+    title: 'Richtlinie Tiroler Beratungsförderung',
+    description: 'Grundlegende Förderrichtlinie mit allen Regelungen.',
+    pdfPath: '/docs/richtlinie-beratungsfoerderung.pdf',
+    type: 'PDF',
+    size: '1.1 MB',
+  },
+  'Honorarrichtlinien': {
+    title: 'Honorarrichtlinien',
+    description: 'Stundensätze und Abrechnungsregeln.',
+    pdfPath: '/docs/honorarrichtlinien.pdf',
+    type: 'PDF',
+    size: '110 KB',
+  },
+  'Beratungsablauf': {
+    title: 'Beratungsablauf',
+    description: 'Der 9-Schritte-Prozess als Flowchart.',
+    pdfPath: '/docs/beratungsablauf.pdf',
+    type: 'PDF',
+    size: '112 KB',
+  },
+  'Richtlinien für Beratungsaufträge': {
+    title: 'Richtlinien für Beratungsaufträge',
+    description: 'Detaillierte Vorgaben für die Durchführung.',
+    pdfPath: '/docs/richtlinien-beratungsauftraege.pdf',
+    type: 'PDF',
+    size: '570 KB',
+  },
+  'Checkliste Digitalisierung': {
+    title: 'Checkliste Digitalisierung',
+    description: 'Prüfliste für Digitalisierungsberatungen.',
+    pdfPath: '/docs/checkliste-digitalisierung.pdf',
+    type: 'PDF',
+    size: '90 KB',
+  },
+  'Berufsbild Unternehmensberatung': {
+    title: 'Berufsbild Unternehmensberatung',
+    description: 'Anforderungsprofil für Unternehmensberater.',
+    pdfPath: '/docs/berufsbild-unternehmensberatung.pdf',
+    type: 'PDF',
+    size: '250 KB',
+  },
+};
+
+// Additional documents for download page
+export const additionalDocuments: SourceDocument[] = [
+  {
+    title: 'Ansuchen Tiroler Beratungsförderung',
+    description: 'Antragsformular für Unternehmen.',
+    pdfPath: '/docs/ansuchen-beratungsfoerderung.pdf',
+    type: 'PDF',
+    size: '120 KB',
+  },
+  {
+    title: 'Beratungsprofil',
+    description: 'Formular für Berater-Registrierung.',
+    pdfPath: '/docs/beratungsprofil.pdf',
+    type: 'PDF',
+    size: '720 KB',
+  },
+  {
+    title: 'Berater Annahmeerklärung',
+    description: 'Auftragsrichtlinien-Bestätigung.',
+    pdfPath: '/docs/berater-annahmeerklaerung.pdf',
+    type: 'PDF',
+    size: '450 KB',
+  },
+];
+
+// Get source document by name
+export function getSourceDocument(name: string) {
+  return sourceDocuments[name] || null;
+}
+
+// Get all downloadable documents
+export function getAllDocuments() {
+  return [
+    ...Object.values(sourceDocuments),
+    ...additionalDocuments,
+  ];
+}

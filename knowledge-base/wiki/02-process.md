@@ -169,6 +169,6 @@ Different document flow - client handles more:
 
 Die offiziellen Richtlinien und Formulare finden Sie auf der WKO Tirol Website:
 
-- [WKO Tirol Beratungsförderung](https://www.wko.at/tirol/beratung-foerderung) - Offizielle Informationen und Antragsformulare
+- [WKO Tirol Beratungsförderung](https://www.wko.at/tirol/foerderung/tiroler-beratungsfoerderung) - Offizielle Informationen und Antragsformulare
 - Beratungsablauf (Stand 24.01.2025)
 - Richtlinie Tiroler Beratungsförderung (Abschnitt 6)

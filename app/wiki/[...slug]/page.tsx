@@ -168,6 +168,29 @@ export default async function WikiArticlePage({ params }: WikiPageProps) {
                         <table className="min-w-full">{children}</table>
                       </div>
                     ),
+                    // Accessible task list checkboxes - decorative only
+                    input: ({ type, checked, disabled, ...props }) => {
+                      if (type === 'checkbox') {
+                        return (
+                          <span
+                            role="img"
+                            aria-label={checked ? 'Erledigt' : 'Offen'}
+                            className={`inline-block w-4 h-4 mr-2 rounded border-2 align-middle ${
+                              checked
+                                ? 'bg-orange-700 border-orange-700 text-white'
+                                : 'bg-white border-stone-400'
+                            }`}
+                          >
+                            {checked && (
+                              <svg className="w-3 h-3 m-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                              </svg>
+                            )}
+                          </span>
+                        );
+                      }
+                      return <input type={type} checked={checked} disabled={disabled} {...props} />;
+                    },
                   }}
                 >
                   {content.replace(/^#\s+[^\n]+\n*/, '').trim()}

@@ -263,14 +263,14 @@ body {
 
 /* Links */
 .prose a {
-  color: #ea580c; /* orange-600 */
+  color: #c2410c; /* orange-700 - WCAG AA compliant */
   text-decoration: none;
   font-weight: 500;
   transition: color 0.15s;
 }
 
 .prose a:hover {
-  color: #c2410c; /* orange-700 */
+  color: #9a3412; /* orange-800 */
   text-decoration: underline;
 }
 
@@ -398,6 +398,36 @@ select:disabled,
 textarea:disabled,
 [disabled] {
   cursor: not-allowed !important;
+}
+
+/* Task list accessibility - hide decorative checkboxes from accessibility tree */
+.prose .contains-task-list .task-list-item input[type="checkbox"] {
+  /* Use CSS to make checkbox decorative only */
+  appearance: none;
+  -webkit-appearance: none;
+  width: 1rem;
+  height: 1rem;
+  border: 2px solid #78716c; /* stone-500 */
+  border-radius: 0.25rem;
+  vertical-align: middle;
+  margin-right: 0.5rem;
+  position: relative;
+  background: #fff;
+}
+
+.prose .contains-task-list .task-list-item input[type="checkbox"]:checked {
+  background: #c2410c; /* orange-700 */
+  border-color: #c2410c;
+}
+
+.prose .contains-task-list .task-list-item input[type="checkbox"]:checked::after {
+  content: "✓";
+  position: absolute;
+  color: white;
+  font-size: 0.75rem;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 /* Custom utilities */

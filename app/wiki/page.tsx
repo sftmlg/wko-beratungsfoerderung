@@ -55,19 +55,19 @@ export default function WikiIndexPage() {
             href="/docs/kunden-leitfaden.pdf"
             target="_blank"
             rel="noopener noreferrer"
-            className="block bg-white rounded-xl p-5 border border-stone-200 hover:border-stone-300 hover:shadow-md transition-all group"
+            className="block bg-white rounded-xl p-5 border border-stone-200 hover:border-stone-300 hover:shadow-sm transition-all group"
           >
             <div className="flex items-center gap-4">
-              <div className="p-2.5 bg-stone-100 rounded-xl group-hover:bg-orange-50 transition-colors">
-                <Sparkles className="w-6 h-6 text-stone-500 group-hover:text-orange-500 transition-colors" />
+              <div className="p-2.5 bg-stone-100 rounded-xl group-hover:bg-stone-200 transition-colors">
+                <Sparkles className="w-6 h-6 text-stone-500 group-hover:text-stone-700 transition-colors" />
               </div>
               <div className="flex-1 min-w-0">
                 <div className="flex items-center gap-2 mb-0.5">
-                  <span className="text-[10px] font-medium bg-stone-100 text-stone-600 px-2 py-0.5 rounded uppercase tracking-wide">
+                  <span className="text-[10px] font-medium bg-stone-100 text-stone-500 px-2 py-0.5 rounded uppercase tracking-wide">
                     Empfohlen
                   </span>
                 </div>
-                <h2 className="text-lg font-semibold text-stone-900 group-hover:text-orange-600 transition-colors">
+                <h2 className="text-lg font-semibold text-stone-900 group-hover:text-stone-700 transition-colors">
                   Kunden-Leitfaden
                 </h2>
                 <p className="text-stone-500 text-sm">
@@ -76,7 +76,7 @@ export default function WikiIndexPage() {
               </div>
               <div className="flex items-center gap-2 flex-shrink-0">
                 <span className="text-xs text-stone-400 hidden sm:inline">PDF</span>
-                <Download className="w-5 h-5 text-stone-400 group-hover:text-orange-500 transition-colors" />
+                <Download className="w-5 h-5 text-stone-400 group-hover:text-stone-600 transition-colors" />
               </div>
             </div>
           </a>

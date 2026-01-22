@@ -60,18 +60,18 @@ export default function DownloadsPage() {
             href="/docs/kunden-leitfaden.pdf"
             target="_blank"
             rel="noopener noreferrer"
-            className="block bg-white border border-stone-200 rounded-xl p-5 hover:border-stone-300 hover:shadow-md transition-all group"
+            className="block bg-white border border-stone-200 rounded-xl p-5 hover:border-stone-300 hover:shadow-sm transition-all group"
           >
             <div className="flex items-center gap-4">
-              <div className="p-2.5 bg-stone-100 rounded-lg group-hover:bg-orange-50 transition-colors flex-shrink-0">
-                <FileText className="w-5 h-5 text-stone-500 group-hover:text-orange-500 transition-colors" />
+              <div className="p-2.5 bg-stone-100 rounded-lg group-hover:bg-stone-200 transition-colors flex-shrink-0">
+                <FileText className="w-5 h-5 text-stone-500 group-hover:text-stone-700 transition-colors" />
               </div>
               <div className="flex-1 min-w-0">
                 <div className="flex items-center gap-2 mb-0.5">
-                  <h2 className="font-semibold text-stone-900 group-hover:text-orange-600 transition-colors">
+                  <h2 className="font-semibold text-stone-900 group-hover:text-stone-700 transition-colors">
                     Kunden-Leitfaden
                   </h2>
-                  <span className="text-[10px] font-medium bg-stone-100 text-stone-600 px-1.5 py-0.5 rounded uppercase tracking-wide">
+                  <span className="text-[10px] font-medium bg-stone-100 text-stone-500 px-1.5 py-0.5 rounded uppercase tracking-wide">
                     Empfohlen
                   </span>
                 </div>
@@ -81,7 +81,7 @@ export default function DownloadsPage() {
               </div>
               <div className="flex items-center gap-2 flex-shrink-0">
                 <span className="text-xs text-stone-400">PDF · 256 KB</span>
-                <Download className="w-4 h-4 text-stone-400 group-hover:text-orange-500 transition-colors" />
+                <Download className="w-4 h-4 text-stone-400 group-hover:text-stone-600 transition-colors" />
               </div>
             </div>
           </a>

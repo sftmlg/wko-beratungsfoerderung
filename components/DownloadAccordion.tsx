@@ -46,12 +46,12 @@ function getTypeBadgeColor(type: string) {
   }
 }
 
-// Categorized official WKO documents
+// Topic-based document categories (user journey: Learn → Apply → Register → Bill)
 const documentCategories: DocumentCategory[] = [
   {
-    id: 'grundlagen',
-    title: 'Grundlagen & Richtlinien',
-    description: 'Basis-Dokumente zum Förderprogramm',
+    id: 'foerderprogramm',
+    title: 'Förderprogramm',
+    description: 'Richtlinien und Rahmenbedingungen',
     iconId: 'BookOpen',
     documents: [
       {
@@ -72,8 +72,8 @@ const documentCategories: DocumentCategory[] = [
   },
   {
     id: 'antrag',
-    title: 'Antragstellung',
-    description: 'Formulare für die Förderung',
+    title: 'Antrag & Ablauf',
+    description: 'Formulare und Checklisten für den Prozess',
     iconId: 'ClipboardList',
     documents: [
       {
@@ -93,18 +93,11 @@ const documentCategories: DocumentCategory[] = [
     ],
   },
   {
-    id: 'berater',
-    title: 'Für Berater',
-    description: 'Registrierung und Auftragsrichtlinien',
+    id: 'registrierung',
+    title: 'Berater-Registrierung',
+    description: 'Anmeldung und Auftragsrichtlinien',
     iconId: 'Users',
     documents: [
-      {
-        title: 'Richtlinien Beratungsaufträge',
-        description: 'Detaillierte Vorgaben für die Durchführung.',
-        filename: 'richtlinien-beratungsauftraege.pdf',
-        type: 'PDF',
-        size: '570 KB',
-      },
       {
         title: 'Beratungsprofil',
         description: 'Formular für Berater-Registrierung.',
@@ -119,12 +112,19 @@ const documentCategories: DocumentCategory[] = [
         type: 'PDF',
         size: '450 KB',
       },
+      {
+        title: 'Richtlinien Beratungsaufträge',
+        description: 'Detaillierte Vorgaben für die Durchführung.',
+        filename: 'richtlinien-beratungsauftraege.pdf',
+        type: 'PDF',
+        size: '570 KB',
+      },
     ],
   },
   {
-    id: 'vorlagen',
-    title: 'Vorlagen',
-    description: 'Dokumente für die Abrechnung',
+    id: 'abrechnung',
+    title: 'Abrechnung',
+    description: 'Vorlagen für Leistungsnachweis und Rechnung',
     iconId: 'FileSpreadsheet',
     documents: [
       {
@@ -148,7 +148,7 @@ const documentCategories: DocumentCategory[] = [
 export function DownloadAccordion() {
   // First category open by default
   const [openCategories, setOpenCategories] = useState<Record<string, boolean>>({
-    grundlagen: true,
+    foerderprogramm: true,
   });
 
   const toggleCategory = (id: string) => {

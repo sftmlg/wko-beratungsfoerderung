@@ -1,30 +1,30 @@
 # Honorarrichtlinien Tiroler Beratungsförderung
 
 **Version**: Jänner 2025
-**Issuer**: Land Tirol + Wirtschaftskammer Tirol
+**Herausgeber**: Land Tirol + Wirtschaftskammer Tirol
 
 ---
 
-## Fee Structure
+## Honorarstruktur
 
-### Stundensatz (Hourly Rate)
+### Stundensatz
 
-**Maximum**: €100,00 netto (since 01.01.2023)
+**Maximum**: €100,00 netto (seit 01.01.2023)
 
 ---
 
-## Förderquote (Funding Rate)
+## Förderquote
 
-| Type | Rate |
-|------|------|
+| Typ | Quote |
+|-----|-------|
 | Standard | 50% |
-| Spezialthemen (incl. Digitalisierung) | up to **80%** |
+| Spezialthemen (inkl. Digitalisierung) | bis zu **80%** |
 
-The number of fundable consulting hours is communicated in the assignment letter (Auftragsschreiben).
+Die Anzahl der förderbaren Beratungsstunden wird im Auftragsschreiben mitgeteilt.
 
 ---
 
-## Funding Source
+## Förderquelle
 
 Fördermittel werden gemeinsam bereitgestellt von:
 - Wirtschaftskammer Tirol
@@ -32,31 +32,31 @@ Fördermittel werden gemeinsam bereitgestellt von:
 
 ---
 
-## Expenses (Spesen)
+## Spesen
 
-The following expenses are to be paid by the **Fördernehmer** (client), NOT covered by funding:
+Folgende Spesen werden vom **Fördernehmer** (Kunde) bezahlt, NICHT von der Förderung abgedeckt:
 
-| Expense Type | Rate |
-|--------------|------|
+| Spesenart | Satz |
+|-----------|------|
 | Amtliches Kilometergeld | €0,50 pro km |
 | Fahrzeitvergütung | €0,18 pro km |
-| Sonstige anfallende Spesen | At cost |
-| USt (VAT) | Full amount |
+| Sonstige anfallende Spesen | Zu Selbstkosten |
+| USt (MwSt) | Voller Betrag |
 
 ---
 
-## Summary Calculation Example
+## Beispielrechnung
 
-For a 24-hour Digitalisierung consulting:
+Für eine 24-stündige Digitalisierungsberatung:
 
-| Item | Amount |
-|------|--------|
-| Consulting (24h × €100) | €2.400,00 netto |
-| **Funded (80%)** | €1.920,00 |
-| **Client pays (20%)** | €480,00 |
-| + Km (e.g., 100km × €0.50) | €50,00 |
-| + Fahrzeit (100km × €0.18) | €18,00 |
-| + USt (20% on total) | ~€500,00 |
-| **Total client cost** | ~€1.050,00 |
+| Position | Betrag |
+|----------|--------|
+| Beratung (24h × €100) | €2.400,00 netto |
+| **Gefördert (80%)** | €1.920,00 |
+| **Kunde zahlt (20%)** | €480,00 |
+| + km (z.B. 100km × €0,50) | €50,00 |
+| + Fahrzeit (100km × €0,18) | €18,00 |
+| + USt (20% auf Gesamt) | ~€500,00 |
+| **Gesamtkosten für Kunde** | ~€1.050,00 |
 
-**Effective hourly rate for client**: ~€44/h (instead of €120 incl. VAT)
+**Effektiver Stundensatz für Kunde**: ~€44/h (statt €120 inkl. MwSt)

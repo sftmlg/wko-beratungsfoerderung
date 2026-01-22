@@ -1,66 +1,66 @@
 # Checkliste Tiroler Beratungsförderung: Digitalisierung von Geschäftsprozessen
 
-**Created**: 06.04.2022 (Essl, Walch)
-**Updated**: 03.01.2023 (Weber)
-**Focus**: Digitalization consulting deliverables
+**Erstellt**: 06.04.2022 (Essl, Walch)
+**Aktualisiert**: 03.01.2023 (Weber)
+**Fokus**: Abgabeleistungen für Digitalisierungsberatungen
 
 ---
 
-## Overview
+## Überblick
 
-| Parameter | Value |
-|-----------|-------|
-| **Zielgruppe** | Bestehende Unternehmen (existing companies) |
-| **Umfang** | Max. 24 Stunden (up to 50h in justified exceptions) |
-| **Förderung** | Up to **80%** of costs |
+| Parameter | Wert |
+|-----------|------|
+| **Zielgruppe** | Bestehende Unternehmen |
+| **Umfang** | Max. 24 Stunden (bis 50h bei begründeten Ausnahmen) |
+| **Förderung** | Bis zu **80%** der Kosten |
 
 ---
 
-## Eligible Topics
+## Förderfähige Themen
 
 Inhalte der Beratung können Themen wie z.B.:
 
-- ERP systems
-- CRM systems
-- Leistungserfassung (time/service tracking)
-- Kapazitätsplanung (capacity planning)
-- Warenwirtschaft (inventory management)
+- ERP-Systeme
+- CRM-Systeme
+- Leistungserfassung
+- Kapazitätsplanung
+- Warenwirtschaft
 - Buchungs- und Reservierungssysteme
 - Integration von bestehenden Systemen
 - Dokumentenmanagement
-- RFID (radio-frequency identification)
+- RFID (Funkfrequenz-Identifikation)
 - Flottenmanagement
 - Digitale Infrastruktur
 
-**Scope**: Begleitung bei der Umsetzung von digitalen Konzepten (implementation support for digital concepts)
+**Umfang**: Begleitung bei der Umsetzung von digitalen Konzepten
 
 ---
 
-## Required Deliverables Checklist
+## Checkliste für Abgabeleistungen
 
-### Phase 1: Erhebung IST-Situation (Current State Analysis)
+### Phase 1: Erhebung IST-Situation
 
 - [ ] **Digitalisierungsgrad** erheben
   - z.B. Potentialanalyse KMU Digital
 - [ ] **Stärke/Schwäche** Analyse
 - [ ] **Prozesse analysieren**
-- [ ] *Optional*: Best Practice Beispiele (Branchenebene)
+- [ ] *Optional*: Best-Practice-Beispiele (Branchenebene)
 
 ---
 
-### Phase 2: Zielformulierung (Goal Definition)
+### Phase 2: Zielformulierung
 
 - [ ] **Vision** bzw. Wunschvorstellungen erheben
 - [ ] **Ziele definieren** (SMART inkl. Maßgrößen)
 - [ ] **Maßnahmenplan** erstellen (inkl. Arbeitspakete)
 - [ ] **Schnittstellen** definieren
-- [ ] **Ressourcenplanung** durchführen (inkl. Kosten/Nutzen Planung)
+- [ ] **Ressourcenplanung** durchführen (inkl. Kosten/Nutzen-Planung)
 - [ ] **Prozessverantwortliche** festlegen
 - [ ] **Fördermöglichkeiten** überprüfen (z.B. Förderberatung der WK)
 
 ---
 
-### Phase 3: Umsetzungsbegleitung (Implementation Support)
+### Phase 3: Umsetzungsbegleitung
 
 - [ ] **Maßnahmenplan** abarbeiten (Projektmanagement)
 - [ ] **Prozesse** anpassen
@@ -69,7 +69,7 @@ Inhalte der Beratung können Themen wie z.B.:
 
 ---
 
-### Phase 4: Bericht (Report)
+### Phase 4: Bericht
 
 - [ ] Bericht **laut Vorgaben strukturieren** und verfassen
 - [ ] **Abweichungen** zur Zielformulierung begründen
@@ -77,48 +77,48 @@ Inhalte der Beratung können Themen wie z.B.:
 
 ---
 
-## SMART Goals Framework
+## SMART-Ziele-System
 
-When defining goals (Ziele definieren), ensure they are:
+Bei der Definition von Zielen sicherstellen, dass diese sind:
 
-| Letter | Meaning | Example |
-|--------|---------|---------|
-| **S** | Specific | "Implement CRM system for sales tracking" |
-| **M** | Measurable | "Reduce manual data entry by 50%" |
-| **A** | Achievable | "Within current budget and team capacity" |
-| **R** | Relevant | "Supports growth strategy" |
-| **T** | Time-bound | "Complete by Q2 2026" |
+| Buchstabe | Bedeutung | Beispiel |
+|-----------|-----------|----------|
+| **S** | Spezifisch | „CRM-System für Vertriebsnachverfolgung implementieren" |
+| **M** | Messbar | „Manuelle Dateneingabe um 50% reduzieren" |
+| **A** | Erreichbar | „Mit aktuellem Budget und Teamkapazität" |
+| **R** | Relevant | „Unterstützt Wachstumsstrategie" |
+| **T** | Terminiert | „Bis Q2 2026 abgeschlossen" |
 
 ---
 
-## Report Structure (per Richtlinien für Beratungsaufträge)
+## Berichtsstruktur (gemäß Richtlinien für Beratungsaufträge)
 
-1. Beratungsunternehmen data
-2. Beratenes Unternehmen data
+1. Beratungsunternehmen Daten
+2. Beratenes Unternehmen Daten
 3. Inhaltsverzeichnis
 4. Beratungsauftrag und Beratungsziel
-5. Beratungsablauf (key points)
-6. **IST-Zustand / Problembeschreibung** (Phase 1 results)
-7. **Beratungsergebnis** (Phase 2+3 outcomes)
-8. **Maßnahmen und Realisierungsempfehlungen** (who, what, when + costs)
-9. **Entscheidungsgrundlagen** - tables, charts, process diagrams
+5. Beratungsablauf (Eckpunkte)
+6. **IST-Zustand / Problembeschreibung** (Phase 1 Ergebnisse)
+7. **Beratungsergebnis** (Phase 2+3 Ergebnisse)
+8. **Maßnahmen und Realisierungsempfehlungen** (wer, was, wann + Kosten)
+9. **Entscheidungsgrundlagen** - Tabellen, Diagramme, Prozessdiagramme
 10. Freizeichnungsklausel
-11. Signature
-12. Appendix (all created documents)
+11. Unterschrift
+12. Anhang (alle erstellten Dokumente)
 
 ---
 
-## Typical Deliverables
+## Typische Abgabeleistungen
 
-| Phase | Typical Documents |
+| Phase | Typische Dokumente |
 |-------|-------------------|
-| IST-Analyse | Process maps, SWOT analysis, digitalization assessment |
-| Zielformulierung | Vision document, SMART goals table, action plan, cost-benefit analysis |
-| Umsetzungsbegleitung | Project timeline, vendor evaluation matrix, implementation checklist |
-| Bericht | Final report (structured per WK guidelines) |
+| IST-Analyse | Prozessdiagramme, SWOT-Analyse, Digitalisierungsgrad-Bewertung |
+| Zielformulierung | Visionsdokument, SMART-Ziele-Tabelle, Maßnahmenplan, Kosten-Nutzen-Analyse |
+| Umsetzungsbegleitung | Projektzeitplan, Anbietervergleich, Umsetzungscheckliste |
+| Bericht | Abschlussbericht (strukturiert gemäß WK-Richtlinien) |
 
 ---
 
-## Bemerkungen (Notes)
+## Bemerkungen
 
-*Space for consultant notes during engagement*
+*Platz für Beraternotizen während der Beratung*

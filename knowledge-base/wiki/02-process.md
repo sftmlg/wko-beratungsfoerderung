@@ -1,4 +1,4 @@
-# Funding Process (Beratungsablauf)
+# Antragsprozess (Beratungsablauf)
 
 ## Die 9 Schritte im Überblick
 
@@ -23,152 +23,149 @@
 
 ---
 
-## Step-by-Step Details
+## Schritt-für-Schritt Details
 
-### Step 1: ANSUCHEN (Application)
+### Schritt 1: Ansuchen
 
-**Actor**: Fördernehmer (Client)
+**Akteur**: Fördernehmer (Kunde)
 
-**Actions**:
-1. Fill out "Ansuchen für die Tiroler Beratungsförderung" form
-2. Sign and stamp
-3. Send to WK Tirol (fax or email)
+**Aktionen**:
+1. Formular „Ansuchen für die Tiroler Beratungsförderung" ausfüllen
+2. Unterschreiben und stempeln
+3. An WK Tirol senden (Fax oder E-Mail)
 
-**Important**:
-- Consulting goal and time expenditure should be agreed at this point
-- Application must be submitted **BEFORE** consulting starts
-
----
-
-### Step 2: PRÜFUNG (Review)
-
-**Actor**: Förderstelle (WK Tirol + Land Tirol)
-
-**Actions**:
-- Review application for eligibility
-- Check funding requirements
-- Assess de-minimis limits
-
-**Duration**: 1-3 weeks
+**Wichtig**:
+- Beratungsziel und Zeitaufwand sollten zu diesem Zeitpunkt abgestimmt sein
+- Antrag muss **VOR** Beratungsbeginn eingereicht werden
 
 ---
 
-### Step 3: AUFTRAGSSCHREIBEN (Assignment Letter)
+### Schritt 2: Prüfung
 
-**Actor**: Förderstelle → Both parties
+**Akteur**: Förderstelle (WK Tirol + Land Tirol)
 
-**Actions**:
-- Upon positive assessment: assignment letter sent to consultant AND client
-- For Barrierefreiheit: client also receives feedback form
+**Aktionen**:
+- Prüfung des Antrags auf Förderfähigkeit
+- Kontrolle der Fördervoraussetzungen
+- Prüfung der De-minimis-Grenzen
 
-**Result**: Green light to start consulting
-
----
-
-### Step 4: BERATUNG (Consulting)
-
-**Actor**: Beratungsunternehmen (Consultant)
-
-**Actions**:
-- Execute consulting according to agreed scope
-- Document time (Leistungsnachweis)
-- Prepare report
-
-**Duration**: Max. 8 months from assignment
-
-**Critical**: Consulting start must be AFTER application received!
+**Dauer**: 1-3 Wochen
 
 ---
 
-### Step 5: ABSCHLUSS (Completion)
+### Schritt 3: Auftragsschreiben
 
-**Actor**: Consultant → Förderstelle
+**Akteur**: Förderstelle → Beide Parteien
 
-**Submit via email**:
-- [ ] Rechnung (Invoice)
-- [ ] Leistungsnachweis (Service record)
-- [ ] Beratungsbericht (Consulting report)
-- [ ] Relevant documents/appendices
+**Aktionen**:
+- Bei positivem Bescheid: Auftragsschreiben an Berater UND Kunde
+- Bei Barrierefreiheit: Kunde erhält zusätzlich Feedbackbogen
 
----
-
-### Step 6: PRÜFUNG (Compliance Check)
-
-**Actor**: Förderstelle
-
-**Actions**:
-- Check all documents for funding eligibility
-- Verify compliance with guidelines
-- Verify hours and rates
+**Ergebnis**: Grünes Licht für Beratungsbeginn
 
 ---
 
-### Step 7: WEITERLEITUNG (Forwarding)
+### Schritt 4: Beratung
 
-**Actor**: Förderstelle → Client
+**Akteur**: Beratungsunternehmen (Berater)
 
-**Actions**:
-- Send documents via email with cover letter
-- Include Feedbackbogen (feedback form)
+**Aktionen**:
+- Beratung gemäß vereinbartem Umfang durchführen
+- Zeit dokumentieren (Leistungsnachweis)
+- Bericht erstellen
 
----
+**Dauer**: Max. 8 Monate ab Auftragserteilung
 
-### Step 8: ZAHLUNG (Payment)
-
-**Actor**: Fördernehmer (Client)
-
-**Actions**:
-1. Review invoice
-2. Transfer **full invoice amount** to consultant
-3. Send to Förderstelle:
-   - Zahlungsnachweis (payment proof)
-   - Feedbackbogen (completed)
-
-**Note**: Client pays 100% first, gets refund later
+**Kritisch**: Beratungsbeginn muss NACH Antragseingang liegen!
 
 ---
 
-### Step 9: FÖRDERUNG (Funding Payout)
+### Schritt 5: Abschluss
 
-**Actor**: Förderstelle → Client
+**Akteur**: Berater → Förderstelle
 
-**Actions**:
-1. Confirmation of funding amount
-2. Transfer funding to client's bank account
-3. May deduct outstanding Grundumlagen
-
-**Result**: Client receives 50%/80% back
-
----
-
-## Timeline Summary
-
-| Phase | Duration |
-|-------|----------|
-| Application → Assignment | 1-3 weeks |
-| Consulting execution | Max. 8 months |
-| Submission → Payout | 2-4 weeks (after payment proof) |
+**Per E-Mail einreichen**:
+- [ ] Rechnung
+- [ ] Leistungsnachweis
+- [ ] Beratungsbericht
+- [ ] Relevante Dokumente/Anhänge
 
 ---
 
-## Special Case: Barrierefreiheit
+### Schritt 6: Prüfung
 
-Different document flow - client handles more:
-1. Documents go to client first
-2. Client sends to Förderstelle with:
+**Akteur**: Förderstelle
+
+**Aktionen**:
+- Prüfung aller Unterlagen auf Förderfähigkeit
+- Kontrolle der Richtlinienkonformität
+- Verifizierung von Stunden und Sätzen
+
+---
+
+### Schritt 7: Weiterleitung
+
+**Akteur**: Förderstelle → Kunde
+
+**Aktionen**:
+- Unterlagen per E-Mail mit Begleitschreiben versenden
+- Feedbackbogen beilegen
+
+---
+
+### Schritt 8: Zahlung
+
+**Akteur**: Fördernehmer (Kunde)
+
+**Aktionen**:
+1. Rechnung prüfen
+2. **Vollen Rechnungsbetrag** an Berater überweisen
+3. An Förderstelle senden:
+   - Zahlungsnachweis
+   - Feedbackbogen (ausgefüllt)
+
+**Hinweis**: Kunde zahlt zuerst 100%, erhält Rückerstattung später
+
+---
+
+### Schritt 9: Förderung
+
+**Akteur**: Förderstelle → Kunde
+
+**Aktionen**:
+1. Bestätigung des Förderbetrags
+2. Überweisung der Förderung auf Kundenkonto
+3. Eventuelle Verrechnung ausstehender Grundumlagen
+
+**Ergebnis**: Kunde erhält 50%/80% zurück
+
+---
+
+## Zeitlicher Überblick
+
+| Phase | Dauer |
+|-------|-------|
+| Antrag → Auftragserteilung | 1-3 Wochen |
+| Beratungsdurchführung | Max. 8 Monate |
+| Einreichung → Auszahlung | 2-4 Wochen (nach Zahlungsnachweis) |
+
+---
+
+## Sonderfall: Barrierefreiheit
+
+Abweichender Dokumentenfluss - Kunde übernimmt mehr:
+1. Unterlagen gehen zuerst an Kunden
+2. Kunde sendet an Förderstelle:
    - Leistungsnachweis
    - Rechnung
    - Bericht
    - Feedbackbogen
    - Zahlungsbestätigung
-3. Steps 7+8 are skipped
+3. Schritte 7+8 entfallen
 
 ---
 
 ## Quelldokumente
 
-Die offiziellen Richtlinien und Formulare finden Sie auf der WKO Tirol Website:
-
-- [WKO Tirol Beratungsförderung](https://www.wko.at/tirol/foerderung/tiroler-beratungsfoerderung) - Offizielle Informationen und Antragsformulare
-- Beratungsablauf (Stand 24.01.2025)
+- Beratungsablauf
 - Richtlinie Tiroler Beratungsförderung (Abschnitt 6)

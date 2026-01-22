@@ -121,13 +121,6 @@ export const sourceDocuments: Record<string, SourceDocument> = {
     type: 'PDF',
     size: '110 KB',
   },
-  'Beratungsablauf': {
-    title: 'Beratungsablauf',
-    description: 'Der 9-Schritte-Prozess als Flowchart.',
-    pdfPath: '/docs/beratungsablauf.pdf',
-    type: 'PDF',
-    size: '112 KB',
-  },
   'Richtlinien für Beratungsaufträge': {
     title: 'Richtlinien für Beratungsaufträge',
     description: 'Detaillierte Vorgaben für die Durchführung.',
@@ -148,6 +141,13 @@ export const sourceDocuments: Record<string, SourceDocument> = {
     pdfPath: '/docs/berufsbild-unternehmensberatung.pdf',
     type: 'PDF',
     size: '250 KB',
+  },
+  'Beratungsablauf': {
+    title: 'Beratungsablauf',
+    description: 'Der 9-Schritte-Prozess im Detail.',
+    pdfPath: '/docs/beratungsablauf.pdf',
+    type: 'PDF',
+    size: '112 KB',
   },
 };
 

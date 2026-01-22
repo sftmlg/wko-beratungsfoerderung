@@ -1,9 +1,9 @@
-# Funding Areas (Beratungsschwerpunkte)
+# Förderbereiche (Beratungsschwerpunkte)
 
-## Overview
+## Überblick
 
-| # | Area | Förderquote |
-|---|------|-------------|
+| Nr. | Bereich | Förderquote |
+|-----|---------|-------------|
 | 2.1 | Unternehmensberatung | 50% (80% Jungunternehmen) |
 | 2.2 | Innovation, Kreativität, Technologie | 50% |
 | **2.3** | **Digitalisierung** | **80%** |
@@ -39,16 +39,16 @@
 
 ## 2.3 Digitalisierung (80%) ⭐
 
-**David's focus area**
+**Hauptbereich für KMU-Digitalisierung**
 
 - Digitalisierung von Geschäftsprozessen
 - Personalmanagement (Bedarfserhebung, Konzepterstellung, Maßnahmenentwicklung)
 - Verbesserung der IT-Sicherheit
 - Datenschutzvorgaben (DSGVO)
 
-**Special conditions:**
-- Up to **50 Beratungsstunden** (vs. 24h standard)
-- Checklist required: See `03.01.2023_TBF_Checkliste_Digitalisierung_Geschäftsprozessen.pdf`
+**Besondere Bedingungen:**
+- Bis zu **50 Beratungsstunden** (statt 24h Standard)
+- Checkliste erforderlich: Siehe Digitalisierungs-Checkliste
 
 ---
 
@@ -79,26 +79,26 @@ Beratungen betreffend Gleichstellung und Barrierefreiheit.
 
 ---
 
-## NOT Funded (Ausgeschlossen)
+## Nicht gefördert (Ausgeschlossen)
 
-### Explicitly excluded activities:
+### Ausgeschlossene Tätigkeiten
 
-| Category | Examples |
-|----------|----------|
+| Kategorie | Beispiele |
+|-----------|-----------|
 | **Steuer/Recht** | Steuerliche oder rechtliche Fragen |
 | **Gutachten** | Gutachterliche Tätigkeiten |
-| **Implementation** | Agenturleistungen, Werbekampagnen, Homepageerstellung, Programmierung, Grafikerstellung |
-| **Technical** | Technische Messungen |
-| **Training** | Trainings- und Einschulungsleistungen, Ausarbeitung von Schulungsunterlagen |
-| **Funding apps** | Beratungen zur Ausarbeitung von Förderanträgen |
+| **Umsetzung** | Agenturleistungen, Werbekampagnen, Homepageerstellung, Programmierung, Grafikerstellung |
+| **Technisch** | Technische Messungen |
+| **Schulungen** | Trainings- und Einschulungsleistungen, Ausarbeitung von Schulungsunterlagen |
+| **Förderanträge** | Beratungen zur Ausarbeitung von Förderanträgen |
 
-### Conflict of interest exclusions:
+### Interessenskonflikte
 
-- Consultant and client have **same trade license** (Gewerbeberechtigung)
-- **IT-Dienstleistungsunternehmen** consulting on Digitalisierung (conflict of interest)
+- Berater und Kunde haben **dieselbe Gewerbeberechtigung**
+- **IT-Dienstleistungsunternehmen** beraten zu Digitalisierung (Interessenskonflikt)
 
 ---
 
-## Source Documents
+## Quelldokumente
 
-- `1 Richtlinie Tiroler Beratungsförderung.pdf` (Section 2)
+- Richtlinie Tiroler Beratungsförderung (Abschnitt 2)

@@ -1,123 +1,95 @@
-# Requirements
+# Voraussetzungen
 
-## For Clients (Fördernehmer)
+## Für Kunden (Fördernehmer)
 
-### Eligibility
+### Förderfähigkeit
 
-| Requirement | Details |
+| Anforderung | Details |
 |-------------|---------|
-| **WKO Membership** | Must be member of Wirtschaftskammer Tirol |
-| **Application timing** | Submit BEFORE consulting starts |
-| **One per topic/year** | Only one funding per Beratungsthema per calendar year |
-| **De-minimis declaration** | Declare subsidies from past 2 tax years + current year |
+| **WKO-Mitgliedschaft** | Muss Mitglied der Wirtschaftskammer Tirol sein |
+| **Antragszeitpunkt** | Einreichung VOR Beratungsbeginn |
+| **Einmal pro Thema/Jahr** | Nur eine Förderung pro Beratungsthema pro Kalenderjahr |
+| **De-minimis-Erklärung** | Angabe der Beihilfen der letzten 2 Steuerjahre + laufendes Jahr |
 
-### Special Cases
+### Sonderfälle
 
-- **Businessplan/Betriebsanlagen/Wirtshäuser**: Can receive funding even if business is not founded/taken over after consulting
-- **Max €4.000/year**: When receiving multiple fundings in same year
+- **Businessplan/Betriebsanlagen/Wirtshäuser**: Förderung auch möglich, wenn Gründung/Übernahme nach Beratung nicht erfolgt
+- **Max. €4.000/Jahr**: Bei mehreren Förderungen im selben Jahr
 
 ---
 
-## For Consultants (Berater)
+## Für Berater
 
-### Mandatory Requirements
+### Pflichtanforderungen
 
-| Requirement | Details |
+| Anforderung | Details |
 |-------------|---------|
-| **Trade license** | Unternehmensberatungsgewerbe (NOT IT-Dienstleistungsgewerbe) |
-| **Beraterpool** | Must be listed in WKO Tirol Beraterpool |
-| **Rate acceptance** | Accept max €100/h rate |
-| **Signed declaration** | Annahmeerklärung signed and submitted |
+| **Gewerbeberechtigung** | Unternehmensberatungsgewerbe (NICHT IT-Dienstleistungsgewerbe) |
+| **Beraterpool** | Muss im WKO Tirol Beraterpool gelistet sein |
+| **Honorarakzeptanz** | Akzeptiert max. €100/h Honorar |
+| **Unterschriebene Erklärung** | Annahmeerklärung unterschrieben und eingereicht |
 
-### Registration Documents
+### Registrierungsunterlagen
 
-To join Beraterpool, submit:
-1. **Beratungsprofil** (Document 6) - competencies, experience, specializations
-2. **Annahmeerklärung** (Document 7) - signed acceptance of guidelines
-3. **Proof of Unternehmensberatungsgewerbe**
+Für die Aufnahme in den Beraterpool einreichen:
+1. **Beratungsprofil** (Dokument 6) - Kompetenzen, Erfahrung, Spezialisierungen
+2. **Annahmeerklärung** (Dokument 7) - Unterschriebene Akzeptanz der Richtlinien
+3. **Nachweis Unternehmensberatungsgewerbe**
 
-### After 3 successful consultations
-→ Listed on internal WKO recommendation list
-
----
-
-## Unternehmensberatungsgewerbe Qualification
-
-**This is a REGULATED trade** (reglementiertes Gewerbe) - requires proof of qualification.
-
-### 6 Qualification Paths
-
-| # | Path | Requirements |
-|---|------|--------------|
-| 1 | **Befähigungsprüfung** | Pass exam in Vienna |
-| 2 | 3 years experience | 3 years relevant work + employer certificates |
-| 3 | BWL/Jus degree + 1 year | Business/Law degree + 1 year experience |
-| 4 | Other degree + law + 1 year | University degree + legal knowledge + 1 year |
-| 5 | BHS + law + 1.5 years | Higher education + legal knowledge + 1.5 years |
-| 6 | **230h training + 2.5 years** | Consulting education + 2.5 years experience |
-
-### What counts as "relevant experience"?
-
-From the guidelines:
-> "Tätigkeiten im Bereich der Unternehmensberatung, der Leitung von Unternehmen, im leitenden Management oder als Wirtschaftstreuhänder"
-
-**Includes**:
-- Analysis of organizations
-- Development of solutions
-- Implementation through consulting and intervention
-- Managing consulting/communication processes
-
-**Warning for EPU (solo entrepreneurs)**:
-> "Bei Ein-Personen-Unternehmen oder Kleinstunternehmen wird die notwendige Schwelle an unternehmensberatungsadäquaten Aufgaben in der Regel NICHT erreicht."
-
-= Solo self-employment typically does NOT count as relevant experience!
+### Nach 3 erfolgreichen Beratungen
+→ Listung auf interner WKO-Empfehlungsliste
 
 ---
 
-## David's Situation
+## Unternehmensberatungsgewerbe-Qualifikation
 
-**Current status**: IT-Dienstleistungsgewerbe (free trade)
-**Needed**: Unternehmensberatungsgewerbe (regulated trade)
+**Dies ist ein REGLEMENTIERTES GEWERBE** - erfordert Qualifikationsnachweis.
 
-### The Problem
+### 6 Qualifikationswege
 
-| Factor | David's Status |
-|--------|----------------|
-| Education | Informatik (not BWL/Jus) |
-| Employment history | Self-employed since 2018/19 |
-| Employer certificates | NONE (no employed positions) |
-| EPU experience | Does NOT count per guidelines |
+| Nr. | Weg | Anforderungen |
+|-----|-----|---------------|
+| 1 | **Befähigungsprüfung** | Prüfung in Wien bestehen |
+| 2 | 3 Jahre Erfahrung | 3 Jahre einschlägige Tätigkeit + Arbeitgeberzeugnisse |
+| 3 | BWL/Jus-Abschluss + 1 Jahr | Wirtschafts-/Rechtsabschluss + 1 Jahr Erfahrung |
+| 4 | Anderer Abschluss + Recht + 1 Jahr | Hochschulabschluss + Rechtskenntnisse + 1 Jahr |
+| 5 | BHS + Recht + 1,5 Jahre | Höhere Bildung + Rechtskenntnisse + 1,5 Jahre |
+| 6 | **230h Ausbildung + 2,5 Jahre** | Beratungsausbildung + 2,5 Jahre Erfahrung |
 
-### Realistic Options
+### Was zählt als „einschlägige Erfahrung"?
 
-| Path | Feasibility |
-|------|-------------|
-| **1. Befähigungsprüfung (Wien)** | Possible - exam-based |
-| 2-5. Experience-based paths | Blocked - no employer certificates |
-| **6. 230h training + 2.5 years** | Possible - requires training course |
+Aus den Richtlinien:
+> „Tätigkeiten im Bereich der Unternehmensberatung, der Leitung von Unternehmen, im leitenden Management oder als Wirtschaftstreuhänder"
 
-**Detailed analysis**: See `260115_1_david-situation-analysis.md`
-**Contact at WKO**: Elias Hager
+**Umfasst**:
+- Analyse von Organisationen
+- Entwicklung von Lösungen
+- Umsetzung durch Beratung und Intervention
+- Steuerung von Beratungs-/Kommunikationsprozessen
 
----
+**Warnung für EPU (Einzelunternehmer)**:
+> „Bei Ein-Personen-Unternehmen oder Kleinstunternehmen wird die notwendige Schwelle an unternehmensberatungsadäquaten Aufgaben in der Regel NICHT erreicht."
 
-## Conflict of Interest Rules
-
-Funding is **excluded** when:
-- Consultant and client have **same trade license**
-- **IT-Dienstleistungsunternehmen** consulting on Digitalisierung
-
-**Important**: Having BOTH IT-DL and UB licenses is allowed. Just can't use IT-DL for funded Digi-consulting.
-
-Proper separation:
-1. Funded consulting = strategy, analysis (via UB license)
-2. Implementation = separate project (via IT-DL license)
+= Selbstständige Einzeltätigkeit zählt typischerweise NICHT als einschlägige Erfahrung!
 
 ---
 
-## Source Documents
+## Interessenskonflikte
 
-- `1 Richtlinie Tiroler Beratungsförderung.pdf` (Sections 3, 5)
-- `7 Berater_Annahmerklaerung_Auftragsrichtlinien 20230110.pdf`
-- `10 Berufsbild Unternehmensberatung 20230921.pdf`
-- `260115_1_david-situation-analysis.md`
+Förderung ist **ausgeschlossen** wenn:
+- Berater und Kunde **dieselbe Gewerbeberechtigung** haben
+- **IT-Dienstleistungsunternehmen** zu Digitalisierung beraten
+
+**Wichtig**: BEIDE Lizenzen (IT-DL und UB) zu haben ist erlaubt. Nur darf IT-DL nicht für geförderte Digitalisierungsberatung verwendet werden.
+
+Korrekte Trennung:
+1. Geförderte Beratung = Strategie, Analyse (über UB-Lizenz)
+2. Umsetzung = separates Projekt (über IT-DL-Lizenz)
+
+---
+
+## Quelldokumente
+
+- Richtlinie Tiroler Beratungsförderung (Abschnitte 3, 5)
+- Berater-Annahmeerklärung
+- Berufsbild Unternehmensberatung

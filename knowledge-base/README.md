@@ -1,72 +1,72 @@
-# WKO Beratungsförderung Knowledge Base
+# WKO Beratungsförderung Wissensdatenbank
 
-Knowledge base for the WKO Beratungsförderung chatbot. This contains all official guidelines and synthesized summaries for the Tirol consulting funding program.
+Wissensdatenbank für den WKO Beratungsförderungs-Chatbot. Enthält alle offiziellen Richtlinien und aufbereitete Zusammenfassungen für das Tiroler Beratungsförderprogramm.
 
-## Structure
+## Struktur
 
-### `/wiki/` - Synthesized Summaries
-Curated, structured summaries optimized for chatbot comprehension:
+### `/wiki/` - Aufbereitete Zusammenfassungen
+Kuratierte, strukturierte Zusammenfassungen, optimiert für Chatbot-Verständnis:
 
-- **00-overview.md** - Program overview and key facts
-- **01-funding-areas.md** - Eligible funding areas and focus topics
-- **02-process.md** - Application and consulting process workflow
-- **03-requirements.md** - Requirements for consultants and businesses
-- **04-deliverables.md** - Required documentation and deliverables
+- **00-overview.md** - Programmübersicht und Eckdaten
+- **01-funding-areas.md** - Förderbereiche und Schwerpunktthemen
+- **02-process.md** - Antrags- und Beratungsablauf
+- **03-requirements.md** - Voraussetzungen für Berater und Unternehmen
+- **04-deliverables.md** - Erforderliche Dokumentation und Abgabeleistungen
 
-### `/raw/` - Official Guidelines
-Complete official guideline documents in markdown format:
+### `/raw/` - Offizielle Richtlinien
+Vollständige offizielle Richtliniendokumente im Markdown-Format:
 
-- **richtlinie-beratungsfoerderung.md** - Main funding guideline (Tiroler Beratungsförderung)
-- **richtlinien-beratungsauftraege.md** - Consulting assignment guidelines
-- **honorarrichtlinien.md** - Fee guidelines (updated 2025-01-01)
-- **beratungsablauf.md** - Consulting process flow (updated 2025-01-24)
-- **checkliste-digitalisierung.md** - Digitalization checklist for business processes
+- **richtlinie-beratungsfoerderung.md** - Hauptförderrichtlinie (Tiroler Beratungsförderung)
+- **richtlinien-beratungsauftraege.md** - Richtlinien für Beratungsaufträge
+- **honorarrichtlinien.md** - Honorarrichtlinien (Stand 01.01.2025)
+- **beratungsablauf.md** - Beratungsablauf (Stand 24.01.2025)
+- **checkliste-digitalisierung.md** - Digitalisierungscheckliste für Geschäftsprozesse
 
-## Usage for Chatbot
+## Chatbot-Nutzung
 
-### Priority Hierarchy
-1. **Wiki summaries** - Primary source for quick responses
-2. **Raw guidelines** - Reference for detailed/specific questions
-3. **Cross-reference** - Validate wiki against raw when needed
+### Prioritätshierarchie
+1. **Wiki-Zusammenfassungen** - Primärquelle für schnelle Antworten
+2. **Original-Richtlinien** - Referenz für detaillierte/spezifische Fragen
+3. **Querprüfung** - Wiki gegen Original validieren wenn nötig
 
-### Key Information
+### Wichtige Informationen
 
-**Funding Amount**: 80% of consulting costs (max varies by topic)
+**Fördersumme**: 80% der Beratungskosten (Maximum variiert nach Thema)
 
-**Target Audience**:
-- Businesses (customers)
-- Consultants (providers)
+**Zielgruppe**:
+- Unternehmen (Kunden)
+- Berater (Anbieter)
 
-**Main Topics**:
-- Digitalisierung (Digitalization)
-- Betriebswirtschaft (Business Management)
-- Personal (HR)
+**Hauptthemen**:
+- Digitalisierung
+- Betriebswirtschaft
+- Personal
 - Marketing
-- Internationalisierung (Internationalization)
+- Internationalisierung
 - Innovation
-- Energie (Energy)
+- Energie
 
-**Geographic Scope**: Tirol, Austria
+**Geografischer Geltungsbereich**: Tirol, Österreich
 
-## Chatbot Integration
+## Chatbot-Integration
 
-This knowledge base is designed to be ingested by an AI chatbot that answers questions about:
-- Program eligibility
-- Application process
-- Consultant requirements
-- Funding amounts and conditions
-- Required documentation
-- Process workflow
+Diese Wissensdatenbank ist für die Nutzung durch einen KI-Chatbot konzipiert, der Fragen beantwortet zu:
+- Programmfähigkeit
+- Antragsprozess
+- Berater-Anforderungen
+- Förderbeträge und Konditionen
+- Erforderliche Dokumentation
+- Prozessablauf
 
-The chatbot should:
-1. Start with wiki summaries for context
-2. Reference raw guidelines for specific details
-3. Provide accurate quotes from official documents
-4. Guide users through the process step-by-step
-5. Distinguish between requirements for businesses vs. consultants
+Der Chatbot sollte:
+1. Mit Wiki-Zusammenfassungen für Kontext starten
+2. Original-Richtlinien für spezifische Details referenzieren
+3. Genaue Zitate aus offiziellen Dokumenten liefern
+4. Nutzer Schritt für Schritt durch den Prozess führen
+5. Zwischen Anforderungen für Unternehmen vs. Berater unterscheiden
 
-## Source
+## Quelle
 
-Original content from: `lead-generation/procedures/wko-beratungsfoerderung/`
+Originalinhalt aus: `lead-generation/procedures/wko-beratungsfoerderung/`
 
-Last updated: 2025-01-22
+Letzte Aktualisierung: 22.01.2025

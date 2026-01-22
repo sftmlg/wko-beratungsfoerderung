@@ -1,60 +1,60 @@
-# Deliverables (Abgabeleistungen)
+# Abgabeleistungen
 
-## Summary
+## Übersicht
 
-| Document | Template | Required |
-|----------|----------|----------|
-| Beratungsbericht | Per guidelines | Yes |
-| Leistungsnachweis | `8a Leistungsnachweis` | Yes |
-| Rechnung | `9a Rechnungsmuster` | Yes |
-| Feedbackbogen | Provided by WK | Yes (filled by client) |
+| Dokument | Vorlage | Erforderlich |
+|----------|---------|--------------|
+| Beratungsbericht | Gemäß Richtlinien | Ja |
+| Leistungsnachweis | Vorlage Leistungsnachweis | Ja |
+| Rechnung | Rechnungsmuster | Ja |
+| Feedbackbogen | Von WK bereitgestellt | Ja (vom Kunden ausgefüllt) |
 
 ---
 
-## Beratungsbericht (Consulting Report)
+## Beratungsbericht
 
-### Mandatory Structure
+### Pflichtstruktur
 
-| # | Section | Content |
-|---|---------|---------|
-| 1 | Beratungsunternehmen | Consultant company data |
-| 2 | Beratenes Unternehmen | Client company data |
-| 3 | Inhaltsverzeichnis | Table of contents |
-| 4 | Beratungsauftrag und -ziel | Assignment and goals |
-| 5 | Beratungsablauf | Process description (key points) |
-| 6 | IST-Zustand / Problembeschreibung | Current state analysis (Befund) |
-| 7 | Beratungsergebnis | Results |
-| 8 | Maßnahmen und Realisierungsempfehlungen | Recommendations: who, what, when + cost estimates |
-| 9 | **Entscheidungsgrundlagen** | Tables, charts, diagrams - **CORE of consulting** |
-| 10 | Freizeichnungsklausel | Disclaimer (see below) |
-| 11 | Unterschrift | Handwritten consultant signature |
-| 12 | Anhang | All documents created during consulting |
+| Nr. | Abschnitt | Inhalt |
+|-----|-----------|--------|
+| 1 | Beratungsunternehmen | Daten des Beraterunternehmens |
+| 2 | Beratenes Unternehmen | Daten des Kundenunternehmens |
+| 3 | Inhaltsverzeichnis | Inhaltsübersicht |
+| 4 | Beratungsauftrag und -ziel | Auftrag und Ziele |
+| 5 | Beratungsablauf | Prozessbeschreibung (Eckpunkte) |
+| 6 | IST-Zustand / Problembeschreibung | Analyse des aktuellen Zustands (Befund) |
+| 7 | Beratungsergebnis | Ergebnisse |
+| 8 | Maßnahmen und Realisierungsempfehlungen | Empfehlungen: wer, was, wann + Kostenschätzungen |
+| 9 | **Entscheidungsgrundlagen** | Tabellen, Grafiken, Diagramme - **KERN der Beratung** |
+| 10 | Freizeichnungsklausel | Haftungsausschluss (siehe unten) |
+| 11 | Unterschrift | Handschriftliche Beraterunterschrift |
+| 12 | Anhang | Alle während der Beratung erstellten Dokumente |
 
-### Special Sections (if applicable)
+### Sonderabschnitte (falls zutreffend)
 
-| Case | Additional Section |
-|------|-------------------|
+| Fall | Zusätzlicher Abschnitt |
+|------|------------------------|
 | Jungunternehmen | Plankostenrechnung, Mindestumsatzrechnung, Deckungsbeitragsrechnung, Break-Even-Analyse |
-| Investment decisions | Multiple variants (pessimistic/optimistic/likely) showing risk profile |
-| Financial difficulties | Explicit note if insolvency risk detected |
+| Investitionsentscheidungen | Mehrere Varianten (pessimistisch/optimistisch/wahrscheinlich) mit Risikoprofil |
+| Finanzielle Schwierigkeiten | Expliziter Hinweis bei erkanntem Insolvenzrisiko |
 
-### Freizeichnungsklausel (Disclaimer)
+### Freizeichnungsklausel (Haftungsausschluss)
 
-Standard text:
-> "Die Umsetzung der empfohlenen Maßnahmen muss vom Unternehmen selbst und in eigener Verantwortung durchgeführt werden. Alle Vorschläge wurden vom Berater nach bestem Wissen und Gewissen, basierend auf der betrieblichen Überprüfung sowie den bereitgestellten Informationen und Unterlagen, zusammengestellt."
+Standardtext:
+> „Die Umsetzung der empfohlenen Maßnahmen muss vom Unternehmen selbst und in eigener Verantwortung durchgeführt werden. Alle Vorschläge wurden vom Berater nach bestem Wissen und Gewissen, basierend auf der betrieblichen Überprüfung sowie den bereitgestellten Informationen und Unterlagen, zusammengestellt."
 
 ---
 
-## Digitalisierung Checklist
+## Digitalisierungs-Checkliste
 
-**Required phases for Digitalisierung consulting** (80% funding area):
+**Erforderliche Phasen für Digitalisierungsberatung** (80% Förderbereich):
 
 ### Phase 1: IST-Analyse
 
 - [ ] Digitalisierungsgrad erheben (z.B. KMU Digital Potentialanalyse)
-- [ ] Stärke/Schwäche Analyse
+- [ ] Stärke/Schwäche-Analyse
 - [ ] Prozesse analysieren
-- [ ] *Optional*: Best Practice Beispiele
+- [ ] *Optional*: Best-Practice-Beispiele
 
 ### Phase 2: Zielformulierung
 
@@ -81,107 +81,107 @@ Standard text:
 
 ---
 
-## SMART Goals Framework
+## SMART-Ziele-System
 
-| Letter | Meaning | Example |
-|--------|---------|---------|
-| **S** | Specific | "CRM-System für Vertrieb implementieren" |
-| **M** | Measurable | "Manuelle Dateneingabe um 50% reduzieren" |
-| **A** | Achievable | "Mit aktuellem Budget und Team machbar" |
-| **R** | Relevant | "Unterstützt Wachstumsstrategie" |
-| **T** | Time-bound | "Bis Q2 2026 abgeschlossen" |
+| Buchstabe | Bedeutung | Beispiel |
+|-----------|-----------|----------|
+| **S** | Spezifisch | „CRM-System für Vertrieb implementieren" |
+| **M** | Messbar | „Manuelle Dateneingabe um 50% reduzieren" |
+| **A** | Erreichbar | „Mit aktuellem Budget und Team machbar" |
+| **R** | Relevant | „Unterstützt Wachstumsstrategie" |
+| **T** | Terminiert | „Bis Q2 2026 abgeschlossen" |
 
 ---
 
-## Leistungsnachweis (Service Record)
+## Leistungsnachweis
 
-**Template**: `8a Leistungsnachweis allgemein Stand 20230101.doc`
+**Vorlage**: Leistungsnachweis
 
-### Required Information
+### Erforderliche Angaben
 
-- Consultant data
-- Client data
-- Assignment number
-- Date of each consulting session
-- Hours per session
-- Activity description
-- Cumulative hours
-- Signatures (consultant + client)
+- Beraterdaten
+- Kundendaten
+- Auftragsnummer
+- Datum jeder Beratungssitzung
+- Stunden pro Sitzung
+- Tätigkeitsbeschreibung
+- Kumulative Stunden
+- Unterschriften (Berater + Kunde)
 
-### Max Hours
+### Maximale Stunden
 
-| Category | Max Hours |
-|----------|-----------|
+| Kategorie | Max. Stunden |
+|-----------|--------------|
 | Standard | 24h |
-| Digitalisierung | **50h** (in justified cases) |
-| Tiroler Wirtshäuser | 120h (over 3 years) |
+| Digitalisierung | **50h** (bei begründeten Fällen) |
+| Tiroler Wirtshäuser | 120h (über 3 Jahre) |
 
 ---
 
-## Rechnung (Invoice)
+## Rechnung
 
-**Template**: `9a Rechnungsmuster Stand 20230101.docx`
+**Vorlage**: Rechnungsmuster
 
-### Requirements
+### Anforderungen
 
-- Issued to **client's name**
-- Include **assignment number**
-- Structured per template
-- Detailed attachment with:
-  - Dates of consulting
-  - Travel routes/distances
-  - Activity breakdown
+- Ausgestellt auf **Kundennamen**
+- **Auftragsnummer** angeben
+- Gemäß Vorlage strukturiert
+- Detaillierter Anhang mit:
+  - Beratungsterminen
+  - Fahrtstrecken/Entfernungen
+  - Tätigkeitsaufschlüsselung
 
-### Rate Limits
+### Höchstsätze
 
-| Component | Max Rate |
-|-----------|----------|
-| Consulting hours | €100,00 netto/h |
-| Travel (km) | Per current WKO rates |
-| Materials | Not fundable |
-| Other expenses | Not fundable |
-
----
-
-## Submission Process
-
-After final meeting (Schlussbesprechung), consultant sends to WK:
-
-1. **Beratungsbericht** with all attachments
-2. **Rechnung** (Invoice)
-3. **Leistungsnachweis** (Time record)
-4. **Bestätigung der Endbesprechung** (Final meeting confirmation)
-
-**Submission**: Via email to beratungsfoerderung@wktirol.at
+| Komponente | Höchstsatz |
+|------------|------------|
+| Beratungsstunden | €100,00 netto/h |
+| Fahrt (km) | Gemäß aktuellen WKO-Sätzen |
+| Materialien | Nicht förderfähig |
+| Sonstige Ausgaben | Nicht förderfähig |
 
 ---
 
-## Quality Criteria
+## Einreichungsprozess
 
-WK may object if report doesn't meet quality criteria:
-- Report structure incomplete
-- Goals not clearly documented
-- Recommendations not actionable
-- Cost estimates missing
+Nach der Schlussbesprechung sendet der Berater an WK:
 
-**Consequence**: Consultant must rework (free of charge) before payment
+1. **Beratungsbericht** mit allen Anhängen
+2. **Rechnung**
+3. **Leistungsnachweis**
+4. **Bestätigung der Endbesprechung**
+
+**Einreichung**: Per E-Mail an beratungsfoerderung@wktirol.at
 
 ---
 
-## Typical Deliverables by Phase
+## Qualitätskriterien
 
-| Phase | Documents |
+WK kann Einwände erheben, wenn der Bericht die Qualitätskriterien nicht erfüllt:
+- Berichtsstruktur unvollständig
+- Ziele nicht klar dokumentiert
+- Empfehlungen nicht umsetzbar
+- Kostenschätzungen fehlen
+
+**Konsequenz**: Berater muss (kostenlos) nachbessern vor Zahlung
+
+---
+
+## Typische Abgabeleistungen nach Phase
+
+| Phase | Dokumente |
 |-------|-----------|
-| IST-Analyse | Process maps, SWOT, Digitalisierungsgrad assessment |
-| Zielformulierung | Vision doc, SMART goals table, action plan, cost-benefit |
-| Umsetzungsbegleitung | Project timeline, vendor evaluation, implementation checklist |
-| Bericht | Final report (per WK structure) |
+| IST-Analyse | Prozessdiagramme, SWOT, Digitalisierungsgrad-Bewertung |
+| Zielformulierung | Visionsdokument, SMART-Ziele-Tabelle, Maßnahmenplan, Kosten-Nutzen |
+| Umsetzungsbegleitung | Projektzeitplan, Anbietervergleich, Umsetzungscheckliste |
+| Bericht | Abschlussbericht (gemäß WK-Struktur) |
 
 ---
 
-## Source Documents
+## Quelldokumente
 
-- `3 Richtlinien für Beratungsaufträge ab 1.10.2023.pdf`
-- `03.01.2023_TBF_Checkliste_Digitalisierung_Geschäftsprozessen.pdf`
-- `8a Leistungsnachweis allgemein Stand 20230101.doc`
-- `9a Rechnungsmuster Stand 20230101.docx`
+- Richtlinien für Beratungsaufträge
+- Checkliste Digitalisierung
+- Leistungsnachweis-Vorlage
+- Rechnungsmuster

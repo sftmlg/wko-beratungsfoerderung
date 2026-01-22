@@ -1,17 +1,17 @@
-# Tiroler Beratungsförderung - Overview
+# Programmübersicht
 
-## What is it?
+## Überblick
 
-Joint funding program by **Land Tirol** and **Wirtschaftskammer Tirol** to strengthen Tyrolean businesses through subsidized consulting services.
+Gemeinsames Förderprogramm von **Land Tirol** und **Wirtschaftskammer Tirol** zur Stärkung der Tiroler Wirtschaft durch bezuschusste Beratungsleistungen.
 
-**Goal**: Improve competitiveness of Tyrolean businesses through professional external consulting.
+**Ziel**: Steigerung der Wettbewerbsfähigkeit Tiroler Unternehmen durch professionelle externe Beratung.
 
 ---
 
-## Key Numbers
+## Eckdaten
 
-| Parameter | Value |
-|-----------|-------|
+| Parameter | Wert |
+|-----------|------|
 | **Standard Förderquote** | 50% |
 | **Erhöhte Förderquote** | 80% (Digitalisierung, Umwelt, Jungunternehmen, Barrierefreiheit) |
 | **Max. Stundensatz** | €100,00 netto |
@@ -20,17 +20,17 @@ Joint funding program by **Land Tirol** and **Wirtschaftskammer Tirol** to stren
 
 ---
 
-## Validity
+## Gültigkeit
 
-| Date | Event |
-|------|-------|
+| Datum | Ereignis |
+|-------|----------|
 | 01.01.2023 | Inkrafttreten |
 | 31.12.2027 | Letzte Anträge |
 | 30.06.2028 | Ende der Gültigkeit |
 
 ---
 
-## Legal Basis
+## Rechtsgrundlagen
 
 - Verordnung (EU) 2023/2831 (De-minimis-Beihilfen)
 - Verordnung (EU) Nr. 651/2014 (AGVO)
@@ -38,35 +38,28 @@ Joint funding program by **Land Tirol** and **Wirtschaftskammer Tirol** to stren
 
 ---
 
-## Contact
+## Kontakt
 
 | | |
 |---|---|
-| **Address** | Wilhelm-Greil-Straße 7, 6020 Innsbruck |
-| **Phone** | 05 90 90 5-1372 |
-| **Email** | beratungsfoerderung@wktirol.at |
+| **Adresse** | Wilhelm-Greil-Straße 7, 6020 Innsbruck |
+| **Telefon** | 05 90 90 5-1372 |
+| **E-Mail** | beratungsfoerderung@wktirol.at |
 | **Web** | WKO.at/tirol |
 
 ---
 
-## Quick Facts
+## Kurzübersicht
 
-- **Non-repayable grant** (nicht rückzahlbarer Einmalzuschuss)
-- Only consulting from **WKO Tirol Beraterpool** eligible
-- Application **before** consulting start
-- One funding per topic/company/year
-- Cannot be combined with other state subsidies (Kumulierungsverbot)
+- **Nicht rückzahlbarer Einmalzuschuss**
+- Nur Beratung durch den **WKO Tirol Beraterpool** förderfähig
+- Antrag **vor** Beratungsbeginn erforderlich
+- Eine Förderung pro Thema/Unternehmen/Jahr
+- Keine Kombination mit anderen Landesförderungen (Kumulierungsverbot)
 
 ---
 
-## Related Wiki Pages
+## Quelldokumente
 
-- [01-funding-areas.md](01-funding-areas.md) - What's covered
-- [02-process.md](02-process.md) - The 9-step procedure
-- [03-requirements.md](03-requirements.md) - Client & consultant requirements
-- [04-deliverables.md](04-deliverables.md) - Reports & templates
-
-## Source Documents
-
-- `1 Richtlinie Tiroler Beratungsförderung.pdf`
-- `4 Honorarrichtlinien_Stand 20250101.pdf`
+- Richtlinie Tiroler Beratungsförderung
+- Honorarrichtlinien

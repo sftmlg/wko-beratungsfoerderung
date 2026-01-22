@@ -1,129 +1,129 @@
 # Ablauf der Tiroler Beratungsförderung
 
 **Version**: Jänner 2025
-**Contact**: Wirtschaftskammer Tirol, Wirtschaftsberatung und Rechtsservice
+**Kontakt**: Wirtschaftskammer Tirol, Wirtschaftsberatung und Rechtsservice
 
 ---
 
-## Contact Information
+## Kontaktinformationen
 
 | | |
 |---|---|
-| **Address** | Wilhelm-Greil-Straße 7, 6020 Innsbruck |
-| **Phone** | 05 90 90 5-1372 |
+| **Adresse** | Wilhelm-Greil-Straße 7, 6020 Innsbruck |
+| **Telefon** | 05 90 90 5-1372 |
 | **Fax** | 05 90 90 5-51372 |
-| **Email** | beratungsfoerderung@wktirol.at |
+| **E-Mail** | beratungsfoerderung@wktirol.at |
 | **Web** | WKO.at/tirol |
 
 ---
 
-## 9-Step Process
+## Der 9-Schritte-Prozess
 
-### Step 1: ANSUCHEN (Application)
+### Schritt 1: Ansuchen
 
-**Who**: Fördernehmer (client company)
+**Wer**: Fördernehmer (Kundenunternehmen)
 
-**Actions**:
-- Fill out "Ansuchen für die Tiroler Beratungsförderung" form
-- Sign and stamp
-- Send to WK Tirol (fax or email)
+**Aktionen**:
+- Formular „Ansuchen für die Tiroler Beratungsförderung" ausfüllen
+- Unterschreiben und stempeln
+- An WK Tirol senden (Fax oder E-Mail)
 
-**Important**: Consulting goal and time expenditure should be agreed at this point, latest at consulting start.
-
----
-
-### Step 2: PRÜFUNG (Review)
-
-**Who**: Förderstelle (WK Tirol + Land Tirol)
-
-**Actions**:
-- Review application for eligibility
-- Check funding requirements
+**Wichtig**: Beratungsziel und Zeitaufwand sollten zu diesem Zeitpunkt abgestimmt sein, spätestens bei Beratungsbeginn.
 
 ---
 
-### Step 3: AUFTRAGSSCHREIBEN (Assignment Letter)
+### Schritt 2: Prüfung
 
-**Who**: Förderstelle → Beratungsunternehmen + Fördernehmer
+**Wer**: Förderstelle (WK Tirol + Land Tirol)
 
-**Actions**:
-- Upon positive assessment: assignment letter sent to both consultant and client
-- For Barrierefreiheit consulting: client also receives feedback form (to be returned after consulting)
-
----
-
-### Step 4: BERATUNG (Consulting)
-
-**Who**: Beratungsunternehmen
-
-**Actions**:
-- Execute consulting
-
-**WICHTIG**: Consulting start must be **AFTER** the application was received by the Förderstelle!
+**Aktionen**:
+- Prüfung des Antrags auf Förderfähigkeit
+- Kontrolle der Fördervoraussetzungen
 
 ---
 
-### Step 5: ABSCHLUSS (Completion)
+### Schritt 3: Auftragsschreiben
 
-**Who**: Beratungsunternehmen → Förderstelle
+**Wer**: Förderstelle → Beratungsunternehmen + Fördernehmer
 
-**Actions**: Submit via email:
-- Rechnung (invoice)
-- Leistungsnachweis (service record)
-- Beratungsbericht (consulting report)
-- Relevant documents
+**Aktionen**:
+- Bei positivem Bescheid: Auftragsschreiben an Berater und Kunde
+- Bei Barrierefreiheitsberatung: Kunde erhält zusätzlich Feedbackbogen (nach Beratung zurückzusenden)
 
-**Exception for Barrierefreiheit**:
-Documents go to Fördernehmer first, who then sends to Förderstelle:
+---
+
+### Schritt 4: Beratung
+
+**Wer**: Beratungsunternehmen
+
+**Aktionen**:
+- Beratung durchführen
+
+**WICHTIG**: Beratungsbeginn muss **NACH** Antragseingang bei der Förderstelle liegen!
+
+---
+
+### Schritt 5: Abschluss
+
+**Wer**: Beratungsunternehmen → Förderstelle
+
+**Aktionen**: Per E-Mail einreichen:
+- Rechnung
+- Leistungsnachweis
+- Beratungsbericht
+- Relevante Dokumente
+
+**Ausnahme bei Barrierefreiheit**:
+Unterlagen gehen zuerst an Fördernehmer, der dann an Förderstelle sendet:
 - Leistungsnachweis
 - Rechnung
 - Bericht
 - Feedbackbogen
 - Zahlungsbestätigung
-- (Skip steps 7+8)
+- (Schritte 7+8 entfallen)
 
 ---
 
-### Step 6: PRÜFUNG (Compliance Check)
+### Schritt 6: Prüfung
 
-**Who**: Förderstelle
+**Wer**: Förderstelle
 
-**Actions**:
-- Check all documents for funding eligibility
-- Verify compliance with guidelines
-
----
-
-### Step 7: WEITERLEITUNG (Forwarding)
-
-**Who**: Förderstelle → Fördernehmer
-
-**Actions**:
-- Send documents via email with cover letter
-- Include Feedbackbogen (feedback form)
+**Aktionen**:
+- Prüfung aller Unterlagen auf Förderfähigkeit
+- Kontrolle der Richtlinienkonformität
 
 ---
 
-### Step 8: ZAHLUNG (Payment)
+### Schritt 7: Weiterleitung
 
-**Who**: Fördernehmer
+**Wer**: Förderstelle → Fördernehmer
 
-**Actions**:
-1. Review invoice
-2. Transfer full invoice amount to Beratungsunternehmen
-3. Send to Förderstelle (email or fax):
-   - Zahlungsnachweis (payment proof)
-   - Feedbackbogen (completed)
+**Aktionen**:
+- Unterlagen per E-Mail mit Begleitschreiben versenden
+- Feedbackbogen beilegen
 
 ---
 
-### Step 9: FÖRDERUNG (Funding Payout)
+### Schritt 8: Zahlung
 
-**Who**: Förderstelle → Fördernehmer
+**Wer**: Fördernehmer
 
-**Actions**:
-1. Send confirmation of funding amount (minus any outstanding Grundumlagen)
-2. Transfer funding to client's bank account
+**Aktionen**:
+1. Rechnung prüfen
+2. Vollen Rechnungsbetrag an Beratungsunternehmen überweisen
+3. An Förderstelle senden (E-Mail oder Fax):
+   - Zahlungsnachweis
+   - Feedbackbogen (ausgefüllt)
+
+---
+
+### Schritt 9: Förderung
+
+**Wer**: Förderstelle → Fördernehmer
+
+**Aktionen**:
+1. Bestätigung des Förderbetrags versenden (abzgl. etwaiger offener Grundumlagen)
+2. Förderung auf Kundenkonto überweisen
 
 ---
 
@@ -148,10 +148,10 @@ Documents go to Fördernehmer first, who then sends to Förderstelle:
 
 ---
 
-## Timeline Summary
+## Zeitlicher Überblick
 
-| Phase | Duration |
-|-------|----------|
-| Application review | 1-3 weeks |
-| Consulting execution | max. 8 months |
-| Funding payout | After payment proof received |
+| Phase | Dauer |
+|-------|-------|
+| Antragsprüfung | 1-3 Wochen |
+| Beratungsdurchführung | max. 8 Monate |
+| Förderauszahlung | Nach Zahlungsnachweis |

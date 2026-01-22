@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { ArrowRight, CheckCircle2, Clock, FileText, Shield } from 'lucide-react';
+import { ArrowRight, CheckCircle2, Clock, FileText, Shield, Download, Sparkles } from 'lucide-react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 
@@ -119,6 +119,39 @@ export default function HomePage() {
                 </p>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Client Guide Promotion */}
+      <section className="py-16 bg-stone-100">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="bg-white rounded-2xl border border-stone-200 p-8 md:p-10 flex flex-col md:flex-row items-center gap-8">
+            <div className="flex-shrink-0">
+              <div className="w-16 h-16 bg-orange-100 rounded-xl flex items-center justify-center">
+                <Sparkles className="w-8 h-8 text-orange-600" />
+              </div>
+            </div>
+            <div className="flex-1 text-center md:text-left">
+              <h2 className="text-xl md:text-2xl font-bold text-stone-900 mb-2">
+                Kunden-Leitfaden herunterladen
+              </h2>
+              <p className="text-stone-600 max-w-2xl">
+                Kompakter Überblick für Unternehmen: Förderung, Ablauf und Voraussetzungen
+                auf einen Blick. Der ideale Einstieg in das Förderprogramm.
+              </p>
+            </div>
+            <div className="flex-shrink-0">
+              <a
+                href="/docs/kunden-leitfaden.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 px-5 py-2.5 bg-stone-900 text-white font-medium rounded-lg hover:bg-stone-800 transition-colors"
+              >
+                <Download className="w-4 h-4" />
+                PDF Download
+              </a>
+            </div>
           </div>
         </div>
       </section>

@@ -1,12 +1,12 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import { ArrowLeft, Download, FileText, FileSpreadsheet, BookOpen, Users, ClipboardList } from 'lucide-react';
+import { ArrowLeft, Download, FileText, FileSpreadsheet, BookOpen, Users, ClipboardList, Sparkles } from 'lucide-react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 
 export const metadata = {
-  title: 'Offizielle Quellen | WKO Beratungsförderung',
-  description: 'Original-Dokumente der WKO Tirol zur Beratungsförderung zum Download.',
+  title: 'Dokumente & Downloads | WKO Beratungsförderung',
+  description: 'Alle offiziellen Dokumente zur WKO Beratungsförderung zum Download - inkl. Kunden-Leitfaden.',
 };
 
 interface Document {
@@ -192,11 +192,48 @@ export default function DownloadsPage() {
       {/* Content */}
       <main className="flex-1 max-w-4xl mx-auto px-6 py-10 w-full">
 
+        {/* Featured: Kunden-Leitfaden */}
+        <section className="mb-10">
+          <a
+            href="/docs/kunden-leitfaden.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="block bg-white border-2 border-orange-200 rounded-2xl p-6 hover:border-orange-300 hover:bg-orange-50/30 transition-all group"
+          >
+            <div className="flex items-start gap-5">
+              <div className="p-3 bg-orange-100 rounded-xl group-hover:bg-orange-200 transition-colors">
+                <Sparkles className="w-8 h-8 text-orange-600" />
+              </div>
+              <div className="flex-1 min-w-0">
+                <div className="flex items-center gap-2 mb-1">
+                  <span className="text-xs font-medium bg-orange-100 text-orange-700 px-2 py-0.5 rounded">
+                    Empfohlen
+                  </span>
+                </div>
+                <h2 className="text-xl font-bold text-stone-900 mb-2">
+                  Kunden-Leitfaden WKO Beratungsförderung
+                </h2>
+                <p className="text-stone-600 text-sm mb-4 leading-relaxed">
+                  Kompakter Überblick für Unternehmen: Alles Wichtige zu Förderung, Ablauf und
+                  Voraussetzungen auf einen Blick. Ideal als Einstieg in das Förderprogramm.
+                </p>
+                <div className="flex items-center gap-3">
+                  <span className="inline-flex items-center gap-1.5 text-sm font-medium text-orange-600 group-hover:text-orange-700">
+                    <Download className="w-4 h-4" />
+                    PDF herunterladen
+                  </span>
+                  <span className="text-stone-400 text-xs">256 KB</span>
+                </div>
+              </div>
+            </div>
+          </a>
+        </section>
+
         {/* Info Box */}
-        <div className="bg-orange-50 border border-orange-200 rounded-lg p-4 mb-8">
-          <p className="text-sm text-orange-800">
-            Alle Dokumente können direkt heruntergeladen werden. Die Unterlagen
-            entsprechen den aktuellen WKO-Richtlinien (Stand: 2025).
+        <div className="bg-stone-100 border border-stone-200 rounded-lg p-4 mb-8">
+          <p className="text-sm text-stone-700">
+            Alle offiziellen Dokumente können direkt heruntergeladen werden.
+            Stand: Januar 2025.
           </p>
         </div>
 
@@ -224,7 +261,7 @@ export default function DownloadsPage() {
                   {category.documents.map((doc, idx) => (
                     <a
                       key={idx}
-                      href={`/documents/${doc.filename}`}
+                      href={`/docs/${doc.filename}`}
                       download
                       className="flex items-center justify-between p-4 hover:bg-stone-50 transition-colors group"
                     >
@@ -261,11 +298,11 @@ export default function DownloadsPage() {
         {/* Stats */}
         <div className="mt-10 grid grid-cols-3 gap-4">
           <div className="bg-white border border-stone-200 rounded-lg p-4 text-center">
-            <div className="text-2xl font-bold text-stone-900">10</div>
+            <div className="text-2xl font-bold text-stone-900">11</div>
             <div className="text-xs text-stone-500">Dokumente</div>
           </div>
           <div className="bg-white border border-stone-200 rounded-lg p-4 text-center">
-            <div className="text-2xl font-bold text-stone-900">4</div>
+            <div className="text-2xl font-bold text-stone-900">5</div>
             <div className="text-xs text-stone-500">Kategorien</div>
           </div>
           <div className="bg-white border border-stone-200 rounded-lg p-4 text-center">

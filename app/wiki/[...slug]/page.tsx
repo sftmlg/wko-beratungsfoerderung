@@ -7,7 +7,7 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
-import { getArticle, getAllArticles } from '@/lib/articles';
+import { getArticle, getAllArticles, getSourceDocument } from '@/lib/articles';
 
 interface WikiPageProps {
   params: Promise<{ slug: string[] }>;
@@ -105,14 +105,31 @@ export default async function WikiArticlePage({ params }: WikiPageProps) {
               {sources.length > 0 && (
                 <div className="flex flex-wrap items-center gap-2">
                   <span className="text-sm text-slate-400">Basiert auf:</span>
-                  {sources.map((source, idx) => (
-                    <span
-                      key={idx}
-                      className="inline-block px-3 py-1 bg-slate-800 text-slate-300 text-xs font-medium rounded-lg"
-                    >
-                      {source}
-                    </span>
-                  ))}
+                  {sources.map((source, idx) => {
+                    const sourceDoc = getSourceDocument(source);
+                    if (sourceDoc) {
+                      return (
+                        <a
+                          key={idx}
+                          href={sourceDoc.pdfPath}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="inline-flex items-center gap-1.5 px-3 py-1 bg-slate-800 hover:bg-orange-600 text-slate-300 hover:text-white text-xs font-medium rounded-lg transition-colors group"
+                        >
+                          <Download className="w-3 h-3 opacity-60 group-hover:opacity-100" />
+                          {source}
+                        </a>
+                      );
+                    }
+                    return (
+                      <span
+                        key={idx}
+                        className="inline-block px-3 py-1 bg-slate-800 text-slate-300 text-xs font-medium rounded-lg"
+                      >
+                        {source}
+                      </span>
+                    );
+                  })}
                 </div>
               )}
             </div>
@@ -126,27 +143,35 @@ export default async function WikiArticlePage({ params }: WikiPageProps) {
           {/* Article Content */}
           <article className="lg:col-span-3">
             <div className="bg-white rounded-2xl shadow-sm border border-slate-200 p-6 sm:p-10 md:p-14">
-              <div className="prose prose-slate max-w-none
-                prose-headings:font-bold prose-headings:text-slate-900 prose-headings:tracking-tight
-                prose-h1:text-2xl prose-h1:sm:text-3xl prose-h1:mb-6 prose-h1:mt-0 prose-h1:first:mt-0 prose-h1:leading-tight
-                prose-h2:text-xl prose-h2:sm:text-2xl prose-h2:mb-5 prose-h2:mt-14 prose-h2:pt-8 prose-h2:border-t prose-h2:border-slate-200 prose-h2:first:mt-0 prose-h2:first:pt-0 prose-h2:first:border-0
-                prose-h3:text-lg prose-h3:sm:text-xl prose-h3:mb-4 prose-h3:mt-10 prose-h3:text-slate-800
-                prose-h4:text-base prose-h4:sm:text-lg prose-h4:mb-3 prose-h4:mt-8 prose-h4:text-slate-700
-                prose-p:text-slate-600 prose-p:leading-relaxed prose-p:mb-4 prose-p:text-[15px] prose-p:sm:text-base
-                prose-li:text-slate-600 prose-li:my-2 prose-li:text-[15px] prose-li:sm:text-base prose-li:leading-relaxed
-                prose-ul:my-5 prose-ul:pl-5
-                prose-ol:my-5 prose-ol:pl-5
-                prose-strong:text-slate-800 prose-strong:font-semibold
-                prose-a:text-orange-600 prose-a:no-underline hover:prose-a:underline prose-a:font-medium prose-a:transition-colors
-                prose-table:border-collapse prose-table:w-full prose-table:my-8 prose-table:text-sm
-                prose-th:bg-slate-50 prose-th:text-left prose-th:p-3 prose-th:sm:p-4 prose-th:border prose-th:border-slate-200 prose-th:font-semibold prose-th:text-slate-700
-                prose-td:p-3 prose-td:sm:p-4 prose-td:border prose-td:border-slate-200 prose-td:align-top prose-td:text-slate-600
-                prose-tr:even:bg-slate-50/50
-                prose-hr:border-slate-100 prose-hr:my-0 prose-hr:hidden
-                prose-code:bg-orange-50 prose-code:text-orange-700 prose-code:px-2 prose-code:py-0.5 prose-code:rounded prose-code:text-sm prose-code:font-medium prose-code:before:content-none prose-code:after:content-none
-                prose-blockquote:border-l-4 prose-blockquote:border-orange-400 prose-blockquote:bg-orange-50/50 prose-blockquote:py-4 prose-blockquote:px-6 prose-blockquote:not-italic prose-blockquote:my-8 prose-blockquote:rounded-r-lg
-              ">
-                <ReactMarkdown remarkPlugins={[remarkGfm]}>{content}</ReactMarkdown>
+              <div className="prose prose-lg max-w-none">
+                <ReactMarkdown
+                  remarkPlugins={[remarkGfm]}
+                  components={{
+                    // Custom link handling for internal navigation
+                    a: ({ href, children, ...props }) => {
+                      if (href && !href.startsWith('http') && !href.startsWith('mailto:')) {
+                        return (
+                          <Link href={href} className="text-orange-600 hover:text-orange-700 font-medium no-underline hover:underline transition-colors">
+                            {children}
+                          </Link>
+                        );
+                      }
+                      return (
+                        <a href={href} target="_blank" rel="noopener noreferrer" {...props}>
+                          {children}
+                        </a>
+                      );
+                    },
+                    // Custom table wrapper for responsive overflow
+                    table: ({ children }) => (
+                      <div className="overflow-x-auto my-6 -mx-4 sm:mx-0">
+                        <table className="min-w-full">{children}</table>
+                      </div>
+                    ),
+                  }}
+                >
+                  {content.replace(/^#\s+[^\n]+\n*/, '').trim()}
+                </ReactMarkdown>
               </div>
             </div>
 

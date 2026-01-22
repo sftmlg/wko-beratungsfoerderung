@@ -7,7 +7,7 @@ export default function Footer() {
   return (
     <footer className="relative bg-slate-900 text-white overflow-hidden">
       {/* Background accents */}
-      <div className="absolute inset-0 pointer-events-none">
+      <div className="absolute inset-0 pointer-events-none z-0">
         {/* Ambient glow orbs */}
         <div className="absolute -top-20 left-[10%] w-[400px] h-[400px] bg-orange-500/8 rounded-full blur-3xl" />
         <div className="absolute top-1/3 -right-20 w-[350px] h-[350px] bg-slate-600/15 rounded-full blur-3xl" />
@@ -62,7 +62,7 @@ export default function Footer() {
         />
       </div>
 
-      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Brand */}
           <div className="space-y-4">

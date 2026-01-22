@@ -220,7 +220,7 @@ export default function HomePage() {
       {/* Funding Facts */}
       <section className="relative py-16 sm:py-20 bg-gradient-to-br from-slate-900 via-slate-900 to-slate-800 text-white overflow-hidden">
         {/* Dark section accents */}
-        <div className="absolute inset-0 pointer-events-none">
+        <div className="absolute inset-0 pointer-events-none z-0">
           {/* Orange glow accents */}
           <div className="absolute top-[10%] left-[15%] w-[400px] h-[400px] bg-orange-500/8 rounded-full blur-3xl" />
           <div className="absolute bottom-[10%] right-[10%] w-[350px] h-[350px] bg-orange-400/6 rounded-full blur-3xl" />
@@ -251,7 +251,7 @@ export default function HomePage() {
           />
         </div>
 
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-4">
             Förderung auf einen Blick
           </h2>
@@ -277,7 +277,7 @@ export default function HomePage() {
       {/* Process Steps */}
       <section className="relative py-20 bg-gradient-to-b from-white via-stone-50/30 to-stone-100/40 overflow-hidden">
         {/* Background accents */}
-        <div className="absolute inset-0 pointer-events-none">
+        <div className="absolute inset-0 pointer-events-none z-0">
           {/* Side glows */}
           <div className="absolute top-1/3 -left-32 w-[350px] h-[500px] bg-orange-200/12 rounded-full blur-3xl" />
           <div className="absolute bottom-1/4 -right-20 w-[300px] h-[400px] bg-stone-300/10 rounded-full blur-3xl" />
@@ -296,7 +296,7 @@ export default function HomePage() {
           <div className="absolute top-0 left-0 right-0 h-[1px] bg-gradient-to-r from-transparent via-stone-300/40 to-transparent" />
         </div>
 
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <h2 className="text-3xl md:text-4xl font-bold text-center text-slate-900 mb-4">
             Der Beratungsprozess
           </h2>
@@ -326,7 +326,7 @@ export default function HomePage() {
       {/* Resources: Wiki & Downloads */}
       <section className="relative py-16 sm:py-20 bg-gradient-to-br from-stone-100 via-stone-100 to-orange-50/30 overflow-hidden">
         {/* Background accents */}
-        <div className="absolute inset-0 pointer-events-none">
+        <div className="absolute inset-0 pointer-events-none z-0">
           <div className="absolute bottom-[10%] right-[5%] w-[450px] h-[450px] bg-orange-200/12 rounded-full blur-3xl" />
           <div className="absolute top-[10%] left-[10%] w-[300px] h-[300px] bg-stone-300/10 rounded-full blur-3xl" />
 
@@ -341,7 +341,7 @@ export default function HomePage() {
           />
         </div>
 
-        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <h2 className="text-2xl sm:text-3xl font-bold text-center text-slate-900 mb-3">
             Alle Informationen
           </h2>
@@ -404,7 +404,7 @@ export default function HomePage() {
       {/* CTA Section */}
       <section className="relative py-16 sm:py-20 bg-gradient-to-br from-orange-50/80 via-white to-stone-50 overflow-hidden">
         {/* Background accents */}
-        <div className="absolute inset-0 pointer-events-none">
+        <div className="absolute inset-0 pointer-events-none z-0">
           {/* Central glow */}
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[350px] bg-orange-200/20 rounded-full blur-3xl" />
           {/* Side accents */}
@@ -425,7 +425,7 @@ export default function HomePage() {
           <div className="absolute top-0 left-0 right-0 h-[1px] bg-gradient-to-r from-transparent via-orange-300/30 to-transparent" />
         </div>
 
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
           <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-6">
             Haben Sie Fragen?
           </h2>

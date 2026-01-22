@@ -73,7 +73,7 @@ export default function WikiIndexPage() {
       {/* Content - with ambient background accents */}
       <main className="relative flex-1 max-w-2xl mx-auto px-6 py-12 w-full">
         {/* Background accents for content area */}
-        <div className="absolute inset-0 pointer-events-none overflow-hidden">
+        <div className="absolute inset-0 pointer-events-none overflow-hidden z-0">
           {/* Floating glow orbs */}
           <div className="absolute top-[15%] -right-20 w-[250px] h-[250px] bg-orange-300/6 rounded-full blur-3xl" />
           <div className="absolute top-[45%] -left-32 w-[300px] h-[300px] bg-stone-400/5 rounded-full blur-3xl" />
@@ -111,7 +111,7 @@ export default function WikiIndexPage() {
         </div>
 
         {/* Featured Guide - Minimal card */}
-        <section className="mb-16">
+        <section className="relative z-10 mb-16">
           <a
             href="/docs/kunden-leitfaden.pdf"
             target="_blank"
@@ -148,7 +148,7 @@ export default function WikiIndexPage() {
             .filter(Boolean);
 
           return (
-            <section key={category.id} className="mb-12">
+            <section key={category.id} className="relative z-10 mb-12">
               {/* Category Header */}
               <div className="flex items-center gap-3 mb-4">
                 <div className="w-10 h-10 rounded-xl bg-orange-50 flex items-center justify-center">
@@ -194,7 +194,7 @@ export default function WikiIndexPage() {
         })}
 
         {/* Downloads - Subtle link */}
-        <section className="mb-16">
+        <section className="relative z-10 mb-16">
           <Link
             href="/wiki/downloads"
             className="group flex items-center justify-between p-6 bg-white rounded-xl border border-stone-200 hover:border-stone-300 hover:shadow-lg transition-all duration-300"
@@ -217,7 +217,7 @@ export default function WikiIndexPage() {
         </section>
 
         {/* CTA - Dark card with ambient accents */}
-        <section className="text-center relative">
+        <section className="text-center relative z-10">
           <div className="inline-block relative bg-stone-900 rounded-2xl p-8 shadow-xl overflow-hidden">
             {/* Dark card background accents */}
             <div className="absolute inset-0 pointer-events-none">

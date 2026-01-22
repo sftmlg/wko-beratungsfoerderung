@@ -18,7 +18,7 @@ export default function DownloadsPage() {
       {/* Hero - Enhanced with ambient accents */}
       <section className="relative bg-gradient-to-br from-slate-900 via-slate-900 to-slate-800 text-white overflow-hidden">
         {/* Background accents */}
-        <div className="absolute inset-0 pointer-events-none">
+        <div className="absolute inset-0 pointer-events-none z-0">
           {/* Glow orbs */}
           <div className="absolute -top-20 right-[10%] w-[400px] h-[400px] bg-orange-500/12 rounded-full blur-3xl" />
           <div className="absolute -bottom-20 -left-20 w-[350px] h-[350px] bg-slate-600/20 rounded-full blur-3xl" />
@@ -52,7 +52,7 @@ export default function DownloadsPage() {
             ))}
           </div>
         </div>
-        <div className="max-w-4xl mx-auto px-6 py-12 relative">
+        <div className="max-w-4xl mx-auto px-6 py-12 relative z-10">
           <nav className="flex items-center gap-2 text-sm text-stone-400 mb-6">
             <Link href="/wiki" className="hover:text-white transition-colors">
               Wissensdatenbank
@@ -86,7 +86,7 @@ export default function DownloadsPage() {
       {/* Content - with ambient accents */}
       <main className="relative flex-1 max-w-4xl mx-auto px-6 py-10 w-full">
         {/* Background accents for content area */}
-        <div className="absolute inset-0 pointer-events-none overflow-hidden">
+        <div className="absolute inset-0 pointer-events-none overflow-hidden z-0">
           {/* Floating glow orbs */}
           <div className="absolute top-[10%] -right-32 w-[300px] h-[300px] bg-orange-300/5 rounded-full blur-3xl" />
           <div className="absolute top-[40%] -left-40 w-[350px] h-[350px] bg-stone-400/4 rounded-full blur-3xl" />
@@ -125,7 +125,7 @@ export default function DownloadsPage() {
         </div>
 
         {/* Featured: Kunden-Leitfaden */}
-        <section className="mb-10">
+        <section className="relative z-10 mb-10">
           <a
             href="/docs/kunden-leitfaden.pdf"
             target="_blank"
@@ -158,7 +158,7 @@ export default function DownloadsPage() {
         </section>
 
         {/* Info Box */}
-        <div className="bg-stone-100 border border-stone-200 rounded-lg p-4 mb-8">
+        <div className="relative z-10 bg-stone-100 border border-stone-200 rounded-lg p-4 mb-8">
           <p className="text-sm text-stone-700">
             Alle offiziellen Dokumente können direkt heruntergeladen werden.
             Stand: Januar 2025.
@@ -166,10 +166,12 @@ export default function DownloadsPage() {
         </div>
 
         {/* Document Categories - Accordion */}
-        <DownloadAccordion />
+        <div className="relative z-10">
+          <DownloadAccordion />
+        </div>
 
         {/* Back Link */}
-        <div className="mt-10">
+        <div className="relative z-10 mt-10">
           <Link
             href="/wiki"
             className="inline-flex items-center gap-2 text-stone-500 hover:text-orange-600 transition-colors text-sm font-medium"

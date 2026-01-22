@@ -2,7 +2,7 @@ import { readFile, readdir } from 'node:fs/promises';
 import path from 'node:path';
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
-import { ArrowLeft, FileText, ChevronRight, ExternalLink, Download } from 'lucide-react';
+import { ArrowLeft, FileText, ChevronRight } from 'lucide-react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import ReactMarkdown from 'react-markdown';
@@ -121,7 +121,7 @@ export default async function WikiArticlePage({ params }: WikiPageProps) {
 
   const relatedArticles = allArticles
     .filter((a) => a.slug !== slug)
-    .slice(0, 4)
+    .slice(0, 3)
     .map((a) => ({
       ...a,
       title: articleInfo[a.slug]?.title || a.slug,
@@ -217,26 +217,6 @@ export default async function WikiArticlePage({ params }: WikiPageProps) {
           {/* Sidebar */}
           <aside className="lg:col-span-1">
             <div className="sticky top-24 space-y-6">
-              {/* Official Documents */}
-              <div className="bg-white rounded-xl shadow-sm border border-slate-200 p-5">
-                <h3 className="font-semibold text-slate-900 mb-4 flex items-center gap-2">
-                  <Download className="w-4 h-4 text-orange-500" />
-                  Originaldokumente
-                </h3>
-                <p className="text-sm text-slate-500 mb-4">
-                  Die offiziellen PDF-Dokumente finden Sie auf der WKO Tirol Website.
-                </p>
-                <a
-                  href="https://www.wko.at/tirol/beratung-foerderung"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center gap-2 text-sm text-orange-600 hover:text-orange-700 font-medium transition-colors"
-                >
-                  <ExternalLink className="w-4 h-4" />
-                  WKO Dokumente anzeigen
-                </a>
-              </div>
-
               {/* Quick Actions */}
               <div className="bg-white rounded-xl shadow-sm border border-slate-200 p-5">
                 <h3 className="font-semibold text-slate-900 mb-4">Schnellzugriff</h3>

@@ -1,8 +1,7 @@
 import Link from 'next/link';
-import { ArrowRight, Download, Sparkles, BookOpen, FileText } from 'lucide-react';
+import { ArrowRight, Download, BookOpen } from 'lucide-react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
-import { AccordionItem } from '@/components/Accordion';
 import { getAllArticles } from '@/lib/articles';
 
 export const metadata = {
@@ -13,176 +12,184 @@ export const metadata = {
 export default function WikiIndexPage() {
   const allArticles = getAllArticles();
 
-  // Split articles by category for better cognitive organization
+  // Split articles by category
   const wikiArticles = allArticles.filter(a => a.category === 'wiki');
   const rawArticles = allArticles.filter(a => a.category === 'raw');
 
   return (
-    <div className="min-h-screen flex flex-col bg-gradient-to-b from-stone-50 to-white">
+    <div className="min-h-screen flex flex-col bg-stone-50">
       <Header />
 
-      {/* Hero - Enhanced with gradient */}
-      <section className="relative bg-gradient-to-br from-slate-900 via-slate-900 to-slate-800 text-white overflow-hidden">
-        {/* Subtle accent glow */}
-        <div className="absolute top-0 right-0 w-[400px] h-[400px] bg-gradient-radial from-orange-500/10 to-transparent rounded-full blur-3xl pointer-events-none" />
-        <div className="absolute bottom-0 left-0 w-[300px] h-[300px] bg-gradient-radial from-slate-600/20 to-transparent rounded-full blur-3xl pointer-events-none" />
-        <div className="max-w-3xl mx-auto px-6 py-12 relative">
-          <div className="flex items-start gap-5">
-            <div className="p-3 bg-orange-500/20 rounded-xl flex-shrink-0">
-              <BookOpen className="w-10 h-10 text-orange-400" />
-            </div>
-            <div className="min-w-0">
-              <p className="text-orange-400 text-sm font-medium tracking-wide uppercase mb-2">
-                Wissensdatenbank
-              </p>
-              <h1 className="text-3xl font-semibold tracking-tight mb-2">
-                WKO Beratungsförderung
-              </h1>
-              <p className="text-stone-400">
-                {allArticles.length} Artikel zu Richtlinien, Prozessen und Anforderungen.
-              </p>
-            </div>
+      {/* Hero - Ultra minimal */}
+      <section className="bg-white border-b border-stone-200">
+        <div className="max-w-2xl mx-auto px-6 py-16 text-center">
+          <div className="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-orange-500/10 mb-6">
+            <BookOpen className="w-8 h-8 text-orange-600" strokeWidth={1.5} />
           </div>
+          <h1 className="text-4xl font-light text-stone-900 mb-3 tracking-tight">
+            Wissensdatenbank
+          </h1>
+          <p className="text-stone-500 text-lg font-light">
+            {allArticles.length} Artikel zur WKO Beratungsförderung
+          </p>
         </div>
       </section>
 
       {/* Content */}
-      <main className="flex-1 max-w-3xl mx-auto px-6 py-10 w-full">
+      <main className="flex-1 max-w-2xl mx-auto px-6 py-12 w-full">
 
-        {/* Featured: Kunden-Leitfaden - Subtle styling */}
-        <section className="mb-10">
+        {/* Featured Guide - Minimal card */}
+        <section className="mb-16">
           <a
             href="/docs/kunden-leitfaden.pdf"
             target="_blank"
             rel="noopener noreferrer"
-            className="block bg-white rounded-xl p-5 border border-stone-200 hover:border-stone-300 hover:shadow-sm transition-all group"
+            className="group block bg-white rounded-2xl p-6 border border-stone-200 hover:border-orange-300 hover:shadow-lg transition-all duration-300"
           >
-            <div className="flex items-center gap-4">
-              <div className="p-2.5 bg-stone-100 rounded-xl group-hover:bg-stone-200 transition-colors">
-                <Sparkles className="w-6 h-6 text-stone-500 group-hover:text-stone-700 transition-colors" />
+            <div className="flex items-start gap-5">
+              <div className="p-3 bg-orange-50 rounded-xl group-hover:bg-orange-100 transition-colors">
+                <Download className="w-6 h-6 text-orange-600" strokeWidth={1.5} />
               </div>
-              <div className="flex-1 min-w-0">
-                <div className="flex items-center gap-2 mb-0.5">
-                  <span className="text-[10px] font-medium bg-stone-100 text-stone-500 px-2 py-0.5 rounded uppercase tracking-wide">
-                    Empfohlen
-                  </span>
-                </div>
-                <h2 className="text-lg font-semibold text-stone-900 group-hover:text-stone-700 transition-colors">
+              <div className="flex-1">
+                <h2 className="text-xl font-medium text-stone-900 mb-1 group-hover:text-orange-600 transition-colors">
                   Kunden-Leitfaden
                 </h2>
-                <p className="text-stone-500 text-sm">
-                  Kompakter Überblick für Unternehmen
+                <p className="text-stone-600 font-light leading-relaxed">
+                  Kompakter Überblick für Unternehmen. Ideal als Einstieg in das Förderprogramm.
                 </p>
+                <div className="flex items-center gap-2 mt-3 text-sm text-stone-400">
+                  <span>PDF</span>
+                  <span>•</span>
+                  <span>256 KB</span>
+                </div>
               </div>
-              <div className="flex items-center gap-2 flex-shrink-0">
-                <span className="text-xs text-stone-400 hidden sm:inline">PDF</span>
-                <Download className="w-5 h-5 text-stone-400 group-hover:text-stone-600 transition-colors" />
-              </div>
+              <ArrowRight className="w-5 h-5 text-stone-300 group-hover:text-orange-500 group-hover:translate-x-1 transition-all mt-1" strokeWidth={1.5} />
             </div>
           </a>
         </section>
 
-        {/* Article Categories - Accordion */}
-        <section className="space-y-4 mb-10">
-          {/* Wiki Articles - Grundlagen & Übersicht */}
-          <AccordionItem
-            title="Grundlagen & Übersicht"
-            subtitle="Aufbereitete Zusammenfassungen"
-            icon={<BookOpen className="w-4 h-4 text-orange-600" />}
-            iconBg="bg-orange-50"
-            defaultOpen={true}
-          >
-            <div className="divide-y divide-stone-100">
-              {wikiArticles.map((article) => (
-                <Link
-                  key={article.slug}
-                  href={`/wiki/${article.category}/${article.slug}`}
-                  className="group flex items-center justify-between p-4 hover:bg-orange-50/50 transition-all cursor-pointer"
-                >
-                  <div className="min-w-0">
-                    <h3 className="text-stone-900 font-medium group-hover:text-orange-600 transition-colors">
+        {/* Articles - Simple list with visual breathing room */}
+        <section className="mb-16">
+          <h2 className="text-sm font-medium text-stone-400 uppercase tracking-wider mb-6">
+            Grundlagen & Übersicht
+          </h2>
+          <div className="space-y-1">
+            {wikiArticles.map((article, idx) => (
+              <Link
+                key={article.slug}
+                href={`/wiki/${article.category}/${article.slug}`}
+                className="group block bg-white hover:bg-stone-50 rounded-xl p-5 border border-stone-200 hover:border-stone-300 transition-all duration-200"
+style={{
+                  animationDelay: `${idx * 50}ms`,
+                }}
+              >
+                <div className="flex items-start justify-between gap-4">
+                  <div className="flex-1 min-w-0">
+                    <h3 className="font-medium text-stone-900 mb-1 group-hover:text-orange-600 transition-colors">
                       {article.title}
                     </h3>
-                    <p className="text-stone-500 text-sm">
+                    <p className="text-sm text-stone-600 font-light leading-relaxed">
                       {article.description}
                     </p>
                   </div>
-                  <ArrowRight className="w-4 h-4 text-stone-300 group-hover:text-orange-500 group-hover:translate-x-1 transition-all flex-shrink-0 ml-4" />
-                </Link>
-              ))}
-            </div>
-          </AccordionItem>
-
-          {/* Raw Articles - Referenzdokumente */}
-          <AccordionItem
-            title="Referenzdokumente"
-            subtitle="Offizielle WKO-Dokumente im Detail"
-            icon={<FileText className="w-4 h-4 text-stone-600" />}
-            iconBg="bg-stone-100"
-            defaultOpen={false}
-          >
-            <div className="divide-y divide-stone-100">
-              {rawArticles.map((article) => (
-                <Link
-                  key={article.slug}
-                  href={`/wiki/${article.category}/${article.slug}`}
-                  className="group flex items-center justify-between p-4 hover:bg-stone-50 transition-all cursor-pointer"
-                >
-                  <div className="min-w-0">
-                    <h3 className="text-stone-900 font-medium group-hover:text-orange-600 transition-colors">
-                      {article.title}
-                    </h3>
-                    <p className="text-stone-500 text-sm">
-                      {article.description}
-                    </p>
-                  </div>
-                  <ArrowRight className="w-4 h-4 text-stone-300 group-hover:text-orange-500 group-hover:translate-x-1 transition-all flex-shrink-0 ml-4" />
-                </Link>
-              ))}
-            </div>
-          </AccordionItem>
+                  <ArrowRight
+                    className="w-5 h-5 text-stone-300 group-hover:text-orange-500 group-hover:translate-x-1 transition-all flex-shrink-0 mt-0.5"
+                    strokeWidth={1.5}
+                  />
+                </div>
+              </Link>
+            ))}
+          </div>
         </section>
 
-        {/* Downloads Link */}
-        <section className="mb-10">
+        {/* Reference Documents - Collapsed by default for reduced cognitive load */}
+        <section className="mb-16">
+          <details className="group bg-white rounded-xl border border-stone-200 overflow-hidden">
+            <summary className="flex items-center justify-between p-5 cursor-pointer hover:bg-stone-50 transition-colors list-none">
+              <div>
+                <h2 className="text-sm font-medium text-stone-400 uppercase tracking-wider mb-1">
+                  Referenzdokumente
+                </h2>
+                <p className="text-xs text-stone-500 font-light">
+                  Offizielle WKO-Dokumente im Detail
+                </p>
+              </div>
+              <div className="flex items-center gap-3">
+                <span className="text-xs text-stone-400 font-light">
+                  {rawArticles.length} Artikel
+                </span>
+                <div className="w-8 h-8 rounded-full bg-stone-100 flex items-center justify-center group-hover:bg-stone-200 transition-colors">
+                  <ArrowRight className="w-4 h-4 text-stone-500 rotate-90 group-open:rotate-0 transition-transform" strokeWidth={1.5} />
+                </div>
+              </div>
+            </summary>
+            <div className="border-t border-stone-100 p-2">
+              <div className="space-y-1">
+                {rawArticles.map((article) => (
+                  <Link
+                    key={article.slug}
+                    href={`/wiki/${article.category}/${article.slug}`}
+                    className="group block hover:bg-stone-50 rounded-lg p-4 transition-colors"
+                  >
+                    <div className="flex items-start justify-between gap-4">
+                      <div className="flex-1 min-w-0">
+                        <h3 className="font-medium text-stone-900 text-sm mb-0.5 group-hover:text-orange-600 transition-colors">
+                          {article.title}
+                        </h3>
+                        <p className="text-xs text-stone-600 font-light leading-relaxed">
+                          {article.description}
+                        </p>
+                      </div>
+                      <ArrowRight
+                        className="w-4 h-4 text-stone-300 group-hover:text-orange-500 group-hover:translate-x-1 transition-all flex-shrink-0 mt-0.5"
+                        strokeWidth={1.5}
+                      />
+                    </div>
+                  </Link>
+                ))}
+              </div>
+            </div>
+          </details>
+        </section>
+
+        {/* Downloads - Subtle link */}
+        <section className="mb-16">
           <Link
             href="/wiki/downloads"
-            className="flex items-center justify-between p-5 bg-white border border-stone-200 rounded-xl hover:border-stone-300 hover:shadow-sm transition-colors group cursor-pointer"
+            className="group flex items-center justify-between p-6 bg-white rounded-xl border border-stone-200 hover:border-stone-300 hover:shadow-lg transition-all duration-300"
           >
             <div className="flex items-center gap-4">
-              <div className="p-2.5 bg-stone-100 group-hover:bg-orange-50 rounded-lg transition-colors">
-                <Download className="w-5 h-5 text-stone-500 group-hover:text-orange-600 transition-colors" />
+              <div className="w-12 h-12 rounded-xl bg-stone-100 group-hover:bg-orange-50 flex items-center justify-center transition-colors">
+                <Download className="w-5 h-5 text-stone-600 group-hover:text-orange-600 transition-colors" strokeWidth={1.5} />
               </div>
               <div>
                 <h3 className="font-medium text-stone-900 group-hover:text-orange-600 transition-colors">
-                  Alle Downloads & Vorlagen
+                  Alle Downloads
                 </h3>
-                <p className="text-sm text-stone-500">
-                  PDFs, Formulare und Vorlagen zum Download
+                <p className="text-sm text-stone-600 font-light">
+                  10 Dokumente · PDF, DOC, DOCX
                 </p>
               </div>
             </div>
-            <ArrowRight className="w-4 h-4 text-stone-300 group-hover:text-orange-500 group-hover:translate-x-1 transition-all" />
+            <ArrowRight className="w-5 h-5 text-stone-300 group-hover:text-orange-500 group-hover:translate-x-1 transition-all" strokeWidth={1.5} />
           </Link>
         </section>
 
-        {/* CTA - Enhanced */}
-        <section className="relative bg-gradient-to-br from-slate-900 to-slate-800 rounded-xl p-6 text-center overflow-hidden">
-          {/* Subtle glow */}
-          <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-radial from-orange-500/15 to-transparent rounded-full blur-2xl pointer-events-none" />
-          <div className="relative">
-            <h2 className="text-lg font-semibold text-white mb-1">
-              Konkrete Frage?
+        {/* CTA - Minimal dark card */}
+        <section className="text-center">
+          <div className="inline-block bg-stone-900 rounded-2xl p-8 shadow-xl">
+            <h2 className="text-xl font-light text-white mb-2">
+              Noch Fragen?
             </h2>
-            <p className="text-stone-400 mb-4 text-sm">
+            <p className="text-stone-400 font-light mb-6 max-w-xs">
               Der KI-Assistent durchsucht alle Dokumente.
             </p>
             <Link
               href="/chat"
-              className="inline-flex items-center gap-2 bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white px-5 py-2 rounded-lg font-medium transition-colors cursor-pointer"
+              className="inline-flex items-center gap-2 bg-white hover:bg-stone-50 text-stone-900 px-6 py-3 rounded-xl font-medium transition-all hover:shadow-lg"
             >
               Zum Chat
-              <ArrowRight className="w-4 h-4" />
+              <ArrowRight className="w-4 h-4" strokeWidth={1.5} />
             </Link>
           </div>
         </section>

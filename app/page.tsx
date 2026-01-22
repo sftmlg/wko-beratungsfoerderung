@@ -53,17 +53,34 @@ export default function HomePage() {
       <Header />
 
       {/* Hero Section */}
-      <section className="relative flex-1 bg-gradient-to-br from-stone-50 via-white to-orange-50/40">
-        {/* Sophisticated mesh gradient overlay */}
-        <div className="absolute inset-0 overflow-hidden pointer-events-none">
-          {/* Primary accent glow - top right */}
-          <div className="absolute -top-20 right-0 w-[700px] h-[700px] bg-gradient-radial from-orange-400/10 via-orange-300/5 to-transparent rounded-full blur-3xl" />
-          {/* Secondary cool tone - bottom left */}
-          <div className="absolute -bottom-32 -left-20 w-[600px] h-[600px] bg-gradient-radial from-slate-400/8 via-slate-300/4 to-transparent rounded-full blur-3xl" />
-          {/* Subtle center warmth */}
-          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[500px] bg-gradient-radial from-orange-100/20 to-transparent rounded-full blur-3xl" />
-          {/* Geometric accent line */}
-          <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-orange-400/20 to-transparent" />
+      <section className="relative flex-1 bg-gradient-to-br from-stone-50 via-white to-orange-50/30 overflow-hidden">
+        {/* Layered glow system */}
+        <div className="absolute inset-0 pointer-events-none">
+          {/* Primary orange glow - top right */}
+          <div className="absolute -top-32 right-[10%] w-[600px] h-[600px] bg-orange-400/12 rounded-full blur-3xl" />
+          {/* Secondary stone glow - bottom left */}
+          <div className="absolute -bottom-40 -left-20 w-[500px] h-[500px] bg-stone-400/8 rounded-full blur-3xl" />
+          {/* Tertiary warm glow - center */}
+          <div className="absolute top-1/3 left-1/2 -translate-x-1/2 w-[700px] h-[400px] bg-orange-200/15 rounded-full blur-3xl" />
+          {/* Small accent glow - left side */}
+          <div className="absolute top-[20%] left-[5%] w-[200px] h-[200px] bg-orange-300/10 rounded-full blur-2xl" />
+
+          {/* Diagonal accent lines */}
+          <div
+            className="absolute top-0 left-[15%] w-[1px] h-[120%] bg-gradient-to-b from-transparent via-orange-400/15 to-transparent"
+            style={{ transform: 'rotate(-12deg)', transformOrigin: 'top center' }}
+          />
+          <div
+            className="absolute top-0 left-[35%] w-[1px] h-[100%] bg-gradient-to-b from-transparent via-stone-400/10 to-transparent"
+            style={{ transform: 'rotate(8deg)', transformOrigin: 'top center' }}
+          />
+          <div
+            className="absolute top-0 right-[25%] w-[2px] h-[110%] bg-gradient-to-b from-transparent via-orange-300/12 to-transparent"
+            style={{ transform: 'rotate(-5deg)', transformOrigin: 'top center' }}
+          />
+
+          {/* Top accent line */}
+          <div className="absolute top-0 left-0 right-0 h-[1px] bg-gradient-to-r from-transparent via-orange-400/25 to-transparent" />
         </div>
 
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 pb-24">
@@ -107,15 +124,34 @@ export default function HomePage() {
       </section>
 
       {/* Features Section */}
-      <section id="features" className="relative py-16 sm:py-20 bg-gradient-to-b from-white via-stone-50/50 to-stone-100/30 overflow-hidden">
-        {/* Subtle geometric pattern */}
-        <div className="absolute inset-0 pointer-events-none opacity-[0.02]" style={{backgroundImage: 'radial-gradient(circle at 1px 1px, #78716c 1px, transparent 0)', backgroundSize: '32px 32px'}} />
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section id="features" className="relative py-16 sm:py-20 bg-gradient-to-b from-white via-stone-50/40 to-stone-100/50 overflow-hidden">
+        {/* Background accents */}
+        <div className="absolute inset-0 pointer-events-none">
+          {/* Subtle dot pattern */}
+          <div
+            className="absolute inset-0 opacity-[0.025]"
+            style={{
+              backgroundImage: 'radial-gradient(circle at 1px 1px, #78716c 1px, transparent 0)',
+              backgroundSize: '28px 28px'
+            }}
+          />
+          {/* Corner glows */}
+          <div className="absolute -top-20 -right-20 w-[400px] h-[400px] bg-orange-200/10 rounded-full blur-3xl" />
+          <div className="absolute -bottom-20 -left-20 w-[300px] h-[300px] bg-stone-300/10 rounded-full blur-3xl" />
+
+          {/* Diagonal accent */}
+          <div
+            className="absolute top-0 right-[40%] w-[1px] h-full bg-gradient-to-b from-transparent via-orange-300/10 to-transparent"
+            style={{ transform: 'rotate(15deg)', transformOrigin: 'top center' }}
+          />
+        </div>
+
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
             {features.map((feature, idx) => (
               <div
                 key={idx}
-                className="group bg-slate-50 hover:bg-white rounded-2xl p-8 border border-slate-100 hover:border-orange-200 hover:shadow-xl transition-all duration-300"
+                className="group bg-white/80 backdrop-blur-sm hover:bg-white rounded-2xl p-8 border border-stone-200/60 hover:border-orange-200 hover:shadow-xl transition-all duration-300"
               >
                 <div className="w-14 h-14 bg-gradient-to-br from-orange-500 to-orange-600 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg">
                   <feature.icon className="w-7 h-7 text-white" />
@@ -133,11 +169,25 @@ export default function HomePage() {
       </section>
 
       {/* Client Guide Promotion */}
-      <section className="relative py-16 bg-gradient-to-br from-stone-100 via-stone-50 to-orange-50/30 overflow-hidden">
-        {/* Accent glow */}
-        <div className="absolute top-0 right-1/4 w-[400px] h-[400px] bg-gradient-radial from-orange-200/20 to-transparent rounded-full blur-3xl pointer-events-none" />
+      <section className="relative py-16 bg-gradient-to-br from-stone-100 via-stone-50 to-orange-50/20 overflow-hidden">
+        {/* Background accents */}
+        <div className="absolute inset-0 pointer-events-none">
+          <div className="absolute top-1/2 right-[10%] -translate-y-1/2 w-[450px] h-[450px] bg-orange-200/15 rounded-full blur-3xl" />
+          <div className="absolute top-0 left-[20%] w-[250px] h-[250px] bg-stone-300/10 rounded-full blur-2xl" />
+
+          {/* Diagonal lines */}
+          <div
+            className="absolute top-0 left-[10%] w-[1px] h-full bg-gradient-to-b from-transparent via-orange-400/12 to-transparent"
+            style={{ transform: 'rotate(-10deg)', transformOrigin: 'top center' }}
+          />
+          <div
+            className="absolute top-0 right-[30%] w-[1px] h-full bg-gradient-to-b from-transparent via-stone-400/8 to-transparent"
+            style={{ transform: 'rotate(6deg)', transformOrigin: 'top center' }}
+          />
+        </div>
+
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative">
-          <div className="bg-white/80 backdrop-blur-sm rounded-2xl border border-stone-200/80 p-8 md:p-10 flex flex-col md:flex-row items-center gap-8 shadow-sm">
+          <div className="bg-white/70 backdrop-blur-sm rounded-2xl border border-stone-200/70 p-8 md:p-10 flex flex-col md:flex-row items-center gap-8 shadow-sm">
             <div className="flex-shrink-0">
               <div className="w-16 h-16 bg-orange-100 rounded-xl flex items-center justify-center">
                 <Sparkles className="w-8 h-8 text-orange-600" />
@@ -169,13 +219,38 @@ export default function HomePage() {
 
       {/* Funding Facts */}
       <section className="relative py-16 sm:py-20 bg-gradient-to-br from-slate-900 via-slate-900 to-slate-800 text-white overflow-hidden">
-        {/* Sophisticated dark gradient accents */}
+        {/* Dark section accents */}
         <div className="absolute inset-0 pointer-events-none">
-          <div className="absolute top-0 left-1/4 w-[500px] h-[500px] bg-gradient-radial from-orange-500/8 to-transparent rounded-full blur-3xl" />
-          <div className="absolute bottom-0 right-1/4 w-[400px] h-[400px] bg-gradient-radial from-slate-600/20 to-transparent rounded-full blur-3xl" />
-          {/* Subtle grid pattern */}
-          <div className="absolute inset-0 opacity-[0.03]" style={{backgroundImage: 'linear-gradient(rgba(255,255,255,0.1) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.1) 1px, transparent 1px)', backgroundSize: '60px 60px'}} />
+          {/* Orange glow accents */}
+          <div className="absolute top-[10%] left-[15%] w-[400px] h-[400px] bg-orange-500/8 rounded-full blur-3xl" />
+          <div className="absolute bottom-[10%] right-[10%] w-[350px] h-[350px] bg-orange-400/6 rounded-full blur-3xl" />
+          {/* Cool tone balance */}
+          <div className="absolute top-1/2 right-[40%] -translate-y-1/2 w-[300px] h-[300px] bg-slate-500/10 rounded-full blur-3xl" />
+
+          {/* Grid pattern */}
+          <div
+            className="absolute inset-0 opacity-[0.03]"
+            style={{
+              backgroundImage: 'linear-gradient(rgba(255,255,255,0.08) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.08) 1px, transparent 1px)',
+              backgroundSize: '48px 48px'
+            }}
+          />
+
+          {/* Diagonal accent lines */}
+          <div
+            className="absolute top-0 left-[25%] w-[1px] h-full bg-gradient-to-b from-transparent via-orange-400/15 to-transparent"
+            style={{ transform: 'rotate(-8deg)', transformOrigin: 'top center' }}
+          />
+          <div
+            className="absolute top-0 right-[20%] w-[2px] h-full bg-gradient-to-b from-transparent via-orange-500/10 to-transparent"
+            style={{ transform: 'rotate(12deg)', transformOrigin: 'top center' }}
+          />
+          <div
+            className="absolute top-0 left-[60%] w-[1px] h-full bg-gradient-to-b from-transparent via-slate-400/8 to-transparent"
+            style={{ transform: 'rotate(-4deg)', transformOrigin: 'top center' }}
+          />
         </div>
+
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-4">
             Förderung auf einen Blick
@@ -188,7 +263,7 @@ export default function HomePage() {
             {fundingFacts.map((fact, idx) => (
               <div
                 key={idx}
-                className="bg-gradient-to-br from-slate-800/80 to-slate-800/40 backdrop-blur rounded-xl sm:rounded-2xl p-6 sm:p-8 border border-slate-700/50 hover:border-orange-500/50 hover:from-slate-800/90 hover:to-slate-700/50 transition-all duration-300 shadow-lg"
+                className="bg-gradient-to-br from-slate-800/80 to-slate-800/40 backdrop-blur rounded-xl sm:rounded-2xl p-6 sm:p-8 border border-slate-700/50 hover:border-orange-500/40 hover:from-slate-800/90 hover:to-slate-700/50 transition-all duration-300 shadow-lg"
               >
                 <p className="text-sm text-neutral-400 mb-1 sm:mb-2">{fact.label}</p>
                 <p className="text-4xl sm:text-5xl font-bold text-orange-500 mb-2 sm:mb-3">{fact.value}</p>
@@ -200,11 +275,27 @@ export default function HomePage() {
       </section>
 
       {/* Process Steps */}
-      <section className="relative py-20 bg-gradient-to-b from-white via-stone-50/30 to-stone-100/50 overflow-hidden">
-        {/* Diagonal accent line */}
-        <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-stone-200 to-transparent" />
-        {/* Subtle side accents */}
-        <div className="absolute top-1/2 -left-20 w-40 h-[600px] -translate-y-1/2 bg-gradient-to-r from-orange-100/30 to-transparent blur-3xl pointer-events-none" />
+      <section className="relative py-20 bg-gradient-to-b from-white via-stone-50/30 to-stone-100/40 overflow-hidden">
+        {/* Background accents */}
+        <div className="absolute inset-0 pointer-events-none">
+          {/* Side glows */}
+          <div className="absolute top-1/3 -left-32 w-[350px] h-[500px] bg-orange-200/12 rounded-full blur-3xl" />
+          <div className="absolute bottom-1/4 -right-20 w-[300px] h-[400px] bg-stone-300/10 rounded-full blur-3xl" />
+
+          {/* Diagonal lines */}
+          <div
+            className="absolute top-0 left-[45%] w-[1px] h-full bg-gradient-to-b from-transparent via-orange-300/10 to-transparent"
+            style={{ transform: 'rotate(-6deg)', transformOrigin: 'top center' }}
+          />
+          <div
+            className="absolute top-0 right-[15%] w-[1px] h-full bg-gradient-to-b from-transparent via-stone-400/8 to-transparent"
+            style={{ transform: 'rotate(10deg)', transformOrigin: 'top center' }}
+          />
+
+          {/* Top line */}
+          <div className="absolute top-0 left-0 right-0 h-[1px] bg-gradient-to-r from-transparent via-stone-300/40 to-transparent" />
+        </div>
+
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative">
           <h2 className="text-3xl md:text-4xl font-bold text-center text-slate-900 mb-4">
             Der Beratungsprozess
@@ -217,15 +308,15 @@ export default function HomePage() {
             {processSteps.map((step, idx) => (
               <div
                 key={idx}
-                className="group flex items-center gap-4 bg-slate-50 hover:bg-orange-50 rounded-xl p-5 border border-slate-200 hover:border-orange-300 transition-all duration-200"
+                className="group flex items-center gap-4 bg-white/70 backdrop-blur-sm hover:bg-orange-50/80 rounded-xl p-5 border border-stone-200/60 hover:border-orange-300 transition-all duration-200"
               >
-                <div className="flex-shrink-0 w-10 h-10 bg-slate-200 group-hover:bg-orange-500 text-slate-700 group-hover:text-white rounded-full flex items-center justify-center font-semibold transition-all duration-200">
+                <div className="flex-shrink-0 w-10 h-10 bg-stone-200 group-hover:bg-orange-500 text-slate-700 group-hover:text-white rounded-full flex items-center justify-center font-semibold transition-all duration-200">
                   {idx + 1}
                 </div>
                 <p className="text-slate-800 group-hover:text-slate-900 font-medium transition-colors duration-200">
                   {step}
                 </p>
-                <CheckCircle2 className="ml-auto w-5 h-5 text-slate-300 group-hover:text-orange-500 transition-colors duration-200" />
+                <CheckCircle2 className="ml-auto w-5 h-5 text-stone-300 group-hover:text-orange-500 transition-colors duration-200" />
               </div>
             ))}
           </div>
@@ -233,9 +324,23 @@ export default function HomePage() {
       </section>
 
       {/* Resources: Wiki & Downloads */}
-      <section className="relative py-16 sm:py-20 bg-gradient-to-br from-stone-100 via-stone-100 to-orange-50/40 overflow-hidden">
-        {/* Background accent */}
-        <div className="absolute bottom-0 right-0 w-[500px] h-[500px] bg-gradient-radial from-orange-200/15 to-transparent rounded-full blur-3xl pointer-events-none" />
+      <section className="relative py-16 sm:py-20 bg-gradient-to-br from-stone-100 via-stone-100 to-orange-50/30 overflow-hidden">
+        {/* Background accents */}
+        <div className="absolute inset-0 pointer-events-none">
+          <div className="absolute bottom-[10%] right-[5%] w-[450px] h-[450px] bg-orange-200/12 rounded-full blur-3xl" />
+          <div className="absolute top-[10%] left-[10%] w-[300px] h-[300px] bg-stone-300/10 rounded-full blur-3xl" />
+
+          {/* Diagonal lines */}
+          <div
+            className="absolute top-0 left-[30%] w-[1px] h-full bg-gradient-to-b from-transparent via-orange-300/10 to-transparent"
+            style={{ transform: 'rotate(-8deg)', transformOrigin: 'top center' }}
+          />
+          <div
+            className="absolute top-0 right-[35%] w-[1px] h-full bg-gradient-to-b from-transparent via-stone-400/8 to-transparent"
+            style={{ transform: 'rotate(5deg)', transformOrigin: 'top center' }}
+          />
+        </div>
+
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative">
           <h2 className="text-2xl sm:text-3xl font-bold text-center text-slate-900 mb-3">
             Alle Informationen
@@ -248,7 +353,7 @@ export default function HomePage() {
             {/* Knowledge Base */}
             <Link
               href="/wiki"
-              className="group bg-white rounded-xl border border-stone-200 p-6 hover:border-stone-300 hover:shadow-md transition-all"
+              className="group bg-white/80 backdrop-blur-sm rounded-xl border border-stone-200/70 p-6 hover:border-stone-300 hover:shadow-md transition-all"
             >
               <div className="flex items-start gap-4">
                 <div className="p-3 bg-stone-100 rounded-lg group-hover:bg-orange-100 transition-colors">
@@ -272,7 +377,7 @@ export default function HomePage() {
             {/* Downloads */}
             <Link
               href="/wiki/downloads"
-              className="group bg-white rounded-xl border border-stone-200 p-6 hover:border-stone-300 hover:shadow-md transition-all"
+              className="group bg-white/80 backdrop-blur-sm rounded-xl border border-stone-200/70 p-6 hover:border-stone-300 hover:shadow-md transition-all"
             >
               <div className="flex items-start gap-4">
                 <div className="p-3 bg-stone-100 rounded-lg group-hover:bg-orange-100 transition-colors">
@@ -297,11 +402,29 @@ export default function HomePage() {
       </section>
 
       {/* CTA Section */}
-      <section className="relative py-16 sm:py-20 bg-gradient-to-br from-orange-50 via-white to-stone-50 overflow-hidden">
-        {/* Radial accent glow */}
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[400px] bg-gradient-radial from-orange-200/25 to-transparent rounded-full blur-3xl pointer-events-none" />
-        {/* Top accent line */}
-        <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-orange-200 to-transparent" />
+      <section className="relative py-16 sm:py-20 bg-gradient-to-br from-orange-50/80 via-white to-stone-50 overflow-hidden">
+        {/* Background accents */}
+        <div className="absolute inset-0 pointer-events-none">
+          {/* Central glow */}
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[350px] bg-orange-200/20 rounded-full blur-3xl" />
+          {/* Side accents */}
+          <div className="absolute top-0 left-[10%] w-[200px] h-[200px] bg-orange-300/10 rounded-full blur-2xl" />
+          <div className="absolute bottom-0 right-[15%] w-[250px] h-[250px] bg-stone-300/10 rounded-full blur-2xl" />
+
+          {/* Diagonal lines */}
+          <div
+            className="absolute top-0 left-[20%] w-[1px] h-full bg-gradient-to-b from-transparent via-orange-400/12 to-transparent"
+            style={{ transform: 'rotate(-10deg)', transformOrigin: 'top center' }}
+          />
+          <div
+            className="absolute top-0 right-[25%] w-[1px] h-full bg-gradient-to-b from-transparent via-orange-300/10 to-transparent"
+            style={{ transform: 'rotate(8deg)', transformOrigin: 'top center' }}
+          />
+
+          {/* Top accent line */}
+          <div className="absolute top-0 left-0 right-0 h-[1px] bg-gradient-to-r from-transparent via-orange-300/30 to-transparent" />
+        </div>
+
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative">
           <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-6">
             Haben Sie Fragen?

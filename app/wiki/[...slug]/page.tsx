@@ -2,58 +2,29 @@ import { readFile, readdir } from 'node:fs/promises';
 import path from 'node:path';
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
-import { ArrowLeft, FileText, ChevronRight, Download, ExternalLink } from 'lucide-react';
+import { ArrowLeft, FileText, ChevronRight } from 'lucide-react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
+import { getArticle, getAllArticles } from '@/lib/articles';
 
 interface WikiPageProps {
   params: Promise<{ slug: string[] }>;
 }
 
-// Map of file slugs to human-readable titles and source documents
-const articleInfo: Record<string, { title: string; sources: string[] }> = {
-  '00-overview': {
-    title: 'Programmübersicht',
-    sources: ['Richtlinie Tiroler Beratungsförderung', 'Honorarrichtlinien'],
-  },
-  '01-funding-areas': {
-    title: 'Förderbereiche',
-    sources: ['Richtlinie Tiroler Beratungsförderung'],
-  },
-  '02-process': {
-    title: 'Antragsprozess',
-    sources: ['Beratungsablauf', 'Richtlinie Tiroler Beratungsförderung'],
-  },
-  '03-requirements': {
-    title: 'Voraussetzungen',
-    sources: ['Richtlinie Tiroler Beratungsförderung', 'Richtlinien für Beratungsaufträge', 'Berufsbild Unternehmensberatung'],
-  },
-  '04-deliverables': {
-    title: 'Dokumentation & Berichte',
-    sources: ['Richtlinien für Beratungsaufträge', 'Checkliste Digitalisierung'],
-  },
-  'richtlinie-beratungsfoerderung': {
-    title: 'Förderrichtlinie',
-    sources: ['Richtlinie Tiroler Beratungsförderung'],
-  },
-  'richtlinien-beratungsauftraege': {
-    title: 'Beratungsaufträge',
-    sources: ['Richtlinien für Beratungsaufträge'],
-  },
-  'honorarrichtlinien': {
-    title: 'Honorarrichtlinien',
-    sources: ['Honorarrichtlinien'],
-  },
-  'beratungsablauf': {
-    title: 'Beratungsablauf',
-    sources: ['Beratungsablauf'],
-  },
-  'checkliste-digitalisierung': {
-    title: 'Checkliste Digitalisierung',
-    sources: ['Checkliste Digitalisierung'],
-  },
+// Source documents for each article (detail page specific)
+const articleSources: Record<string, string[]> = {
+  '00-overview': ['Richtlinie Tiroler Beratungsförderung', 'Honorarrichtlinien'],
+  '01-funding-areas': ['Richtlinie Tiroler Beratungsförderung'],
+  '02-process': ['Beratungsablauf', 'Richtlinie Tiroler Beratungsförderung'],
+  '03-requirements': ['Richtlinie Tiroler Beratungsförderung', 'Richtlinien für Beratungsaufträge', 'Berufsbild Unternehmensberatung'],
+  '04-deliverables': ['Richtlinien für Beratungsaufträge', 'Checkliste Digitalisierung'],
+  'richtlinie-beratungsfoerderung': ['Richtlinie Tiroler Beratungsförderung'],
+  'richtlinien-beratungsauftraege': ['Richtlinien für Beratungsaufträge'],
+  'honorarrichtlinien': ['Honorarrichtlinien'],
+  'beratungsablauf': ['Beratungsablauf'],
+  'checkliste-digitalisierung': ['Checkliste Digitalisierung'],
 };
 
 export async function generateStaticParams() {
@@ -82,11 +53,12 @@ export async function generateStaticParams() {
 export async function generateMetadata({ params }: WikiPageProps) {
   const resolvedParams = await params;
   const [category, slug] = resolvedParams.slug;
-  const info = articleInfo[slug] || { title: slug, sources: [] };
+  const article = getArticle(slug);
+  const title = article?.title || slug;
 
   return {
-    title: `${info.title} | WKO Wissensdatenbank`,
-    description: `Informationen zu ${info.title} - WKO Beratungsförderung Wissensdatenbank`,
+    title: `${title} | WKO Wissensdatenbank`,
+    description: article?.description || `Informationen zu ${title} - WKO Beratungsförderung Wissensdatenbank`,
   };
 }
 
@@ -107,25 +79,15 @@ export default async function WikiArticlePage({ params }: WikiPageProps) {
     notFound();
   }
 
-  const info = articleInfo[slug] || { title: slug, sources: [] };
+  const article = getArticle(slug);
+  const title = article?.title || slug;
+  const sources = articleSources[slug] || [];
 
-  // Get all articles for "related" section
-  const knowledgeBasePath = path.join(process.cwd(), 'knowledge-base');
-  const wikiFiles = await readdir(path.join(knowledgeBasePath, 'wiki'));
-  const rawFiles = await readdir(path.join(knowledgeBasePath, 'raw'));
-
-  const allArticles = [
-    ...wikiFiles.filter(f => f.endsWith('.md')).map(f => ({ slug: f.replace('.md', ''), category: 'wiki' })),
-    ...rawFiles.filter(f => f.endsWith('.md')).map(f => ({ slug: f.replace('.md', ''), category: 'raw' })),
-  ];
-
+  // Get related articles from shared config
+  const allArticles = getAllArticles();
   const relatedArticles = allArticles
     .filter((a) => a.slug !== slug)
-    .slice(0, 3)
-    .map((a) => ({
-      ...a,
-      title: articleInfo[a.slug]?.title || a.slug,
-    }));
+    .slice(0, 3);
 
   return (
     <div className="min-h-screen flex flex-col bg-gradient-to-b from-slate-50 via-white to-orange-50/30">
@@ -144,7 +106,7 @@ export default async function WikiArticlePage({ params }: WikiPageProps) {
               Wissensdatenbank
             </Link>
             <ChevronRight className="w-4 h-4" />
-            <span className="text-orange-400">{info.title}</span>
+            <span className="text-orange-400">{title}</span>
           </nav>
 
           {/* Title */}
@@ -153,11 +115,11 @@ export default async function WikiArticlePage({ params }: WikiPageProps) {
               <FileText className="w-10 h-10 text-orange-400" />
             </div>
             <div>
-              <h1 className="text-3xl md:text-4xl font-bold mb-3">{info.title}</h1>
-              {info.sources.length > 0 && (
+              <h1 className="text-3xl md:text-4xl font-bold mb-3">{title}</h1>
+              {sources.length > 0 && (
                 <div className="flex flex-wrap items-center gap-2">
                   <span className="text-sm text-slate-400">Basiert auf:</span>
-                  {info.sources.map((source, idx) => (
+                  {sources.map((source, idx) => (
                     <span
                       key={idx}
                       className="inline-block px-3 py-1 bg-slate-800 text-slate-300 text-xs font-medium rounded-lg"

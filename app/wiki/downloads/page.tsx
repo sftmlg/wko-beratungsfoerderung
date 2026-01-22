@@ -47,13 +47,6 @@ const documentCategories: DocumentCategory[] = [
         type: 'PDF',
         size: '110 KB',
       },
-      {
-        title: 'Beratungsablauf',
-        description: 'Der 9-Schritte-Prozess als Flowchart.',
-        filename: 'beratungsablauf.pdf',
-        type: 'PDF',
-        size: '112 KB',
-      },
     ],
   },
   {
@@ -259,26 +252,26 @@ export default function DownloadsPage() {
                       key={idx}
                       href={`/docs/${doc.filename}`}
                       download
-                      className="flex items-center justify-between p-4 hover:bg-stone-50 transition-colors group"
+                      className="flex items-center justify-between p-3 sm:p-4 hover:bg-stone-50 transition-colors group"
                     >
-                      <div className="flex items-center gap-3 min-w-0">
-                        <div className="p-2 bg-stone-100 rounded group-hover:bg-orange-100 transition-colors">
+                      <div className="flex items-center gap-2 sm:gap-3 min-w-0">
+                        <div className="p-1.5 sm:p-2 bg-stone-100 rounded group-hover:bg-orange-100 transition-colors flex-shrink-0">
                           {getFileIcon(doc.type)}
                         </div>
                         <div className="min-w-0">
-                          <h3 className="text-stone-900 font-medium text-sm group-hover:text-orange-600 transition-colors">
+                          <h3 className="text-stone-900 font-medium text-sm group-hover:text-orange-600 transition-colors truncate">
                             {doc.title}
                           </h3>
-                          <p className="text-stone-500 text-xs truncate">
+                          <p className="text-stone-500 text-xs truncate hidden sm:block">
                             {doc.description}
                           </p>
                         </div>
                       </div>
-                      <div className="flex items-center gap-3 ml-4 flex-shrink-0">
-                        <span className={`text-xs px-2 py-0.5 rounded font-medium ${getTypeBadgeColor(doc.type)}`}>
+                      <div className="flex items-center gap-2 sm:gap-3 ml-2 sm:ml-4 flex-shrink-0">
+                        <span className={`hidden sm:inline text-xs px-2 py-0.5 rounded font-medium ${getTypeBadgeColor(doc.type)}`}>
                           {doc.type}
                         </span>
-                        <span className="text-xs text-stone-400">
+                        <span className="text-[10px] sm:text-xs text-stone-400">
                           {doc.size}
                         </span>
                         <Download className="w-4 h-4 text-stone-300 group-hover:text-orange-500 transition-colors" />
@@ -292,18 +285,18 @@ export default function DownloadsPage() {
         </div>
 
         {/* Stats */}
-        <div className="mt-10 grid grid-cols-3 gap-4">
-          <div className="bg-white border border-stone-200 rounded-lg p-4 text-center">
-            <div className="text-2xl font-bold text-stone-900">11</div>
-            <div className="text-xs text-stone-500">Dokumente</div>
+        <div className="mt-10 grid grid-cols-3 gap-3 sm:gap-4">
+          <div className="bg-white border border-stone-200 rounded-lg p-3 sm:p-4 text-center">
+            <div className="text-xl sm:text-2xl font-bold text-stone-900">10</div>
+            <div className="text-[10px] sm:text-xs text-stone-500">Dokumente</div>
           </div>
-          <div className="bg-white border border-stone-200 rounded-lg p-4 text-center">
-            <div className="text-2xl font-bold text-stone-900">5</div>
-            <div className="text-xs text-stone-500">Kategorien</div>
+          <div className="bg-white border border-stone-200 rounded-lg p-3 sm:p-4 text-center">
+            <div className="text-xl sm:text-2xl font-bold text-stone-900">4</div>
+            <div className="text-[10px] sm:text-xs text-stone-500">Kategorien</div>
           </div>
-          <div className="bg-white border border-stone-200 rounded-lg p-4 text-center">
-            <div className="text-2xl font-bold text-orange-500">2025</div>
-            <div className="text-xs text-stone-500">Aktuell</div>
+          <div className="bg-white border border-stone-200 rounded-lg p-3 sm:p-4 text-center">
+            <div className="text-xl sm:text-2xl font-bold text-orange-500">2025</div>
+            <div className="text-[10px] sm:text-xs text-stone-500">Aktuell</div>
           </div>
         </div>
 

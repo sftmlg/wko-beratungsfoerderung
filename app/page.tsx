@@ -100,9 +100,9 @@ export default function HomePage() {
       </section>
 
       {/* Features Section */}
-      <section id="features" className="py-20 bg-white">
+      <section id="features" className="py-16 sm:py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
             {features.map((feature, idx) => (
               <div
                 key={idx}
@@ -157,23 +157,23 @@ export default function HomePage() {
       </section>
 
       {/* Funding Facts */}
-      <section className="py-20 bg-slate-900 text-white">
+      <section className="py-16 sm:py-20 bg-slate-900 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-4">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-4">
             Förderung auf einen Blick
           </h2>
-          <p className="text-neutral-400 text-center mb-16 max-w-2xl mx-auto">
+          <p className="text-neutral-400 text-center mb-10 sm:mb-16 max-w-2xl mx-auto text-sm sm:text-base">
             Die wichtigsten Kennzahlen zur WKO Beratungsförderung für Digitalisierungsprojekte
           </p>
 
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-8">
             {fundingFacts.map((fact, idx) => (
               <div
                 key={idx}
-                className="bg-slate-800/50 backdrop-blur rounded-2xl p-8 border border-slate-700/50 hover:border-orange-500/50 transition-all duration-300"
+                className="bg-slate-800/50 backdrop-blur rounded-xl sm:rounded-2xl p-6 sm:p-8 border border-slate-700/50 hover:border-orange-500/50 transition-all duration-300"
               >
-                <p className="text-sm text-neutral-400 mb-2">{fact.label}</p>
-                <p className="text-5xl font-bold text-orange-500 mb-3">{fact.value}</p>
+                <p className="text-sm text-neutral-400 mb-1 sm:mb-2">{fact.label}</p>
+                <p className="text-4xl sm:text-5xl font-bold text-orange-500 mb-2 sm:mb-3">{fact.value}</p>
                 <p className="text-sm text-neutral-300">{fact.detail}</p>
               </div>
             ))}

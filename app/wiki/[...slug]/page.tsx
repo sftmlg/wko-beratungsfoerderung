@@ -96,12 +96,12 @@ export default async function WikiArticlePage({ params }: WikiPageProps) {
           </nav>
 
           {/* Title */}
-          <div className="flex items-start gap-5">
-            <div className="p-4 bg-orange-500/20 rounded-2xl">
-              <FileText className="w-10 h-10 text-orange-400" />
+          <div className="flex items-start gap-4 sm:gap-5">
+            <div className="p-3 sm:p-4 bg-orange-500/20 rounded-xl sm:rounded-2xl flex-shrink-0">
+              <FileText className="w-7 h-7 sm:w-10 sm:h-10 text-orange-400" />
             </div>
-            <div>
-              <h1 className="text-3xl md:text-4xl font-bold mb-3">{title}</h1>
+            <div className="min-w-0">
+              <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-2 sm:mb-3">{title}</h1>
               {sources.length > 0 && (
                 <div className="flex flex-wrap items-center gap-2">
                   <span className="text-sm text-slate-400">Basiert auf:</span>
@@ -138,12 +138,12 @@ export default async function WikiArticlePage({ params }: WikiPageProps) {
       </div>
 
       {/* Content */}
-      <main className="flex-1 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="grid grid-cols-1 lg:grid-cols-4 gap-12">
+      <main className="flex-1 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
+        <div className="grid grid-cols-1 lg:grid-cols-4 gap-8 lg:gap-12">
           {/* Article Content */}
           <article className="lg:col-span-3">
-            <div className="bg-white rounded-2xl shadow-sm border border-slate-200 p-6 sm:p-10 md:p-14">
-              <div className="prose prose-lg max-w-none">
+            <div className="bg-white rounded-xl sm:rounded-2xl shadow-sm border border-slate-200 p-5 sm:p-8 md:p-12">
+              <div className="prose max-w-none">
                 <ReactMarkdown
                   remarkPlugins={[remarkGfm]}
                   components={{

@@ -151,7 +151,7 @@ export default async function WikiArticlePage({ params }: WikiPageProps) {
                     a: ({ href, children, ...props }) => {
                       if (href && !href.startsWith('http') && !href.startsWith('mailto:')) {
                         return (
-                          <Link href={href} className="text-orange-600 hover:text-orange-700 font-medium no-underline hover:underline transition-colors">
+                          <Link href={href} className="text-orange-700 hover:text-orange-800 font-medium no-underline hover:underline transition-colors">
                             {children}
                           </Link>
                         );
@@ -237,7 +237,7 @@ export default async function WikiArticlePage({ params }: WikiPageProps) {
                 </p>
                 <Link
                   href="/chat"
-                  className="inline-block bg-white text-orange-600 px-4 py-2 rounded-lg text-sm font-medium hover:bg-orange-50 transition-colors"
+                  className="inline-block bg-white text-orange-700 px-4 py-2 rounded-lg text-sm font-medium hover:bg-orange-50 transition-colors"
                 >
                   Zum Chat
                 </Link>

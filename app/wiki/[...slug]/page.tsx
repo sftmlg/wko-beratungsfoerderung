@@ -13,20 +13,6 @@ interface WikiPageProps {
   params: Promise<{ slug: string[] }>;
 }
 
-// Source documents for each article (detail page specific)
-const articleSources: Record<string, string[]> = {
-  '00-overview': ['Richtlinie Tiroler Beratungsförderung', 'Honorarrichtlinien'],
-  '01-funding-areas': ['Richtlinie Tiroler Beratungsförderung'],
-  '02-process': ['Beratungsablauf', 'Richtlinie Tiroler Beratungsförderung'],
-  '03-requirements': ['Richtlinie Tiroler Beratungsförderung', 'Richtlinien für Beratungsaufträge', 'Berufsbild Unternehmensberatung'],
-  '04-deliverables': ['Richtlinien für Beratungsaufträge', 'Checkliste Digitalisierung'],
-  'richtlinie-beratungsfoerderung': ['Richtlinie Tiroler Beratungsförderung'],
-  'richtlinien-beratungsauftraege': ['Richtlinien für Beratungsaufträge'],
-  'honorarrichtlinien': ['Honorarrichtlinien'],
-  'beratungsablauf': ['Beratungsablauf'],
-  'checkliste-digitalisierung': ['Checkliste Digitalisierung'],
-};
-
 export async function generateStaticParams() {
   const knowledgeBasePath = path.join(process.cwd(), 'knowledge-base');
   const params: { slug: string[] }[] = [];
@@ -81,7 +67,7 @@ export default async function WikiArticlePage({ params }: WikiPageProps) {
 
   const article = getArticle(slug);
   const title = article?.title || slug;
-  const sources = articleSources[slug] || [];
+  const sources = article?.sources || [];
 
   // Get related articles from shared config
   const allArticles = getAllArticles();

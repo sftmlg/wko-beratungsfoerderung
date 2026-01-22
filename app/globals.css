@@ -1,0 +1,168 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #0f172a;
+  --color-secondary: #f97316;
+  --color-accent: #0ea5e9;
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --animate-fadeIn: fadeIn 0.5s ease-in-out;
+  --animate-slideUp: slideUp 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+  --animate-slideInLeft: slideInLeft 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+  --animate-slideInRight: slideInRight 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+  --radius: 0.5rem;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes thinkingPulse {
+  0%, 100% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: var(--font-sans);
+  scroll-behavior: smooth;
+}
+
+/* Markdown styling */
+.markdown-content {
+  @apply text-neutral-700 leading-relaxed;
+}
+
+.markdown-content h1 {
+  @apply text-2xl font-semibold text-neutral-900 mt-6 mb-3;
+}
+
+.markdown-content h2 {
+  @apply text-xl font-semibold text-neutral-900 mt-5 mb-2;
+}
+
+.markdown-content h3 {
+  @apply text-lg font-semibold text-neutral-900 mt-4 mb-2;
+}
+
+.markdown-content p {
+  @apply mb-4;
+}
+
+.markdown-content ul, .markdown-content ol {
+  @apply mb-4 ml-6;
+}
+
+.markdown-content li {
+  @apply mb-1;
+}
+
+.markdown-content ul li {
+  @apply list-disc;
+}
+
+.markdown-content ol li {
+  @apply list-decimal;
+}
+
+.markdown-content a {
+  @apply text-orange-500 hover:text-orange-600 underline underline-offset-2 transition-colors;
+}
+
+.markdown-content code {
+  @apply bg-neutral-100 text-neutral-800 px-1.5 py-0.5 rounded text-sm font-mono;
+}
+
+.markdown-content pre {
+  @apply bg-neutral-900 text-neutral-100 p-4 rounded-lg overflow-x-auto mb-4;
+}
+
+.markdown-content pre code {
+  @apply bg-transparent text-neutral-100 p-0;
+}
+
+.markdown-content blockquote {
+  @apply border-l-4 border-orange-500 pl-4 italic text-neutral-600 my-4;
+}
+
+.markdown-content strong {
+  @apply font-semibold text-neutral-900;
+}
+
+.markdown-content em {
+  @apply italic;
+}
+
+.markdown-content hr {
+  @apply border-neutral-200 my-6;
+}
+
+/* Cursor pointer for all interactive elements - use !important to override Tailwind */
+a,
+button,
+[role="button"],
+input[type="submit"],
+input[type="button"],
+input[type="reset"],
+select,
+label[for],
+.cursor-pointer {
+  cursor: pointer !important;
+}
+
+/* Disabled elements should show not-allowed cursor */
+button:disabled,
+input:disabled,
+select:disabled,
+textarea:disabled,
+[disabled] {
+  cursor: not-allowed !important;
+}
+
+/* Custom utilities */
+.thinking-pulse {
+  animation: thinkingPulse 2s ease-in-out infinite;
+}

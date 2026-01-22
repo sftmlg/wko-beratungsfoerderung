@@ -49,6 +49,22 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
+                <Link
+                  href="/wiki"
+                  className="text-sm text-neutral-400 hover:text-orange-500 transition-colors duration-200"
+                >
+                  Wissensdatenbank
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/wiki/downloads"
+                  className="text-sm text-neutral-400 hover:text-orange-500 transition-colors duration-200"
+                >
+                  Offizielle Dokumente
+                </Link>
+              </li>
+              <li>
                 <a
                   href="https://kiautomatisierung.info"
                   target="_blank"
@@ -71,7 +87,36 @@ export default function Footer() {
           </div>
         </div>
 
+        {/* Partner Logos */}
         <div className="mt-12 pt-8 border-t border-neutral-800">
+          <p className="text-center text-[10px] text-neutral-500 uppercase tracking-wider mb-4">
+            Förderprogramm von
+          </p>
+          <div className="flex flex-wrap items-center justify-center gap-8 sm:gap-12">
+            <div className="flex items-center gap-3">
+              <Image
+                src="/images/logo-wko.webp"
+                alt="WKO Tirol"
+                width={90}
+                height={45}
+                className="h-9 w-auto"
+              />
+              <span className="text-xs text-neutral-400">WKO Tirol</span>
+            </div>
+            <div className="flex items-center gap-3">
+              <Image
+                src="/images/logo-tirol.svg"
+                alt="Land Tirol"
+                width={90}
+                height={45}
+                className="h-9 w-auto"
+              />
+              <span className="text-xs text-neutral-400">Land Tirol</span>
+            </div>
+          </div>
+        </div>
+
+        <div className="mt-8 pt-6 border-t border-neutral-800">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-xs text-neutral-500">
               {currentYear} KI für KMU. Alle Rechte vorbehalten.

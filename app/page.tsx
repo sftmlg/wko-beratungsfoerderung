@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { ArrowRight, CheckCircle2, Clock, FileText, Shield, Download, Sparkles } from 'lucide-react';
+import { ArrowRight, CheckCircle2, Clock, FileText, Shield, Download, Sparkles, BookOpen } from 'lucide-react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 
@@ -210,8 +210,70 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* Resources: Wiki & Downloads */}
+      <section className="py-16 sm:py-20 bg-stone-100">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-2xl sm:text-3xl font-bold text-center text-slate-900 mb-3">
+            Alle Informationen
+          </h2>
+          <p className="text-neutral-600 text-center mb-10 sm:mb-12 max-w-xl mx-auto">
+            Umfassende Dokumentation und offizielle Unterlagen zum Förderprogramm
+          </p>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
+            {/* Knowledge Base */}
+            <Link
+              href="/wiki"
+              className="group bg-white rounded-xl border border-stone-200 p-6 hover:border-stone-300 hover:shadow-md transition-all"
+            >
+              <div className="flex items-start gap-4">
+                <div className="p-3 bg-stone-100 rounded-lg group-hover:bg-orange-100 transition-colors">
+                  <BookOpen className="w-6 h-6 text-stone-600 group-hover:text-orange-600 transition-colors" />
+                </div>
+                <div className="flex-1 min-w-0">
+                  <h3 className="font-semibold text-stone-900 mb-1 group-hover:text-orange-600 transition-colors">
+                    Wissensdatenbank
+                  </h3>
+                  <p className="text-sm text-stone-500 mb-3">
+                    10 Artikel zu Richtlinien, Prozessen und Anforderungen
+                  </p>
+                  <span className="inline-flex items-center gap-1 text-sm font-medium text-stone-600 group-hover:text-orange-600 transition-colors">
+                    Artikel lesen
+                    <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                  </span>
+                </div>
+              </div>
+            </Link>
+
+            {/* Downloads */}
+            <Link
+              href="/wiki/downloads"
+              className="group bg-white rounded-xl border border-stone-200 p-6 hover:border-stone-300 hover:shadow-md transition-all"
+            >
+              <div className="flex items-start gap-4">
+                <div className="p-3 bg-stone-100 rounded-lg group-hover:bg-orange-100 transition-colors">
+                  <Download className="w-6 h-6 text-stone-600 group-hover:text-orange-600 transition-colors" />
+                </div>
+                <div className="flex-1 min-w-0">
+                  <h3 className="font-semibold text-stone-900 mb-1 group-hover:text-orange-600 transition-colors">
+                    Offizielle Dokumente
+                  </h3>
+                  <p className="text-sm text-stone-500 mb-3">
+                    PDFs, Formulare und Vorlagen zum Download
+                  </p>
+                  <span className="inline-flex items-center gap-1 text-sm font-medium text-stone-600 group-hover:text-orange-600 transition-colors">
+                    Downloads ansehen
+                    <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                  </span>
+                </div>
+              </div>
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-b from-orange-50 to-white">
+      <section className="py-16 sm:py-20 bg-gradient-to-b from-orange-50 to-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-6">
             Haben Sie Fragen?

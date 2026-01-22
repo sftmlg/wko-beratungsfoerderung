@@ -1,14 +1,17 @@
 'use client';
 
+import { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { usePathname } from 'next/navigation';
+import { Menu, X } from 'lucide-react';
 
 export default function Header() {
   const pathname = usePathname();
   const isChat = pathname === '/chat';
   const isWiki = pathname?.startsWith('/wiki');
   const isHome = pathname === '/';
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
     <header className="sticky top-0 z-50 backdrop-blur-md bg-white/80 border-b border-neutral-200/60">
@@ -29,7 +32,7 @@ export default function Header() {
             </div>
           </Link>
 
-          {/* Navigation */}
+          {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center gap-1">
             <Link
               href="/"
@@ -63,14 +66,60 @@ export default function Header() {
             </Link>
           </nav>
 
-          {/* Mobile CTA */}
-          <Link
-            href="/chat"
-            className="md:hidden px-4 py-2 bg-orange-500 hover:bg-orange-600 text-white text-sm font-medium rounded-full transition-colors duration-200"
+          {/* Mobile Menu Button */}
+          <button
+            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+            className="md:hidden p-2 text-slate-600 hover:text-slate-900 hover:bg-slate-100 rounded-lg transition-colors"
+            aria-label={mobileMenuOpen ? 'Menü schließen' : 'Menü öffnen'}
           >
-            Chat
-          </Link>
+            {mobileMenuOpen ? (
+              <X className="w-6 h-6" />
+            ) : (
+              <Menu className="w-6 h-6" />
+            )}
+          </button>
         </div>
+
+        {/* Mobile Navigation */}
+        {mobileMenuOpen && (
+          <nav className="md:hidden py-4 border-t border-neutral-200/60">
+            <div className="flex flex-col gap-1">
+              <Link
+                href="/"
+                onClick={() => setMobileMenuOpen(false)}
+                className={`px-4 py-3 rounded-lg text-sm font-medium transition-all duration-200 ${
+                  isHome
+                    ? 'bg-slate-100 text-slate-900'
+                    : 'text-neutral-600 hover:text-slate-900 hover:bg-slate-50'
+                }`}
+              >
+                Start
+              </Link>
+              <Link
+                href="/wiki"
+                onClick={() => setMobileMenuOpen(false)}
+                className={`px-4 py-3 rounded-lg text-sm font-medium transition-all duration-200 ${
+                  isWiki
+                    ? 'bg-slate-100 text-slate-900'
+                    : 'text-neutral-600 hover:text-slate-900 hover:bg-slate-50'
+                }`}
+              >
+                Wissensdatenbank
+              </Link>
+              <Link
+                href="/chat"
+                onClick={() => setMobileMenuOpen(false)}
+                className={`px-4 py-3 rounded-lg text-sm font-medium transition-all duration-200 ${
+                  isChat
+                    ? 'bg-orange-500 text-white'
+                    : 'text-neutral-600 hover:text-slate-900 hover:bg-slate-50'
+                }`}
+              >
+                Chat-Assistent
+              </Link>
+            </div>
+          </nav>
+        )}
       </div>
     </header>
   );

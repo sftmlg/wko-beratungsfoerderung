@@ -1,0 +1,2555 @@
+{
+  "url": "https://wko-beratungsfoerderung.kiautomatisierung.info",
+  "timestamp": "2026-01-22T18:27:25.563Z",
+  "totalPages": 14,
+  "averageScores": {
+    "performance": 0.9000000000000001,
+    "accessibility": 0.9457142857142857,
+    "bestPractices": 1,
+    "seo": 1
+  },
+  "pages": [
+    {
+      "path": "/",
+      "url": "https://wko-beratungsfoerderung.kiautomatisierung.info/",
+      "scores": {
+        "performance": 0.8,
+        "accessibility": 0.94,
+        "bestPractices": 1,
+        "seo": 1
+      },
+      "metrics": {
+        "lcp": 2120.419,
+        "cls": 0,
+        "tbt": 200,
+        "fcp": 914.419,
+        "si": 1727.6785280016948,
+        "tti": 2120.419
+      },
+      "issues": [
+        {
+          "category": "performance",
+          "severity": "low",
+          "title": "First Contentful Paint",
+          "description": "First Contentful Paint marks the time at which the first text or image is painted. [Learn more about the First Contentful Paint metric](https://developer.chrome.com/docs/lighthouse/performance/first-contentful-paint/).",
+          "score": 0.9,
+          "pages": [
+            "/",
+            "/wiki"
+          ]
+        },
+        {
+          "category": "performance",
+          "severity": "high",
+          "title": "Largest Contentful Paint",
+          "description": "Largest Contentful Paint marks the time at which the largest text or image is painted. [Learn more about the Largest Contentful Paint metric](https://developer.chrome.com/docs/lighthouse/performance/lighthouse-largest-contentful-paint/)",
+          "score": 0.59,
+          "pages": [
+            "/",
+            "/wiki"
+          ]
+        },
+        {
+          "category": "performance",
+          "severity": "medium",
+          "title": "Speed Index",
+          "description": "Speed Index shows how quickly the contents of a page are visibly populated. [Learn more about the Speed Index metric](https://developer.chrome.com/docs/lighthouse/performance/speed-index/).",
+          "score": 0.74,
+          "pages": [
+            "/",
+            "/wiki"
+          ]
+        },
+        {
+          "category": "performance",
+          "severity": "medium",
+          "title": "Total Blocking Time",
+          "description": "Sum of all time periods between FCP and Time to Interactive, when task length exceeded 50ms, expressed in milliseconds. [Learn more about the Total Blocking Time metric](https://developer.chrome.com/docs/lighthouse/performance/lighthouse-total-blocking-time/).",
+          "score": 0.8,
+          "pages": [
+            "/"
+          ]
+        },
+        {
+          "category": "performance",
+          "severity": "high",
+          "title": "Max Potential First Input Delay",
+          "description": "The maximum potential First Input Delay that your users could experience is the duration of the longest task. [Learn more about the Maximum Potential First Input Delay metric](https://developer.chrome.com/docs/lighthouse/performance/lighthouse-max-potential-fid/).",
+          "score": 0.5,
+          "pages": [
+            "/",
+            "/wiki"
+          ]
+        },
+        {
+          "category": "performance",
+          "severity": "low",
+          "title": "Time to Interactive",
+          "description": "Time to Interactive is the amount of time it takes for the page to become fully interactive. [Learn more about the Time to Interactive metric](https://developer.chrome.com/docs/lighthouse/performance/interactive/).",
+          "score": 0.94,
+          "pages": [
+            "/",
+            "/wiki"
+          ]
+        },
+        {
+          "category": "performance",
+          "severity": "critical",
+          "title": "Largest Contentful Paint element",
+          "description": "This is the largest contentful element painted within the viewport. [Learn more about the Largest Contentful Paint element](https://developer.chrome.com/docs/lighthouse/performance/lighthouse-largest-contentful-paint/)",
+          "score": 0,
+          "pages": [
+            "/",
+            "/wiki"
+          ]
+        },
+        {
+          "category": "accessibility",
+          "severity": "critical",
+          "title": "Background and foreground colors do not have a sufficient contrast ratio.",
+          "description": "Low-contrast text is difficult or impossible for many users to read. [Learn how to provide sufficient color contrast](https://dequeuniversity.com/rules/axe/4.10/color-contrast).",
+          "score": 0,
+          "pages": [
+            "/",
+            "/wiki"
+          ]
+        },
+        {
+          "category": "accessibility",
+          "severity": "critical",
+          "title": "Heading elements are not in a sequentially-descending order",
+          "description": "Properly ordered headings that do not skip levels convey the semantic structure of the page, making it easier to navigate and understand when using assistive technologies. [Learn more about heading order](https://dequeuniversity.com/rules/axe/4.10/heading-order).",
+          "score": 0,
+          "pages": [
+            "/"
+          ]
+        },
+        {
+          "category": "performance",
+          "severity": "high",
+          "title": "Eliminate render-blocking resources",
+          "description": "Resources are blocking the first paint of your page. Consider delivering critical JS/CSS inline and deferring all non-critical JS/styles. [Learn how to eliminate render-blocking resources](https://developer.chrome.com/docs/lighthouse/performance/render-blocking-resources/).",
+          "score": 0.5,
+          "pages": [
+            "/",
+            "/wiki"
+          ]
+        },
+        {
+          "category": "performance",
+          "severity": "critical",
+          "title": "Reduce unused JavaScript",
+          "description": "Reduce unused JavaScript and defer loading scripts until they are required to decrease bytes consumed by network activity. [Learn how to reduce unused JavaScript](https://developer.chrome.com/docs/lighthouse/performance/unused-javascript/).",
+          "score": 0,
+          "pages": [
+            "/",
+            "/wiki"
+          ]
+        },
+        {
+          "category": "performance",
+          "severity": "critical",
+          "title": "Avoid serving legacy JavaScript to modern browsers",
+          "description": "Polyfills and transforms enable legacy browsers to use new JavaScript features. However, many aren't necessary for modern browsers. Consider modifying your JavaScript build process to not transpile [Baseline](https://web.dev/baseline) features, unless you know you must support legacy browsers. [Learn why most sites can deploy ES6+ code without transpiling](https://philipwalton.com/articles/the-state-of-es5-on-the-web/)",
+          "score": 0,
+          "pages": [
+            "/",
+            "/wiki"
+          ]
+        },
+        {
+          "category": "performance",
+          "severity": "critical",
+          "title": "Forced reflow",
+          "description": "A forced reflow occurs when JavaScript queries geometric properties (such as offsetWidth) after styles have been invalidated by a change to the DOM state. This can result in poor performance. Learn more about [forced reflows](https://developers.google.com/web/fundamentals/performance/rendering/avoid-large-complex-layouts-and-layout-thrashing#avoid-forced-synchronous-layouts) and possible mitigations.",
+          "score": 0,
+          "pages": [
+            "/",
+            "/wiki"
+          ]
+        },
+        {
+          "category": "performance",
+          "severity": "critical",
+          "title": "Legacy JavaScript",
+          "description": "Polyfills and transforms enable older browsers to use new JavaScript features. However, many aren't necessary for modern browsers. Consider modifying your JavaScript build process to not transpile [Baseline](https://web.dev/articles/baseline-and-polyfills) features, unless you know you must support older browsers. [Learn why most sites can deploy ES6+ code without transpiling](https://philipwalton.com/articles/the-state-of-es5-on-the-web/)",
+          "score": 0,
+          "pages": [
+            "/",
+            "/wiki"
+          ]
+        },
+        {
+          "category": "performance",
+          "severity": "critical",
+          "title": "Network dependency tree",
+          "description": "[Avoid chaining critical requests](https://developer.chrome.com/docs/lighthouse/performance/critical-request-chains) by reducing the length of chains, reducing the download size of resources, or deferring the download of unnecessary resources to improve page load.",
+          "score": 0,
+          "pages": [
+            "/",
+            "/wiki"
+          ]
+        },
+        {
+          "category": "performance",
+          "severity": "critical",
+          "title": "Render blocking requests",
+          "description": "Requests are blocking the page's initial render, which may delay LCP. [Deferring or inlining](https://web.dev/learn/performance/understanding-the-critical-path#render-blocking_resources) can move these network requests out of the critical path.",
+          "score": 0,
+          "pages": [
+            "/",
+            "/wiki"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "/wiki",
+      "url": "https://wko-beratungsfoerderung.kiautomatisierung.info/wiki",
+      "scores": {
+        "performance": 0.89,
+        "accessibility": 0.96,
+        "bestPractices": 1,
+        "seo": 1
+      },
+      "metrics": {
+        "lcp": 1981.2179999999998,
+        "cls": 0,
+        "tbt": 24,
+        "fcp": 921.218,
+        "si": 1084.1124739975228,
+        "tti": 2035.668
+      },
+      "issues": [
+        {
+          "category": "performance",
+          "severity": "low",
+          "title": "First Contentful Paint",
+          "description": "First Contentful Paint marks the time at which the first text or image is painted. [Learn more about the First Contentful Paint metric](https://developer.chrome.com/docs/lighthouse/performance/first-contentful-paint/).",
+          "score": 0.9,
+          "pages": [
+            "/wiki"
+          ]
+        },
+        {
+          "category": "performance",
+          "severity": "high",
+          "title": "Largest Contentful Paint",
+          "description": "Largest Contentful Paint marks the time at which the largest text or image is painted. [Learn more about the Largest Contentful Paint metric](https://developer.chrome.com/docs/lighthouse/performance/lighthouse-largest-contentful-paint/)",
+          "score": 0.63,
+          "pages": [
+            "/wiki"
+          ]
+        },
+        {
+          "category": "performance",
+          "severity": "low",
+          "title": "Speed Index",
+          "description": "Speed Index shows how quickly the contents of a page are visibly populated. [Learn more about the Speed Index metric](https://developer.chrome.com/docs/lighthouse/performance/speed-index/).",
+          "score": 0.95,
+          "pages": [
+            "/wiki"
+          ]
+        },
+        {
+          "category": "performance",
+          "severity": "low",
+          "title": "Max Potential First Input Delay",
+          "description": "The maximum potential First Input Delay that your users could experience is the duration of the longest task. [Learn more about the Maximum Potential First Input Delay metric](https://developer.chrome.com/docs/lighthouse/performance/lighthouse-max-potential-fid/).",
+          "score": 0.97,
+          "pages": [
+            "/wiki"
+          ]
+        },
+        {
+          "category": "performance",
+          "severity": "low",
+          "title": "Time to Interactive",
+          "description": "Time to Interactive is the amount of time it takes for the page to become fully interactive. [Learn more about the Time to Interactive metric](https://developer.chrome.com/docs/lighthouse/performance/interactive/).",
+          "score": 0.95,
+          "pages": [
+            "/wiki"
+          ]
+        },
+        {
+          "category": "performance",
+          "severity": "critical",
+          "title": "Largest Contentful Paint element",
+          "description": "This is the largest contentful element painted within the viewport. [Learn more about the Largest Contentful Paint element](https://developer.chrome.com/docs/lighthouse/performance/lighthouse-largest-contentful-paint/)",
+          "score": 0,
+          "pages": [
+            "/wiki"
+          ]
+        },
+        {
+          "category": "accessibility",
+          "severity": "critical",
+          "title": "Background and foreground colors do not have a sufficient contrast ratio.",
+          "description": "Low-contrast text is difficult or impossible for many users to read. [Learn how to provide sufficient color contrast](https://dequeuniversity.com/rules/axe/4.10/color-contrast).",
+          "score": 0,
+          "pages": [
+            "/wiki"
+          ]
+        },
+        {
+          "category": "performance",
+          "severity": "high",
+          "title": "Eliminate render-blocking resources",
+          "description": "Resources are blocking the first paint of your page. Consider delivering critical JS/CSS inline and deferring all non-critical JS/styles. [Learn how to eliminate render-blocking resources](https://developer.chrome.com/docs/lighthouse/performance/render-blocking-resources/).",
+          "score": 0.5,
+          "pages": [
+            "/wiki"
+          ]
+        },
+        {
+          "category": "performance",
+          "severity": "critical",
+          "title": "Reduce unused JavaScript",
+          "description": "Reduce unused JavaScript and defer loading scripts until they are required to decrease bytes consumed by network activity. [Learn how to reduce unused JavaScript](https://developer.chrome.com/docs/lighthouse/performance/unused-javascript/).",
+          "score": 0,
+          "pages": [
+            "/wiki"
+          ]
+        },
+        {
+          "category": "performance",
+          "severity": "critical",
+          "title": "Avoid serving legacy JavaScript to modern browsers",
+          "description": "Polyfills and transforms enable legacy browsers to use new JavaScript features. However, many aren't necessary for modern browsers. Consider modifying your JavaScript build process to not transpile [Baseline](https://web.dev/baseline) features, unless you know you must support legacy browsers. [Learn why most sites can deploy ES6+ code without transpiling](https://philipwalton.com/articles/the-state-of-es5-on-the-web/)",
+          "score": 0,
+          "pages": [
+            "/wiki"
+          ]
+        },
+        {
+          "category": "performance",
+          "severity": "critical",
+          "title": "Forced reflow",
+          "description": "A forced reflow occurs when JavaScript queries geometric properties (such as offsetWidth) after styles have been invalidated by a change to the DOM state. This can result in poor performance. Learn more about [forced reflows](https://developers.google.com/web/fundamentals/performance/rendering/avoid-large-complex-layouts-and-layout-thrashing#avoid-forced-synchronous-layouts) and possible mitigations.",
+          "score": 0,
+          "pages": [
+            "/wiki"
+          ]
+        },
+        {
+          "category": "performance",
+          "severity": "critical",
+          "title": "Legacy JavaScript",
+          "description": "Polyfills and transforms enable older browsers to use new JavaScript features. However, many aren't necessary for modern browsers. Consider modifying your JavaScript build process to not transpile [Baseline](https://web.dev/articles/baseline-and-polyfills) features, unless you know you must support older browsers. [Learn why most sites can deploy ES6+ code without transpiling](https://philipwalton.com/articles/the-state-of-es5-on-the-web/)",
+          "score": 0,
+          "pages": [
+            "/wiki"
+          ]
+        },
+        {
+          "category": "performance",
+          "severity": "critical",
+          "title": "Network dependency tree",
+          "description": "[Avoid chaining critical requests](https://developer.chrome.com/docs/lighthouse/performance/critical-request-chains) by reducing the length of chains, reducing the download size of resources, or deferring the download of unnecessary resources to improve page load.",
+          "score": 0,
+          "pages": [
+            "/wiki"
+          ]
+        },
+        {
+          "category": "performance",
+          "severity": "critical",
+          "title": "Render blocking requests",
+          "description": "Requests are blocking the page's initial render, which may delay LCP. [Deferring or inlining](https://web.dev/learn/performance/understanding-the-critical-path#render-blocking_resources) can move these network requests out of the critical path.",
+          "score": 0,
+          "pages": [
+            "/wiki"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "/wiki/wiki/04-deliverables",
+      "url": "https://wko-beratungsfoerderung.kiautomatisierung.info/wiki/wiki/04-deliverables",
+      "scores": {
+        "performance": 0.93,
+        "accessibility": 0.92,
+        "bestPractices": 1,
+        "seo": 1
+      },
+      "metrics": {
+        "lcp": 1567.9953,
+        "cls": 0,
+        "tbt": 0,
+        "fcp": 925.9953,
+        "si": 925.9953,
+        "tti": 1567.9953
+      },
+      "issues": [
+        {
+          "category": "performance",
+          "severity": "low",
+          "title": "First Contentful Paint",
+          "description": "First Contentful Paint marks the time at which the first text or image is painted. [Learn more about the First Contentful Paint metric](https://developer.chrome.com/docs/lighthouse/performance/first-contentful-paint/).",
+          "score": 0.9,
+          "pages": [
+            "/wiki/wiki/04-deliverables"
+          ]
+        },
+        {
+          "category": "performance",
+          "severity": "medium",
+          "title": "Largest Contentful Paint",
+          "description": "Largest Contentful Paint marks the time at which the largest text or image is painted. [Learn more about the Largest Contentful Paint metric](https://developer.chrome.com/docs/lighthouse/performance/lighthouse-largest-contentful-paint/)",
+          "score": 0.78,
+          "pages": [
+            "/wiki/wiki/04-deliverables"
+          ]
+        },
+        {
+          "category": "performance",
+          "severity": "low",
+          "title": "Speed Index",
+          "description": "Speed Index shows how quickly the contents of a page are visibly populated. [Learn more about the Speed Index metric](https://developer.chrome.com/docs/lighthouse/performance/speed-index/).",
+          "score": 0.98,
+          "pages": [
+            "/wiki/wiki/04-deliverables"
+          ]
+        },
+        {
+          "category": "performance",
+          "severity": "low",
+          "title": "Time to Interactive",
+          "description": "Time to Interactive is the amount of time it takes for the page to become fully interactive. [Learn more about the Time to Interactive metric](https://developer.chrome.com/docs/lighthouse/performance/interactive/).",
+          "score": 0.99,
+          "pages": [
+            "/wiki/wiki/04-deliverables"
+          ]
+        },
+        {
+          "category": "performance",
+          "severity": "critical",
+          "title": "Largest Contentful Paint element",
+          "description": "This is the largest contentful element painted within the viewport. [Learn more about the Largest Contentful Paint element](https://developer.chrome.com/docs/lighthouse/performance/lighthouse-largest-contentful-paint/)",
+          "score": 0,
+          "pages": [
+            "/wiki/wiki/04-deliverables"
+          ]
+        },
+        {
+          "category": "accessibility",
+          "severity": "critical",
+          "title": "Background and foreground colors do not have a sufficient contrast ratio.",
+          "description": "Low-contrast text is difficult or impossible for many users to read. [Learn how to provide sufficient color contrast](https://dequeuniversity.com/rules/axe/4.10/color-contrast).",
+          "score": 0,
+          "pages": [
+            "/wiki/wiki/04-deliverables"
+          ]
+        },
+        {
+          "category": "accessibility",
+          "severity": "critical",
+          "title": "Form elements do not have associated labels",
+          "description": "Labels ensure that form controls are announced properly by assistive technologies, like screen readers. [Learn more about form element labels](https://dequeuniversity.com/rules/axe/4.10/label).",
+          "score": 0,
+          "pages": [
+            "/wiki/wiki/04-deliverables",
+            "/wiki/wiki/02-process"
+          ]
+        },
+        {
+          "category": "performance",
+          "severity": "high",
+          "title": "Eliminate render-blocking resources",
+          "description": "Resources are blocking the first paint of your page. Consider delivering critical JS/CSS inline and deferring all non-critical JS/styles. [Learn how to eliminate render-blocking resources](https://developer.chrome.com/docs/lighthouse/performance/render-blocking-resources/).",
+          "score": 0.5,
+          "pages": [
+            "/wiki/wiki/04-deliverables"
+          ]
+        },
+        {
+          "category": "performance",
+          "severity": "critical",
+          "title": "Reduce unused JavaScript",
+          "description": "Reduce unused JavaScript and defer loading scripts until they are required to decrease bytes consumed by network activity. [Learn how to reduce unused JavaScript](https://developer.chrome.com/docs/lighthouse/performance/unused-javascript/).",
+          "score": 0,
+          "pages": [
+            "/wiki/wiki/04-deliverables"
+          ]
+        },
+        {
+          "category": "performance",
+          "severity": "high",
+          "title": "Avoid serving legacy JavaScript to modern browsers",
+          "description": "Polyfills and transforms enable legacy browsers to use new JavaScript features. However, many aren't necessary for modern browsers. Consider modifying your JavaScript build process to not transpile [Baseline](https://web.dev/baseline) features, unless you know you must support legacy browsers. [Learn why most sites can deploy ES6+ code without transpiling](https://philipwalton.com/articles/the-state-of-es5-on-the-web/)",
+          "score": 0.5,
+          "pages": [
+            "/wiki/wiki/04-deliverables"
+          ]
+        },
+        {
+          "category": "performance",
+          "severity": "critical",
+          "title": "Forced reflow",
+          "description": "A forced reflow occurs when JavaScript queries geometric properties (such as offsetWidth) after styles have been invalidated by a change to the DOM state. This can result in poor performance. Learn more about [forced reflows](https://developers.google.com/web/fundamentals/performance/rendering/avoid-large-complex-layouts-and-layout-thrashing#avoid-forced-synchronous-layouts) and possible mitigations.",
+          "score": 0,
+          "pages": [
+            "/wiki/wiki/04-deliverables"
+          ]
+        },
+        {
+          "category": "performance",
+          "severity": "high",
+          "title": "Legacy JavaScript",
+          "description": "Polyfills and transforms enable older browsers to use new JavaScript features. However, many aren't necessary for modern browsers. Consider modifying your JavaScript build process to not transpile [Baseline](https://web.dev/articles/baseline-and-polyfills) features, unless you know you must support older browsers. [Learn why most sites can deploy ES6+ code without transpiling](https://philipwalton.com/articles/the-state-of-es5-on-the-web/)",
+          "score": 0.5,
+          "pages": [
+            "/wiki/wiki/04-deliverables"
+          ]
+        },
+        {
+          "category": "performance",
+          "severity": "critical",
+          "title": "Network dependency tree",
+          "description": "[Avoid chaining critical requests](https://developer.chrome.com/docs/lighthouse/performance/critical-request-chains) by reducing the length of chains, reducing the download size of resources, or deferring the download of unnecessary resources to improve page load.",
+          "score": 0,
+          "pages": [
+            "/wiki/wiki/04-deliverables"
+          ]
+        },
+        {
+          "category": "performance",
+          "severity": "critical",
+          "title": "Render blocking requests",
+          "description": "Requests are blocking the page's initial render, which may delay LCP. [Deferring or inlining](https://web.dev/learn/performance/understanding-the-critical-path#render-blocking_resources) can move these network requests out of the critical path.",
+          "score": 0,
+          "pages": [
+            "/wiki/wiki/04-deliverables"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "/wiki/wiki/03-requirements",
+      "url": "https://wko-beratungsfoerderung.kiautomatisierung.info/wiki/wiki/03-requirements",
+      "scores": {
+        "performance": 0.93,
+        "accessibility": 0.96,
+        "bestPractices": 1,
+        "seo": 1
+      },
+      "metrics": {
+        "lcp": 1582.7413999999999,
+        "cls": 0,
+        "tbt": 2.5,
+        "fcp": 927.7414,
+        "si": 927.7414,
+        "tti": 1665.2413999999999
+      },
+      "issues": [
+        {
+          "category": "performance",
+          "severity": "low",
+          "title": "First Contentful Paint",
+          "description": "First Contentful Paint marks the time at which the first text or image is painted. [Learn more about the First Contentful Paint metric](https://developer.chrome.com/docs/lighthouse/performance/first-contentful-paint/).",
+          "score": 0.9,
+          "pages": [
+            "/wiki/wiki/03-requirements"
+          ]
+        },
+        {
+          "category": "performance",
+          "severity": "medium",
+          "title": "Largest Contentful Paint",
+          "description": "Largest Contentful Paint marks the time at which the largest text or image is painted. [Learn more about the Largest Contentful Paint metric](https://developer.chrome.com/docs/lighthouse/performance/lighthouse-largest-contentful-paint/)",
+          "score": 0.77,
+          "pages": [
+            "/wiki/wiki/03-requirements"
+          ]
+        },
+        {
+          "category": "performance",
+          "severity": "low",
+          "title": "Speed Index",
+          "description": "Speed Index shows how quickly the contents of a page are visibly populated. [Learn more about the Speed Index metric](https://developer.chrome.com/docs/lighthouse/performance/speed-index/).",
+          "score": 0.98,
+          "pages": [
+            "/wiki/wiki/03-requirements"
+          ]
+        },
+        {
+          "category": "performance",
+          "severity": "low",
+          "title": "Time to Interactive",
+          "description": "Time to Interactive is the amount of time it takes for the page to become fully interactive. [Learn more about the Time to Interactive metric](https://developer.chrome.com/docs/lighthouse/performance/interactive/).",
+          "score": 0.98,
+          "pages": [
+            "/wiki/wiki/03-requirements"
+          ]
+        },
+        {
+          "category": "performance",
+          "severity": "critical",
+          "title": "Largest Contentful Paint element",
+          "description": "This is the largest contentful element painted within the viewport. [Learn more about the Largest Contentful Paint element](https://developer.chrome.com/docs/lighthouse/performance/lighthouse-largest-contentful-paint/)",
+          "score": 0,
+          "pages": [
+            "/wiki/wiki/03-requirements"
+          ]
+        },
+        {
+          "category": "accessibility",
+          "severity": "critical",
+          "title": "Background and foreground colors do not have a sufficient contrast ratio.",
+          "description": "Low-contrast text is difficult or impossible for many users to read. [Learn how to provide sufficient color contrast](https://dequeuniversity.com/rules/axe/4.10/color-contrast).",
+          "score": 0,
+          "pages": [
+            "/wiki/wiki/03-requirements"
+          ]
+        },
+        {
+          "category": "performance",
+          "severity": "high",
+          "title": "Eliminate render-blocking resources",
+          "description": "Resources are blocking the first paint of your page. Consider delivering critical JS/CSS inline and deferring all non-critical JS/styles. [Learn how to eliminate render-blocking resources](https://developer.chrome.com/docs/lighthouse/performance/render-blocking-resources/).",
+          "score": 0.5,
+          "pages": [
+            "/wiki/wiki/03-requirements"
+          ]
+        },
+        {
+          "category": "performance",
+          "severity": "critical",
+          "title": "Reduce unused JavaScript",
+          "description": "Reduce unused JavaScript and defer loading scripts until they are required to decrease bytes consumed by network activity. [Learn how to reduce unused JavaScript](https://developer.chrome.com/docs/lighthouse/performance/unused-javascript/).",
+          "score": 0,
+          "pages": [
+            "/wiki/wiki/03-requirements"
+          ]
+        },
+        {
+          "category": "performance",
+          "severity": "high",
+          "title": "Avoid serving legacy JavaScript to modern browsers",
+          "description": "Polyfills and transforms enable legacy browsers to use new JavaScript features. However, many aren't necessary for modern browsers. Consider modifying your JavaScript build process to not transpile [Baseline](https://web.dev/baseline) features, unless you know you must support legacy browsers. [Learn why most sites can deploy ES6+ code without transpiling](https://philipwalton.com/articles/the-state-of-es5-on-the-web/)",
+          "score": 0.5,
+          "pages": [
+            "/wiki/wiki/03-requirements"
+          ]
+        },
+        {
+          "category": "performance",
+          "severity": "high",
+          "title": "Legacy JavaScript",
+          "description": "Polyfills and transforms enable older browsers to use new JavaScript features. However, many aren't necessary for modern browsers. Consider modifying your JavaScript build process to not transpile [Baseline](https://web.dev/articles/baseline-and-polyfills) features, unless you know you must support older browsers. [Learn why most sites can deploy ES6+ code without transpiling](https://philipwalton.com/articles/the-state-of-es5-on-the-web/)",
+          "score": 0.5,
+          "pages": [
+            "/wiki/wiki/03-requirements"
+          ]
+        },
+        {
+          "category": "performance",
+          "severity": "critical",
+          "title": "Network dependency tree",
+          "description": "[Avoid chaining critical requests](https://developer.chrome.com/docs/lighthouse/performance/critical-request-chains) by reducing the length of chains, reducing the download size of resources, or deferring the download of unnecessary resources to improve page load.",
+          "score": 0,
+          "pages": [
+            "/wiki/wiki/03-requirements"
+          ]
+        },
+        {
+          "category": "performance",
+          "severity": "critical",
+          "title": "Render blocking requests",
+          "description": "Requests are blocking the page's initial render, which may delay LCP. [Deferring or inlining](https://web.dev/learn/performance/understanding-the-critical-path#render-blocking_resources) can move these network requests out of the critical path.",
+          "score": 0,
+          "pages": [
+            "/wiki/wiki/03-requirements"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "/wiki/wiki/02-process",
+      "url": "https://wko-beratungsfoerderung.kiautomatisierung.info/wiki/wiki/02-process",
+      "scores": {
+        "performance": 0.93,
+        "accessibility": 0.92,
+        "bestPractices": 1,
+        "seo": 1
+      },
+      "metrics": {
+        "lcp": 1589.3305,
+        "cls": 0,
+        "tbt": 12,
+        "fcp": 927.3305,
+        "si": 927.3305,
+        "tti": 1589.3305
+      },
+      "issues": [
+        {
+          "category": "performance",
+          "severity": "low",
+          "title": "First Contentful Paint",
+          "description": "First Contentful Paint marks the time at which the first text or image is painted. [Learn more about the First Contentful Paint metric](https://developer.chrome.com/docs/lighthouse/performance/first-contentful-paint/).",
+          "score": 0.9,
+          "pages": [
+            "/wiki/wiki/02-process"
+          ]
+        },
+        {
+          "category": "performance",
+          "severity": "medium",
+          "title": "Largest Contentful Paint",
+          "description": "Largest Contentful Paint marks the time at which the largest text or image is painted. [Learn more about the Largest Contentful Paint metric](https://developer.chrome.com/docs/lighthouse/performance/lighthouse-largest-contentful-paint/)",
+          "score": 0.77,
+          "pages": [
+            "/wiki/wiki/02-process"
+          ]
+        },
+        {
+          "category": "performance",
+          "severity": "low",
+          "title": "Speed Index",
+          "description": "Speed Index shows how quickly the contents of a page are visibly populated. [Learn more about the Speed Index metric](https://developer.chrome.com/docs/lighthouse/performance/speed-index/).",
+          "score": 0.98,
+          "pages": [
+            "/wiki/wiki/02-process"
+          ]
+        },
+        {
+          "category": "performance",
+          "severity": "low",
+          "title": "Time to Interactive",
+          "description": "Time to Interactive is the amount of time it takes for the page to become fully interactive. [Learn more about the Time to Interactive metric](https://developer.chrome.com/docs/lighthouse/performance/interactive/).",
+          "score": 0.99,
+          "pages": [
+            "/wiki/wiki/02-process"
+          ]
+        },
+        {
+          "category": "performance",
+          "severity": "critical",
+          "title": "Largest Contentful Paint element",
+          "description": "This is the largest contentful element painted within the viewport. [Learn more about the Largest Contentful Paint element](https://developer.chrome.com/docs/lighthouse/performance/lighthouse-largest-contentful-paint/)",
+          "score": 0,
+          "pages": [
+            "/wiki/wiki/02-process"
+          ]
+        },
+        {
+          "category": "accessibility",
+          "severity": "critical",
+          "title": "Background and foreground colors do not have a sufficient contrast ratio.",
+          "description": "Low-contrast text is difficult or impossible for many users to read. [Learn how to provide sufficient color contrast](https://dequeuniversity.com/rules/axe/4.10/color-contrast).",
+          "score": 0,
+          "pages": [
+            "/wiki/wiki/02-process"
+          ]
+        },
+        {
+          "category": "accessibility",
+          "severity": "critical",
+          "title": "Form elements do not have associated labels",
+          "description": "Labels ensure that form controls are announced properly by assistive technologies, like screen readers. [Learn more about form element labels](https://dequeuniversity.com/rules/axe/4.10/label).",
+          "score": 0,
+          "pages": [
+            "/wiki/wiki/02-process"
+          ]
+        },
+        {
+          "category": "performance",
+          "severity": "high",
+          "title": "Eliminate render-blocking resources",
+          "description": "Resources are blocking the first paint of your page. Consider delivering critical JS/CSS inline and deferring all non-critical JS/styles. [Learn how to eliminate render-blocking resources](https://developer.chrome.com/docs/lighthouse/performance/render-blocking-resources/).",
+          "score": 0.5,
+          "pages": [
+            "/wiki/wiki/02-process"
+          ]
+        },
+        {
+          "category": "performance",
+          "severity": "critical",
+          "title": "Reduce unused JavaScript",
+          "description": "Reduce unused JavaScript and defer loading scripts until they are required to decrease bytes consumed by network activity. [Learn how to reduce unused JavaScript](https://developer.chrome.com/docs/lighthouse/performance/unused-javascript/).",
+          "score": 0,
+          "pages": [
+            "/wiki/wiki/02-process"
+          ]
+        },
+        {
+          "category": "performance",
+          "severity": "high",
+          "title": "Avoid serving legacy JavaScript to modern browsers",
+          "description": "Polyfills and transforms enable legacy browsers to use new JavaScript features. However, many aren't necessary for modern browsers. Consider modifying your JavaScript build process to not transpile [Baseline](https://web.dev/baseline) features, unless you know you must support legacy browsers. [Learn why most sites can deploy ES6+ code without transpiling](https://philipwalton.com/articles/the-state-of-es5-on-the-web/)",
+          "score": 0.5,
+          "pages": [
+            "/wiki/wiki/02-process"
+          ]
+        },
+        {
+          "category": "performance",
+          "severity": "high",
+          "title": "Legacy JavaScript",
+          "description": "Polyfills and transforms enable older browsers to use new JavaScript features. However, many aren't necessary for modern browsers. Consider modifying your JavaScript build process to not transpile [Baseline](https://web.dev/articles/baseline-and-polyfills) features, unless you know you must support older browsers. [Learn why most sites can deploy ES6+ code without transpiling](https://philipwalton.com/articles/the-state-of-es5-on-the-web/)",
+          "score": 0.5,
+          "pages": [
+            "/wiki/wiki/02-process"
+          ]
+        },
+        {
+          "category": "performance",
+          "severity": "critical",
+          "title": "Network dependency tree",
+          "description": "[Avoid chaining critical requests](https://developer.chrome.com/docs/lighthouse/performance/critical-request-chains) by reducing the length of chains, reducing the download size of resources, or deferring the download of unnecessary resources to improve page load.",
+          "score": 0,
+          "pages": [
+            "/wiki/wiki/02-process"
+          ]
+        },
+        {
+          "category": "performance",
+          "severity": "critical",
+          "title": "Render blocking requests",
+          "description": "Requests are blocking the page's initial render, which may delay LCP. [Deferring or inlining](https://web.dev/learn/performance/understanding-the-critical-path#render-blocking_resources) can move these network requests out of the critical path.",
+          "score": 0,
+          "pages": [
+            "/wiki/wiki/02-process"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "/wiki/wiki/01-funding-areas",
+      "url": "https://wko-beratungsfoerderung.kiautomatisierung.info/wiki/wiki/01-funding-areas",
+      "scores": {
+        "performance": 0.92,
+        "accessibility": 0.96,
+        "bestPractices": 1,
+        "seo": 1
+      },
+      "metrics": {
+        "lcp": 1710.1724,
+        "cls": 0,
+        "tbt": 0,
+        "fcp": 926.1724,
+        "si": 926.1724,
+        "tti": 1710.1724
+      },
+      "issues": [
+        {
+          "category": "performance",
+          "severity": "low",
+          "title": "First Contentful Paint",
+          "description": "First Contentful Paint marks the time at which the first text or image is painted. [Learn more about the First Contentful Paint metric](https://developer.chrome.com/docs/lighthouse/performance/first-contentful-paint/).",
+          "score": 0.9,
+          "pages": [
+            "/wiki/wiki/01-funding-areas"
+          ]
+        },
+        {
+          "category": "performance",
+          "severity": "medium",
+          "title": "Largest Contentful Paint",
+          "description": "Largest Contentful Paint marks the time at which the largest text or image is painted. [Learn more about the Largest Contentful Paint metric](https://developer.chrome.com/docs/lighthouse/performance/lighthouse-largest-contentful-paint/)",
+          "score": 0.73,
+          "pages": [
+            "/wiki/wiki/01-funding-areas"
+          ]
+        },
+        {
+          "category": "performance",
+          "severity": "low",
+          "title": "Speed Index",
+          "description": "Speed Index shows how quickly the contents of a page are visibly populated. [Learn more about the Speed Index metric](https://developer.chrome.com/docs/lighthouse/performance/speed-index/).",
+          "score": 0.98,
+          "pages": [
+            "/wiki/wiki/01-funding-areas"
+          ]
+        },
+        {
+          "category": "performance",
+          "severity": "low",
+          "title": "Time to Interactive",
+          "description": "Time to Interactive is the amount of time it takes for the page to become fully interactive. [Learn more about the Time to Interactive metric](https://developer.chrome.com/docs/lighthouse/performance/interactive/).",
+          "score": 0.98,
+          "pages": [
+            "/wiki/wiki/01-funding-areas"
+          ]
+        },
+        {
+          "category": "performance",
+          "severity": "critical",
+          "title": "Largest Contentful Paint element",
+          "description": "This is the largest contentful element painted within the viewport. [Learn more about the Largest Contentful Paint element](https://developer.chrome.com/docs/lighthouse/performance/lighthouse-largest-contentful-paint/)",
+          "score": 0,
+          "pages": [
+            "/wiki/wiki/01-funding-areas"
+          ]
+        },
+        {
+          "category": "accessibility",
+          "severity": "critical",
+          "title": "Background and foreground colors do not have a sufficient contrast ratio.",
+          "description": "Low-contrast text is difficult or impossible for many users to read. [Learn how to provide sufficient color contrast](https://dequeuniversity.com/rules/axe/4.10/color-contrast).",
+          "score": 0,
+          "pages": [
+            "/wiki/wiki/01-funding-areas"
+          ]
+        },
+        {
+          "category": "performance",
+          "severity": "high",
+          "title": "Eliminate render-blocking resources",
+          "description": "Resources are blocking the first paint of your page. Consider delivering critical JS/CSS inline and deferring all non-critical JS/styles. [Learn how to eliminate render-blocking resources](https://developer.chrome.com/docs/lighthouse/performance/render-blocking-resources/).",
+          "score": 0.5,
+          "pages": [
+            "/wiki/wiki/01-funding-areas"
+          ]
+        },
+        {
+          "category": "performance",
+          "severity": "high",
+          "title": "Reduce unused JavaScript",
+          "description": "Reduce unused JavaScript and defer loading scripts until they are required to decrease bytes consumed by network activity. [Learn how to reduce unused JavaScript](https://developer.chrome.com/docs/lighthouse/performance/unused-javascript/).",
+          "score": 0.5,
+          "pages": [
+            "/wiki/wiki/01-funding-areas"
+          ]
+        },
+        {
+          "category": "performance",
+          "severity": "high",
+          "title": "Avoid serving legacy JavaScript to modern browsers",
+          "description": "Polyfills and transforms enable legacy browsers to use new JavaScript features. However, many aren't necessary for modern browsers. Consider modifying your JavaScript build process to not transpile [Baseline](https://web.dev/baseline) features, unless you know you must support legacy browsers. [Learn why most sites can deploy ES6+ code without transpiling](https://philipwalton.com/articles/the-state-of-es5-on-the-web/)",
+          "score": 0.5,
+          "pages": [
+            "/wiki/wiki/01-funding-areas"
+          ]
+        },
+        {
+          "category": "performance",
+          "severity": "high",
+          "title": "Legacy JavaScript",
+          "description": "Polyfills and transforms enable older browsers to use new JavaScript features. However, many aren't necessary for modern browsers. Consider modifying your JavaScript build process to not transpile [Baseline](https://web.dev/articles/baseline-and-polyfills) features, unless you know you must support older browsers. [Learn why most sites can deploy ES6+ code without transpiling](https://philipwalton.com/articles/the-state-of-es5-on-the-web/)",
+          "score": 0.5,
+          "pages": [
+            "/wiki/wiki/01-funding-areas"
+          ]
+        },
+        {
+          "category": "performance",
+          "severity": "critical",
+          "title": "Network dependency tree",
+          "description": "[Avoid chaining critical requests](https://developer.chrome.com/docs/lighthouse/performance/critical-request-chains) by reducing the length of chains, reducing the download size of resources, or deferring the download of unnecessary resources to improve page load.",
+          "score": 0,
+          "pages": [
+            "/wiki/wiki/01-funding-areas"
+          ]
+        },
+        {
+          "category": "performance",
+          "severity": "critical",
+          "title": "Render blocking requests",
+          "description": "Requests are blocking the page's initial render, which may delay LCP. [Deferring or inlining](https://web.dev/learn/performance/understanding-the-critical-path#render-blocking_resources) can move these network requests out of the critical path.",
+          "score": 0,
+          "pages": [
+            "/wiki/wiki/01-funding-areas"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "/wiki/wiki/00-overview",
+      "url": "https://wko-beratungsfoerderung.kiautomatisierung.info/wiki/wiki/00-overview",
+      "scores": {
+        "performance": 0.93,
+        "accessibility": 0.96,
+        "bestPractices": 1,
+        "seo": 1
+      },
+      "metrics": {
+        "lcp": 1586.9094,
+        "cls": 0,
+        "tbt": 0,
+        "fcp": 932.9094,
+        "si": 993.204902001681,
+        "tti": 1586.9094
+      },
+      "issues": [
+        {
+          "category": "performance",
+          "severity": "low",
+          "title": "First Contentful Paint",
+          "description": "First Contentful Paint marks the time at which the first text or image is painted. [Learn more about the First Contentful Paint metric](https://developer.chrome.com/docs/lighthouse/performance/first-contentful-paint/).",
+          "score": 0.9,
+          "pages": [
+            "/wiki/wiki/00-overview"
+          ]
+        },
+        {
+          "category": "performance",
+          "severity": "medium",
+          "title": "Largest Contentful Paint",
+          "description": "Largest Contentful Paint marks the time at which the largest text or image is painted. [Learn more about the Largest Contentful Paint metric](https://developer.chrome.com/docs/lighthouse/performance/lighthouse-largest-contentful-paint/)",
+          "score": 0.77,
+          "pages": [
+            "/wiki/wiki/00-overview"
+          ]
+        },
+        {
+          "category": "performance",
+          "severity": "low",
+          "title": "Speed Index",
+          "description": "Speed Index shows how quickly the contents of a page are visibly populated. [Learn more about the Speed Index metric](https://developer.chrome.com/docs/lighthouse/performance/speed-index/).",
+          "score": 0.97,
+          "pages": [
+            "/wiki/wiki/00-overview"
+          ]
+        },
+        {
+          "category": "performance",
+          "severity": "low",
+          "title": "Time to Interactive",
+          "description": "Time to Interactive is the amount of time it takes for the page to become fully interactive. [Learn more about the Time to Interactive metric](https://developer.chrome.com/docs/lighthouse/performance/interactive/).",
+          "score": 0.99,
+          "pages": [
+            "/wiki/wiki/00-overview"
+          ]
+        },
+        {
+          "category": "performance",
+          "severity": "critical",
+          "title": "Largest Contentful Paint element",
+          "description": "This is the largest contentful element painted within the viewport. [Learn more about the Largest Contentful Paint element](https://developer.chrome.com/docs/lighthouse/performance/lighthouse-largest-contentful-paint/)",
+          "score": 0,
+          "pages": [
+            "/wiki/wiki/00-overview"
+          ]
+        },
+        {
+          "category": "accessibility",
+          "severity": "critical",
+          "title": "Background and foreground colors do not have a sufficient contrast ratio.",
+          "description": "Low-contrast text is difficult or impossible for many users to read. [Learn how to provide sufficient color contrast](https://dequeuniversity.com/rules/axe/4.10/color-contrast).",
+          "score": 0,
+          "pages": [
+            "/wiki/wiki/00-overview"
+          ]
+        },
+        {
+          "category": "performance",
+          "severity": "high",
+          "title": "Eliminate render-blocking resources",
+          "description": "Resources are blocking the first paint of your page. Consider delivering critical JS/CSS inline and deferring all non-critical JS/styles. [Learn how to eliminate render-blocking resources](https://developer.chrome.com/docs/lighthouse/performance/render-blocking-resources/).",
+          "score": 0.5,
+          "pages": [
+            "/wiki/wiki/00-overview"
+          ]
+        },
+        {
+          "category": "performance",
+          "severity": "high",
+          "title": "Reduce unused JavaScript",
+          "description": "Reduce unused JavaScript and defer loading scripts until they are required to decrease bytes consumed by network activity. [Learn how to reduce unused JavaScript](https://developer.chrome.com/docs/lighthouse/performance/unused-javascript/).",
+          "score": 0.5,
+          "pages": [
+            "/wiki/wiki/00-overview"
+          ]
+        },
+        {
+          "category": "performance",
+          "severity": "high",
+          "title": "Avoid serving legacy JavaScript to modern browsers",
+          "description": "Polyfills and transforms enable legacy browsers to use new JavaScript features. However, many aren't necessary for modern browsers. Consider modifying your JavaScript build process to not transpile [Baseline](https://web.dev/baseline) features, unless you know you must support legacy browsers. [Learn why most sites can deploy ES6+ code without transpiling](https://philipwalton.com/articles/the-state-of-es5-on-the-web/)",
+          "score": 0.5,
+          "pages": [
+            "/wiki/wiki/00-overview"
+          ]
+        },
+        {
+          "category": "performance",
+          "severity": "high",
+          "title": "Legacy JavaScript",
+          "description": "Polyfills and transforms enable older browsers to use new JavaScript features. However, many aren't necessary for modern browsers. Consider modifying your JavaScript build process to not transpile [Baseline](https://web.dev/articles/baseline-and-polyfills) features, unless you know you must support older browsers. [Learn why most sites can deploy ES6+ code without transpiling](https://philipwalton.com/articles/the-state-of-es5-on-the-web/)",
+          "score": 0.5,
+          "pages": [
+            "/wiki/wiki/00-overview"
+          ]
+        },
+        {
+          "category": "performance",
+          "severity": "critical",
+          "title": "Network dependency tree",
+          "description": "[Avoid chaining critical requests](https://developer.chrome.com/docs/lighthouse/performance/critical-request-chains) by reducing the length of chains, reducing the download size of resources, or deferring the download of unnecessary resources to improve page load.",
+          "score": 0,
+          "pages": [
+            "/wiki/wiki/00-overview"
+          ]
+        },
+        {
+          "category": "performance",
+          "severity": "critical",
+          "title": "Render blocking requests",
+          "description": "Requests are blocking the page's initial render, which may delay LCP. [Deferring or inlining](https://web.dev/learn/performance/understanding-the-critical-path#render-blocking_resources) can move these network requests out of the critical path.",
+          "score": 0,
+          "pages": [
+            "/wiki/wiki/00-overview"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "/wiki/raw/richtlinien-beratungsauftraege",
+      "url": "https://wko-beratungsfoerderung.kiautomatisierung.info/wiki/raw/richtlinien-beratungsauftraege",
+      "scores": {
+        "performance": 0.92,
+        "accessibility": 0.96,
+        "bestPractices": 1,
+        "seo": 1
+      },
+      "metrics": {
+        "lcp": 1683.1016,
+        "cls": 0,
+        "tbt": 43,
+        "fcp": 996.1016,
+        "si": 996.1016,
+        "tti": 1776.1016
+      },
+      "issues": [
+        {
+          "category": "performance",
+          "severity": "medium",
+          "title": "First Contentful Paint",
+          "description": "First Contentful Paint marks the time at which the first text or image is painted. [Learn more about the First Contentful Paint metric](https://developer.chrome.com/docs/lighthouse/performance/first-contentful-paint/).",
+          "score": 0.87,
+          "pages": [
+            "/wiki/raw/richtlinien-beratungsauftraege"
+          ]
+        },
+        {
+          "category": "performance",
+          "severity": "medium",
+          "title": "Largest Contentful Paint",
+          "description": "Largest Contentful Paint marks the time at which the largest text or image is painted. [Learn more about the Largest Contentful Paint metric](https://developer.chrome.com/docs/lighthouse/performance/lighthouse-largest-contentful-paint/)",
+          "score": 0.74,
+          "pages": [
+            "/wiki/raw/richtlinien-beratungsauftraege"
+          ]
+        },
+        {
+          "category": "performance",
+          "severity": "low",
+          "title": "Speed Index",
+          "description": "Speed Index shows how quickly the contents of a page are visibly populated. [Learn more about the Speed Index metric](https://developer.chrome.com/docs/lighthouse/performance/speed-index/).",
+          "score": 0.97,
+          "pages": [
+            "/wiki/raw/richtlinien-beratungsauftraege"
+          ]
+        },
+        {
+          "category": "performance",
+          "severity": "low",
+          "title": "Max Potential First Input Delay",
+          "description": "The maximum potential First Input Delay that your users could experience is the duration of the longest task. [Learn more about the Maximum Potential First Input Delay metric](https://developer.chrome.com/docs/lighthouse/performance/lighthouse-max-potential-fid/).",
+          "score": 0.97,
+          "pages": [
+            "/wiki/raw/richtlinien-beratungsauftraege"
+          ]
+        },
+        {
+          "category": "performance",
+          "severity": "low",
+          "title": "Time to Interactive",
+          "description": "Time to Interactive is the amount of time it takes for the page to become fully interactive. [Learn more about the Time to Interactive metric](https://developer.chrome.com/docs/lighthouse/performance/interactive/).",
+          "score": 0.98,
+          "pages": [
+            "/wiki/raw/richtlinien-beratungsauftraege"
+          ]
+        },
+        {
+          "category": "performance",
+          "severity": "critical",
+          "title": "Largest Contentful Paint element",
+          "description": "This is the largest contentful element painted within the viewport. [Learn more about the Largest Contentful Paint element](https://developer.chrome.com/docs/lighthouse/performance/lighthouse-largest-contentful-paint/)",
+          "score": 0,
+          "pages": [
+            "/wiki/raw/richtlinien-beratungsauftraege"
+          ]
+        },
+        {
+          "category": "accessibility",
+          "severity": "critical",
+          "title": "Background and foreground colors do not have a sufficient contrast ratio.",
+          "description": "Low-contrast text is difficult or impossible for many users to read. [Learn how to provide sufficient color contrast](https://dequeuniversity.com/rules/axe/4.10/color-contrast).",
+          "score": 0,
+          "pages": [
+            "/wiki/raw/richtlinien-beratungsauftraege"
+          ]
+        },
+        {
+          "category": "performance",
+          "severity": "critical",
+          "title": "Reduce unused JavaScript",
+          "description": "Reduce unused JavaScript and defer loading scripts until they are required to decrease bytes consumed by network activity. [Learn how to reduce unused JavaScript](https://developer.chrome.com/docs/lighthouse/performance/unused-javascript/).",
+          "score": 0,
+          "pages": [
+            "/wiki/raw/richtlinien-beratungsauftraege"
+          ]
+        },
+        {
+          "category": "performance",
+          "severity": "high",
+          "title": "Avoid serving legacy JavaScript to modern browsers",
+          "description": "Polyfills and transforms enable legacy browsers to use new JavaScript features. However, many aren't necessary for modern browsers. Consider modifying your JavaScript build process to not transpile [Baseline](https://web.dev/baseline) features, unless you know you must support legacy browsers. [Learn why most sites can deploy ES6+ code without transpiling](https://philipwalton.com/articles/the-state-of-es5-on-the-web/)",
+          "score": 0.5,
+          "pages": [
+            "/wiki/raw/richtlinien-beratungsauftraege"
+          ]
+        },
+        {
+          "category": "performance",
+          "severity": "high",
+          "title": "Legacy JavaScript",
+          "description": "Polyfills and transforms enable older browsers to use new JavaScript features. However, many aren't necessary for modern browsers. Consider modifying your JavaScript build process to not transpile [Baseline](https://web.dev/articles/baseline-and-polyfills) features, unless you know you must support older browsers. [Learn why most sites can deploy ES6+ code without transpiling](https://philipwalton.com/articles/the-state-of-es5-on-the-web/)",
+          "score": 0.5,
+          "pages": [
+            "/wiki/raw/richtlinien-beratungsauftraege"
+          ]
+        },
+        {
+          "category": "performance",
+          "severity": "critical",
+          "title": "Network dependency tree",
+          "description": "[Avoid chaining critical requests](https://developer.chrome.com/docs/lighthouse/performance/critical-request-chains) by reducing the length of chains, reducing the download size of resources, or deferring the download of unnecessary resources to improve page load.",
+          "score": 0,
+          "pages": [
+            "/wiki/raw/richtlinien-beratungsauftraege"
+          ]
+        },
+        {
+          "category": "performance",
+          "severity": "high",
+          "title": "Render blocking requests",
+          "description": "Requests are blocking the page's initial render, which may delay LCP. [Deferring or inlining](https://web.dev/learn/performance/understanding-the-critical-path#render-blocking_resources) can move these network requests out of the critical path.",
+          "score": 0.5,
+          "pages": [
+            "/wiki/raw/richtlinien-beratungsauftraege"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "/wiki/raw/richtlinie-beratungsfoerderung",
+      "url": "https://wko-beratungsfoerderung.kiautomatisierung.info/wiki/raw/richtlinie-beratungsfoerderung",
+      "scores": {
+        "performance": 0.92,
+        "accessibility": 0.96,
+        "bestPractices": 1,
+        "seo": 1
+      },
+      "metrics": {
+        "lcp": 1704.3006,
+        "cls": 0,
+        "tbt": 33,
+        "fcp": 931.3006,
+        "si": 934.3150679994205,
+        "tti": 1704.3006
+      },
+      "issues": [
+        {
+          "category": "performance",
+          "severity": "low",
+          "title": "First Contentful Paint",
+          "description": "First Contentful Paint marks the time at which the first text or image is painted. [Learn more about the First Contentful Paint metric](https://developer.chrome.com/docs/lighthouse/performance/first-contentful-paint/).",
+          "score": 0.9,
+          "pages": [
+            "/wiki/raw/richtlinie-beratungsfoerderung"
+          ]
+        },
+        {
+          "category": "performance",
+          "severity": "medium",
+          "title": "Largest Contentful Paint",
+          "description": "Largest Contentful Paint marks the time at which the largest text or image is painted. [Learn more about the Largest Contentful Paint metric](https://developer.chrome.com/docs/lighthouse/performance/lighthouse-largest-contentful-paint/)",
+          "score": 0.73,
+          "pages": [
+            "/wiki/raw/richtlinie-beratungsfoerderung"
+          ]
+        },
+        {
+          "category": "performance",
+          "severity": "low",
+          "title": "Speed Index",
+          "description": "Speed Index shows how quickly the contents of a page are visibly populated. [Learn more about the Speed Index metric](https://developer.chrome.com/docs/lighthouse/performance/speed-index/).",
+          "score": 0.98,
+          "pages": [
+            "/wiki/raw/richtlinie-beratungsfoerderung"
+          ]
+        },
+        {
+          "category": "performance",
+          "severity": "low",
+          "title": "Max Potential First Input Delay",
+          "description": "The maximum potential First Input Delay that your users could experience is the duration of the longest task. [Learn more about the Maximum Potential First Input Delay metric](https://developer.chrome.com/docs/lighthouse/performance/lighthouse-max-potential-fid/).",
+          "score": 0.98,
+          "pages": [
+            "/wiki/raw/richtlinie-beratungsfoerderung"
+          ]
+        },
+        {
+          "category": "performance",
+          "severity": "low",
+          "title": "Time to Interactive",
+          "description": "Time to Interactive is the amount of time it takes for the page to become fully interactive. [Learn more about the Time to Interactive metric](https://developer.chrome.com/docs/lighthouse/performance/interactive/).",
+          "score": 0.98,
+          "pages": [
+            "/wiki/raw/richtlinie-beratungsfoerderung"
+          ]
+        },
+        {
+          "category": "performance",
+          "severity": "critical",
+          "title": "Largest Contentful Paint element",
+          "description": "This is the largest contentful element painted within the viewport. [Learn more about the Largest Contentful Paint element](https://developer.chrome.com/docs/lighthouse/performance/lighthouse-largest-contentful-paint/)",
+          "score": 0,
+          "pages": [
+            "/wiki/raw/richtlinie-beratungsfoerderung"
+          ]
+        },
+        {
+          "category": "accessibility",
+          "severity": "critical",
+          "title": "Background and foreground colors do not have a sufficient contrast ratio.",
+          "description": "Low-contrast text is difficult or impossible for many users to read. [Learn how to provide sufficient color contrast](https://dequeuniversity.com/rules/axe/4.10/color-contrast).",
+          "score": 0,
+          "pages": [
+            "/wiki/raw/richtlinie-beratungsfoerderung"
+          ]
+        },
+        {
+          "category": "performance",
+          "severity": "high",
+          "title": "Eliminate render-blocking resources",
+          "description": "Resources are blocking the first paint of your page. Consider delivering critical JS/CSS inline and deferring all non-critical JS/styles. [Learn how to eliminate render-blocking resources](https://developer.chrome.com/docs/lighthouse/performance/render-blocking-resources/).",
+          "score": 0.5,
+          "pages": [
+            "/wiki/raw/richtlinie-beratungsfoerderung"
+          ]
+        },
+        {
+          "category": "performance",
+          "severity": "critical",
+          "title": "Reduce unused JavaScript",
+          "description": "Reduce unused JavaScript and defer loading scripts until they are required to decrease bytes consumed by network activity. [Learn how to reduce unused JavaScript](https://developer.chrome.com/docs/lighthouse/performance/unused-javascript/).",
+          "score": 0,
+          "pages": [
+            "/wiki/raw/richtlinie-beratungsfoerderung"
+          ]
+        },
+        {
+          "category": "performance",
+          "severity": "high",
+          "title": "Avoid serving legacy JavaScript to modern browsers",
+          "description": "Polyfills and transforms enable legacy browsers to use new JavaScript features. However, many aren't necessary for modern browsers. Consider modifying your JavaScript build process to not transpile [Baseline](https://web.dev/baseline) features, unless you know you must support legacy browsers. [Learn why most sites can deploy ES6+ code without transpiling](https://philipwalton.com/articles/the-state-of-es5-on-the-web/)",
+          "score": 0.5,
+          "pages": [
+            "/wiki/raw/richtlinie-beratungsfoerderung"
+          ]
+        },
+        {
+          "category": "performance",
+          "severity": "high",
+          "title": "Legacy JavaScript",
+          "description": "Polyfills and transforms enable older browsers to use new JavaScript features. However, many aren't necessary for modern browsers. Consider modifying your JavaScript build process to not transpile [Baseline](https://web.dev/articles/baseline-and-polyfills) features, unless you know you must support older browsers. [Learn why most sites can deploy ES6+ code without transpiling](https://philipwalton.com/articles/the-state-of-es5-on-the-web/)",
+          "score": 0.5,
+          "pages": [
+            "/wiki/raw/richtlinie-beratungsfoerderung"
+          ]
+        },
+        {
+          "category": "performance",
+          "severity": "critical",
+          "title": "Network dependency tree",
+          "description": "[Avoid chaining critical requests](https://developer.chrome.com/docs/lighthouse/performance/critical-request-chains) by reducing the length of chains, reducing the download size of resources, or deferring the download of unnecessary resources to improve page load.",
+          "score": 0,
+          "pages": [
+            "/wiki/raw/richtlinie-beratungsfoerderung"
+          ]
+        },
+        {
+          "category": "performance",
+          "severity": "critical",
+          "title": "Render blocking requests",
+          "description": "Requests are blocking the page's initial render, which may delay LCP. [Deferring or inlining](https://web.dev/learn/performance/understanding-the-critical-path#render-blocking_resources) can move these network requests out of the critical path.",
+          "score": 0,
+          "pages": [
+            "/wiki/raw/richtlinie-beratungsfoerderung"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "/wiki/raw/honorarrichtlinien",
+      "url": "https://wko-beratungsfoerderung.kiautomatisierung.info/wiki/raw/honorarrichtlinien",
+      "scores": {
+        "performance": 0.9,
+        "accessibility": 0.96,
+        "bestPractices": 1,
+        "seo": 1
+      },
+      "metrics": {
+        "lcp": 1981.8328999999999,
+        "cls": 0,
+        "tbt": 20.5,
+        "fcp": 931.8329,
+        "si": 941.5042300017586,
+        "tti": 2038.4829
+      },
+      "issues": [
+        {
+          "category": "performance",
+          "severity": "low",
+          "title": "First Contentful Paint",
+          "description": "First Contentful Paint marks the time at which the first text or image is painted. [Learn more about the First Contentful Paint metric](https://developer.chrome.com/docs/lighthouse/performance/first-contentful-paint/).",
+          "score": 0.9,
+          "pages": [
+            "/wiki/raw/honorarrichtlinien"
+          ]
+        },
+        {
+          "category": "performance",
+          "severity": "high",
+          "title": "Largest Contentful Paint",
+          "description": "Largest Contentful Paint marks the time at which the largest text or image is painted. [Learn more about the Largest Contentful Paint metric](https://developer.chrome.com/docs/lighthouse/performance/lighthouse-largest-contentful-paint/)",
+          "score": 0.63,
+          "pages": [
+            "/wiki/raw/honorarrichtlinien"
+          ]
+        },
+        {
+          "category": "performance",
+          "severity": "low",
+          "title": "Speed Index",
+          "description": "Speed Index shows how quickly the contents of a page are visibly populated. [Learn more about the Speed Index metric](https://developer.chrome.com/docs/lighthouse/performance/speed-index/).",
+          "score": 0.98,
+          "pages": [
+            "/wiki/raw/honorarrichtlinien"
+          ]
+        },
+        {
+          "category": "performance",
+          "severity": "low",
+          "title": "Max Potential First Input Delay",
+          "description": "The maximum potential First Input Delay that your users could experience is the duration of the longest task. [Learn more about the Maximum Potential First Input Delay metric](https://developer.chrome.com/docs/lighthouse/performance/lighthouse-max-potential-fid/).",
+          "score": 0.97,
+          "pages": [
+            "/wiki/raw/honorarrichtlinien"
+          ]
+        },
+        {
+          "category": "performance",
+          "severity": "low",
+          "title": "Time to Interactive",
+          "description": "Time to Interactive is the amount of time it takes for the page to become fully interactive. [Learn more about the Time to Interactive metric](https://developer.chrome.com/docs/lighthouse/performance/interactive/).",
+          "score": 0.95,
+          "pages": [
+            "/wiki/raw/honorarrichtlinien"
+          ]
+        },
+        {
+          "category": "performance",
+          "severity": "critical",
+          "title": "Largest Contentful Paint element",
+          "description": "This is the largest contentful element painted within the viewport. [Learn more about the Largest Contentful Paint element](https://developer.chrome.com/docs/lighthouse/performance/lighthouse-largest-contentful-paint/)",
+          "score": 0,
+          "pages": [
+            "/wiki/raw/honorarrichtlinien"
+          ]
+        },
+        {
+          "category": "accessibility",
+          "severity": "critical",
+          "title": "Background and foreground colors do not have a sufficient contrast ratio.",
+          "description": "Low-contrast text is difficult or impossible for many users to read. [Learn how to provide sufficient color contrast](https://dequeuniversity.com/rules/axe/4.10/color-contrast).",
+          "score": 0,
+          "pages": [
+            "/wiki/raw/honorarrichtlinien"
+          ]
+        },
+        {
+          "category": "performance",
+          "severity": "high",
+          "title": "Eliminate render-blocking resources",
+          "description": "Resources are blocking the first paint of your page. Consider delivering critical JS/CSS inline and deferring all non-critical JS/styles. [Learn how to eliminate render-blocking resources](https://developer.chrome.com/docs/lighthouse/performance/render-blocking-resources/).",
+          "score": 0.5,
+          "pages": [
+            "/wiki/raw/honorarrichtlinien"
+          ]
+        },
+        {
+          "category": "performance",
+          "severity": "critical",
+          "title": "Reduce unused JavaScript",
+          "description": "Reduce unused JavaScript and defer loading scripts until they are required to decrease bytes consumed by network activity. [Learn how to reduce unused JavaScript](https://developer.chrome.com/docs/lighthouse/performance/unused-javascript/).",
+          "score": 0,
+          "pages": [
+            "/wiki/raw/honorarrichtlinien"
+          ]
+        },
+        {
+          "category": "performance",
+          "severity": "critical",
+          "title": "Avoid serving legacy JavaScript to modern browsers",
+          "description": "Polyfills and transforms enable legacy browsers to use new JavaScript features. However, many aren't necessary for modern browsers. Consider modifying your JavaScript build process to not transpile [Baseline](https://web.dev/baseline) features, unless you know you must support legacy browsers. [Learn why most sites can deploy ES6+ code without transpiling](https://philipwalton.com/articles/the-state-of-es5-on-the-web/)",
+          "score": 0,
+          "pages": [
+            "/wiki/raw/honorarrichtlinien"
+          ]
+        },
+        {
+          "category": "performance",
+          "severity": "critical",
+          "title": "Forced reflow",
+          "description": "A forced reflow occurs when JavaScript queries geometric properties (such as offsetWidth) after styles have been invalidated by a change to the DOM state. This can result in poor performance. Learn more about [forced reflows](https://developers.google.com/web/fundamentals/performance/rendering/avoid-large-complex-layouts-and-layout-thrashing#avoid-forced-synchronous-layouts) and possible mitigations.",
+          "score": 0,
+          "pages": [
+            "/wiki/raw/honorarrichtlinien"
+          ]
+        },
+        {
+          "category": "performance",
+          "severity": "critical",
+          "title": "Legacy JavaScript",
+          "description": "Polyfills and transforms enable older browsers to use new JavaScript features. However, many aren't necessary for modern browsers. Consider modifying your JavaScript build process to not transpile [Baseline](https://web.dev/articles/baseline-and-polyfills) features, unless you know you must support older browsers. [Learn why most sites can deploy ES6+ code without transpiling](https://philipwalton.com/articles/the-state-of-es5-on-the-web/)",
+          "score": 0,
+          "pages": [
+            "/wiki/raw/honorarrichtlinien"
+          ]
+        },
+        {
+          "category": "performance",
+          "severity": "critical",
+          "title": "Network dependency tree",
+          "description": "[Avoid chaining critical requests](https://developer.chrome.com/docs/lighthouse/performance/critical-request-chains) by reducing the length of chains, reducing the download size of resources, or deferring the download of unnecessary resources to improve page load.",
+          "score": 0,
+          "pages": [
+            "/wiki/raw/honorarrichtlinien"
+          ]
+        },
+        {
+          "category": "performance",
+          "severity": "critical",
+          "title": "Render blocking requests",
+          "description": "Requests are blocking the page's initial render, which may delay LCP. [Deferring or inlining](https://web.dev/learn/performance/understanding-the-critical-path#render-blocking_resources) can move these network requests out of the critical path.",
+          "score": 0,
+          "pages": [
+            "/wiki/raw/honorarrichtlinien"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "/wiki/raw/checkliste-digitalisierung",
+      "url": "https://wko-beratungsfoerderung.kiautomatisierung.info/wiki/raw/checkliste-digitalisierung",
+      "scores": {
+        "performance": 0.9,
+        "accessibility": 0.92,
+        "bestPractices": 1,
+        "seo": 1
+      },
+      "metrics": {
+        "lcp": 1982.7181,
+        "cls": 0,
+        "tbt": 0,
+        "fcp": 932.7181,
+        "si": 932.7181,
+        "tti": 1982.7181
+      },
+      "issues": [
+        {
+          "category": "performance",
+          "severity": "low",
+          "title": "First Contentful Paint",
+          "description": "First Contentful Paint marks the time at which the first text or image is painted. [Learn more about the First Contentful Paint metric](https://developer.chrome.com/docs/lighthouse/performance/first-contentful-paint/).",
+          "score": 0.9,
+          "pages": [
+            "/wiki/raw/checkliste-digitalisierung"
+          ]
+        },
+        {
+          "category": "performance",
+          "severity": "high",
+          "title": "Largest Contentful Paint",
+          "description": "Largest Contentful Paint marks the time at which the largest text or image is painted. [Learn more about the Largest Contentful Paint metric](https://developer.chrome.com/docs/lighthouse/performance/lighthouse-largest-contentful-paint/)",
+          "score": 0.63,
+          "pages": [
+            "/wiki/raw/checkliste-digitalisierung"
+          ]
+        },
+        {
+          "category": "performance",
+          "severity": "low",
+          "title": "Speed Index",
+          "description": "Speed Index shows how quickly the contents of a page are visibly populated. [Learn more about the Speed Index metric](https://developer.chrome.com/docs/lighthouse/performance/speed-index/).",
+          "score": 0.98,
+          "pages": [
+            "/wiki/raw/checkliste-digitalisierung"
+          ]
+        },
+        {
+          "category": "performance",
+          "severity": "low",
+          "title": "Time to Interactive",
+          "description": "Time to Interactive is the amount of time it takes for the page to become fully interactive. [Learn more about the Time to Interactive metric](https://developer.chrome.com/docs/lighthouse/performance/interactive/).",
+          "score": 0.96,
+          "pages": [
+            "/wiki/raw/checkliste-digitalisierung"
+          ]
+        },
+        {
+          "category": "performance",
+          "severity": "critical",
+          "title": "Largest Contentful Paint element",
+          "description": "This is the largest contentful element painted within the viewport. [Learn more about the Largest Contentful Paint element](https://developer.chrome.com/docs/lighthouse/performance/lighthouse-largest-contentful-paint/)",
+          "score": 0,
+          "pages": [
+            "/wiki/raw/checkliste-digitalisierung"
+          ]
+        },
+        {
+          "category": "accessibility",
+          "severity": "critical",
+          "title": "Background and foreground colors do not have a sufficient contrast ratio.",
+          "description": "Low-contrast text is difficult or impossible for many users to read. [Learn how to provide sufficient color contrast](https://dequeuniversity.com/rules/axe/4.10/color-contrast).",
+          "score": 0,
+          "pages": [
+            "/wiki/raw/checkliste-digitalisierung"
+          ]
+        },
+        {
+          "category": "accessibility",
+          "severity": "critical",
+          "title": "Form elements do not have associated labels",
+          "description": "Labels ensure that form controls are announced properly by assistive technologies, like screen readers. [Learn more about form element labels](https://dequeuniversity.com/rules/axe/4.10/label).",
+          "score": 0,
+          "pages": [
+            "/wiki/raw/checkliste-digitalisierung"
+          ]
+        },
+        {
+          "category": "performance",
+          "severity": "high",
+          "title": "Eliminate render-blocking resources",
+          "description": "Resources are blocking the first paint of your page. Consider delivering critical JS/CSS inline and deferring all non-critical JS/styles. [Learn how to eliminate render-blocking resources](https://developer.chrome.com/docs/lighthouse/performance/render-blocking-resources/).",
+          "score": 0.5,
+          "pages": [
+            "/wiki/raw/checkliste-digitalisierung"
+          ]
+        },
+        {
+          "category": "performance",
+          "severity": "critical",
+          "title": "Reduce unused JavaScript",
+          "description": "Reduce unused JavaScript and defer loading scripts until they are required to decrease bytes consumed by network activity. [Learn how to reduce unused JavaScript](https://developer.chrome.com/docs/lighthouse/performance/unused-javascript/).",
+          "score": 0,
+          "pages": [
+            "/wiki/raw/checkliste-digitalisierung"
+          ]
+        },
+        {
+          "category": "performance",
+          "severity": "critical",
+          "title": "Avoid serving legacy JavaScript to modern browsers",
+          "description": "Polyfills and transforms enable legacy browsers to use new JavaScript features. However, many aren't necessary for modern browsers. Consider modifying your JavaScript build process to not transpile [Baseline](https://web.dev/baseline) features, unless you know you must support legacy browsers. [Learn why most sites can deploy ES6+ code without transpiling](https://philipwalton.com/articles/the-state-of-es5-on-the-web/)",
+          "score": 0,
+          "pages": [
+            "/wiki/raw/checkliste-digitalisierung"
+          ]
+        },
+        {
+          "category": "performance",
+          "severity": "critical",
+          "title": "Forced reflow",
+          "description": "A forced reflow occurs when JavaScript queries geometric properties (such as offsetWidth) after styles have been invalidated by a change to the DOM state. This can result in poor performance. Learn more about [forced reflows](https://developers.google.com/web/fundamentals/performance/rendering/avoid-large-complex-layouts-and-layout-thrashing#avoid-forced-synchronous-layouts) and possible mitigations.",
+          "score": 0,
+          "pages": [
+            "/wiki/raw/checkliste-digitalisierung"
+          ]
+        },
+        {
+          "category": "performance",
+          "severity": "critical",
+          "title": "Legacy JavaScript",
+          "description": "Polyfills and transforms enable older browsers to use new JavaScript features. However, many aren't necessary for modern browsers. Consider modifying your JavaScript build process to not transpile [Baseline](https://web.dev/articles/baseline-and-polyfills) features, unless you know you must support older browsers. [Learn why most sites can deploy ES6+ code without transpiling](https://philipwalton.com/articles/the-state-of-es5-on-the-web/)",
+          "score": 0,
+          "pages": [
+            "/wiki/raw/checkliste-digitalisierung"
+          ]
+        },
+        {
+          "category": "performance",
+          "severity": "critical",
+          "title": "Network dependency tree",
+          "description": "[Avoid chaining critical requests](https://developer.chrome.com/docs/lighthouse/performance/critical-request-chains) by reducing the length of chains, reducing the download size of resources, or deferring the download of unnecessary resources to improve page load.",
+          "score": 0,
+          "pages": [
+            "/wiki/raw/checkliste-digitalisierung"
+          ]
+        },
+        {
+          "category": "performance",
+          "severity": "critical",
+          "title": "Render blocking requests",
+          "description": "Requests are blocking the page's initial render, which may delay LCP. [Deferring or inlining](https://web.dev/learn/performance/understanding-the-critical-path#render-blocking_resources) can move these network requests out of the critical path.",
+          "score": 0,
+          "pages": [
+            "/wiki/raw/checkliste-digitalisierung"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "/wiki/raw/beratungsablauf",
+      "url": "https://wko-beratungsfoerderung.kiautomatisierung.info/wiki/raw/beratungsablauf",
+      "scores": {
+        "performance": 0.89,
+        "accessibility": 0.96,
+        "bestPractices": 1,
+        "seo": 1
+      },
+      "metrics": {
+        "lcp": 1965.9769999999999,
+        "cls": 0,
+        "tbt": 27,
+        "fcp": 915.977,
+        "si": 1261.0368740009546,
+        "tti": 2033.627
+      },
+      "issues": [
+        {
+          "category": "performance",
+          "severity": "low",
+          "title": "First Contentful Paint",
+          "description": "First Contentful Paint marks the time at which the first text or image is painted. [Learn more about the First Contentful Paint metric](https://developer.chrome.com/docs/lighthouse/performance/first-contentful-paint/).",
+          "score": 0.9,
+          "pages": [
+            "/wiki/raw/beratungsablauf"
+          ]
+        },
+        {
+          "category": "performance",
+          "severity": "high",
+          "title": "Largest Contentful Paint",
+          "description": "Largest Contentful Paint marks the time at which the largest text or image is painted. [Learn more about the Largest Contentful Paint metric](https://developer.chrome.com/docs/lighthouse/performance/lighthouse-largest-contentful-paint/)",
+          "score": 0.64,
+          "pages": [
+            "/wiki/raw/beratungsablauf"
+          ]
+        },
+        {
+          "category": "performance",
+          "severity": "low",
+          "title": "Speed Index",
+          "description": "Speed Index shows how quickly the contents of a page are visibly populated. [Learn more about the Speed Index metric](https://developer.chrome.com/docs/lighthouse/performance/speed-index/).",
+          "score": 0.91,
+          "pages": [
+            "/wiki/raw/beratungsablauf"
+          ]
+        },
+        {
+          "category": "performance",
+          "severity": "low",
+          "title": "Max Potential First Input Delay",
+          "description": "The maximum potential First Input Delay that your users could experience is the duration of the longest task. [Learn more about the Maximum Potential First Input Delay metric](https://developer.chrome.com/docs/lighthouse/performance/lighthouse-max-potential-fid/).",
+          "score": 0.96,
+          "pages": [
+            "/wiki/raw/beratungsablauf"
+          ]
+        },
+        {
+          "category": "performance",
+          "severity": "low",
+          "title": "Time to Interactive",
+          "description": "Time to Interactive is the amount of time it takes for the page to become fully interactive. [Learn more about the Time to Interactive metric](https://developer.chrome.com/docs/lighthouse/performance/interactive/).",
+          "score": 0.95,
+          "pages": [
+            "/wiki/raw/beratungsablauf"
+          ]
+        },
+        {
+          "category": "performance",
+          "severity": "critical",
+          "title": "Largest Contentful Paint element",
+          "description": "This is the largest contentful element painted within the viewport. [Learn more about the Largest Contentful Paint element](https://developer.chrome.com/docs/lighthouse/performance/lighthouse-largest-contentful-paint/)",
+          "score": 0,
+          "pages": [
+            "/wiki/raw/beratungsablauf"
+          ]
+        },
+        {
+          "category": "accessibility",
+          "severity": "critical",
+          "title": "Background and foreground colors do not have a sufficient contrast ratio.",
+          "description": "Low-contrast text is difficult or impossible for many users to read. [Learn how to provide sufficient color contrast](https://dequeuniversity.com/rules/axe/4.10/color-contrast).",
+          "score": 0,
+          "pages": [
+            "/wiki/raw/beratungsablauf"
+          ]
+        },
+        {
+          "category": "performance",
+          "severity": "high",
+          "title": "Eliminate render-blocking resources",
+          "description": "Resources are blocking the first paint of your page. Consider delivering critical JS/CSS inline and deferring all non-critical JS/styles. [Learn how to eliminate render-blocking resources](https://developer.chrome.com/docs/lighthouse/performance/render-blocking-resources/).",
+          "score": 0.5,
+          "pages": [
+            "/wiki/raw/beratungsablauf"
+          ]
+        },
+        {
+          "category": "performance",
+          "severity": "critical",
+          "title": "Reduce unused JavaScript",
+          "description": "Reduce unused JavaScript and defer loading scripts until they are required to decrease bytes consumed by network activity. [Learn how to reduce unused JavaScript](https://developer.chrome.com/docs/lighthouse/performance/unused-javascript/).",
+          "score": 0,
+          "pages": [
+            "/wiki/raw/beratungsablauf"
+          ]
+        },
+        {
+          "category": "performance",
+          "severity": "critical",
+          "title": "Avoid serving legacy JavaScript to modern browsers",
+          "description": "Polyfills and transforms enable legacy browsers to use new JavaScript features. However, many aren't necessary for modern browsers. Consider modifying your JavaScript build process to not transpile [Baseline](https://web.dev/baseline) features, unless you know you must support legacy browsers. [Learn why most sites can deploy ES6+ code without transpiling](https://philipwalton.com/articles/the-state-of-es5-on-the-web/)",
+          "score": 0,
+          "pages": [
+            "/wiki/raw/beratungsablauf"
+          ]
+        },
+        {
+          "category": "performance",
+          "severity": "critical",
+          "title": "Forced reflow",
+          "description": "A forced reflow occurs when JavaScript queries geometric properties (such as offsetWidth) after styles have been invalidated by a change to the DOM state. This can result in poor performance. Learn more about [forced reflows](https://developers.google.com/web/fundamentals/performance/rendering/avoid-large-complex-layouts-and-layout-thrashing#avoid-forced-synchronous-layouts) and possible mitigations.",
+          "score": 0,
+          "pages": [
+            "/wiki/raw/beratungsablauf"
+          ]
+        },
+        {
+          "category": "performance",
+          "severity": "critical",
+          "title": "Legacy JavaScript",
+          "description": "Polyfills and transforms enable older browsers to use new JavaScript features. However, many aren't necessary for modern browsers. Consider modifying your JavaScript build process to not transpile [Baseline](https://web.dev/articles/baseline-and-polyfills) features, unless you know you must support older browsers. [Learn why most sites can deploy ES6+ code without transpiling](https://philipwalton.com/articles/the-state-of-es5-on-the-web/)",
+          "score": 0,
+          "pages": [
+            "/wiki/raw/beratungsablauf"
+          ]
+        },
+        {
+          "category": "performance",
+          "severity": "critical",
+          "title": "Network dependency tree",
+          "description": "[Avoid chaining critical requests](https://developer.chrome.com/docs/lighthouse/performance/critical-request-chains) by reducing the length of chains, reducing the download size of resources, or deferring the download of unnecessary resources to improve page load.",
+          "score": 0,
+          "pages": [
+            "/wiki/raw/beratungsablauf"
+          ]
+        },
+        {
+          "category": "performance",
+          "severity": "critical",
+          "title": "Render blocking requests",
+          "description": "Requests are blocking the page's initial render, which may delay LCP. [Deferring or inlining](https://web.dev/learn/performance/understanding-the-critical-path#render-blocking_resources) can move these network requests out of the critical path.",
+          "score": 0,
+          "pages": [
+            "/wiki/raw/beratungsablauf"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "/wiki/downloads",
+      "url": "https://wko-beratungsfoerderung.kiautomatisierung.info/wiki/downloads",
+      "scores": {
+        "performance": 0.89,
+        "accessibility": 0.96,
+        "bestPractices": 1,
+        "seo": 1
+      },
+      "metrics": {
+        "lcp": 1964.6779999999999,
+        "cls": 0.0011444409421241574,
+        "tbt": 27,
+        "fcp": 914.678,
+        "si": 1155.9485159983903,
+        "tti": 2116.328
+      },
+      "issues": [
+        {
+          "category": "performance",
+          "severity": "low",
+          "title": "First Contentful Paint",
+          "description": "First Contentful Paint marks the time at which the first text or image is painted. [Learn more about the First Contentful Paint metric](https://developer.chrome.com/docs/lighthouse/performance/first-contentful-paint/).",
+          "score": 0.9,
+          "pages": [
+            "/wiki/downloads"
+          ]
+        },
+        {
+          "category": "performance",
+          "severity": "high",
+          "title": "Largest Contentful Paint",
+          "description": "Largest Contentful Paint marks the time at which the largest text or image is painted. [Learn more about the Largest Contentful Paint metric](https://developer.chrome.com/docs/lighthouse/performance/lighthouse-largest-contentful-paint/)",
+          "score": 0.64,
+          "pages": [
+            "/wiki/downloads"
+          ]
+        },
+        {
+          "category": "performance",
+          "severity": "low",
+          "title": "Speed Index",
+          "description": "Speed Index shows how quickly the contents of a page are visibly populated. [Learn more about the Speed Index metric](https://developer.chrome.com/docs/lighthouse/performance/speed-index/).",
+          "score": 0.94,
+          "pages": [
+            "/wiki/downloads"
+          ]
+        },
+        {
+          "category": "performance",
+          "severity": "low",
+          "title": "Max Potential First Input Delay",
+          "description": "The maximum potential First Input Delay that your users could experience is the duration of the longest task. [Learn more about the Maximum Potential First Input Delay metric](https://developer.chrome.com/docs/lighthouse/performance/lighthouse-max-potential-fid/).",
+          "score": 0.99,
+          "pages": [
+            "/wiki/downloads"
+          ]
+        },
+        {
+          "category": "performance",
+          "severity": "low",
+          "title": "Time to Interactive",
+          "description": "Time to Interactive is the amount of time it takes for the page to become fully interactive. [Learn more about the Time to Interactive metric](https://developer.chrome.com/docs/lighthouse/performance/interactive/).",
+          "score": 0.94,
+          "pages": [
+            "/wiki/downloads"
+          ]
+        },
+        {
+          "category": "performance",
+          "severity": "critical",
+          "title": "Largest Contentful Paint element",
+          "description": "This is the largest contentful element painted within the viewport. [Learn more about the Largest Contentful Paint element](https://developer.chrome.com/docs/lighthouse/performance/lighthouse-largest-contentful-paint/)",
+          "score": 0,
+          "pages": [
+            "/wiki/downloads"
+          ]
+        },
+        {
+          "category": "accessibility",
+          "severity": "critical",
+          "title": "Background and foreground colors do not have a sufficient contrast ratio.",
+          "description": "Low-contrast text is difficult or impossible for many users to read. [Learn how to provide sufficient color contrast](https://dequeuniversity.com/rules/axe/4.10/color-contrast).",
+          "score": 0,
+          "pages": [
+            "/wiki/downloads"
+          ]
+        },
+        {
+          "category": "performance",
+          "severity": "high",
+          "title": "Eliminate render-blocking resources",
+          "description": "Resources are blocking the first paint of your page. Consider delivering critical JS/CSS inline and deferring all non-critical JS/styles. [Learn how to eliminate render-blocking resources](https://developer.chrome.com/docs/lighthouse/performance/render-blocking-resources/).",
+          "score": 0.5,
+          "pages": [
+            "/wiki/downloads"
+          ]
+        },
+        {
+          "category": "performance",
+          "severity": "critical",
+          "title": "Reduce unused JavaScript",
+          "description": "Reduce unused JavaScript and defer loading scripts until they are required to decrease bytes consumed by network activity. [Learn how to reduce unused JavaScript](https://developer.chrome.com/docs/lighthouse/performance/unused-javascript/).",
+          "score": 0,
+          "pages": [
+            "/wiki/downloads"
+          ]
+        },
+        {
+          "category": "performance",
+          "severity": "critical",
+          "title": "Avoid serving legacy JavaScript to modern browsers",
+          "description": "Polyfills and transforms enable legacy browsers to use new JavaScript features. However, many aren't necessary for modern browsers. Consider modifying your JavaScript build process to not transpile [Baseline](https://web.dev/baseline) features, unless you know you must support legacy browsers. [Learn why most sites can deploy ES6+ code without transpiling](https://philipwalton.com/articles/the-state-of-es5-on-the-web/)",
+          "score": 0,
+          "pages": [
+            "/wiki/downloads"
+          ]
+        },
+        {
+          "category": "performance",
+          "severity": "critical",
+          "title": "Forced reflow",
+          "description": "A forced reflow occurs when JavaScript queries geometric properties (such as offsetWidth) after styles have been invalidated by a change to the DOM state. This can result in poor performance. Learn more about [forced reflows](https://developers.google.com/web/fundamentals/performance/rendering/avoid-large-complex-layouts-and-layout-thrashing#avoid-forced-synchronous-layouts) and possible mitigations.",
+          "score": 0,
+          "pages": [
+            "/wiki/downloads"
+          ]
+        },
+        {
+          "category": "performance",
+          "severity": "critical",
+          "title": "Legacy JavaScript",
+          "description": "Polyfills and transforms enable older browsers to use new JavaScript features. However, many aren't necessary for modern browsers. Consider modifying your JavaScript build process to not transpile [Baseline](https://web.dev/articles/baseline-and-polyfills) features, unless you know you must support older browsers. [Learn why most sites can deploy ES6+ code without transpiling](https://philipwalton.com/articles/the-state-of-es5-on-the-web/)",
+          "score": 0,
+          "pages": [
+            "/wiki/downloads"
+          ]
+        },
+        {
+          "category": "performance",
+          "severity": "critical",
+          "title": "Network dependency tree",
+          "description": "[Avoid chaining critical requests](https://developer.chrome.com/docs/lighthouse/performance/critical-request-chains) by reducing the length of chains, reducing the download size of resources, or deferring the download of unnecessary resources to improve page load.",
+          "score": 0,
+          "pages": [
+            "/wiki/downloads"
+          ]
+        },
+        {
+          "category": "performance",
+          "severity": "critical",
+          "title": "Render blocking requests",
+          "description": "Requests are blocking the page's initial render, which may delay LCP. [Deferring or inlining](https://web.dev/learn/performance/understanding-the-critical-path#render-blocking_resources) can move these network requests out of the critical path.",
+          "score": 0,
+          "pages": [
+            "/wiki/downloads"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "/chat",
+      "url": "https://wko-beratungsfoerderung.kiautomatisierung.info/chat",
+      "scores": {
+        "performance": 0.85,
+        "accessibility": 0.9,
+        "bestPractices": 1,
+        "seo": 1
+      },
+      "metrics": {
+        "lcp": 2313.2799999999997,
+        "cls": 0.00015890260631001372,
+        "tbt": 36,
+        "fcp": 917.28,
+        "si": 1557.7674559987781,
+        "tti": 2313.2799999999997
+      },
+      "issues": [
+        {
+          "category": "performance",
+          "severity": "low",
+          "title": "First Contentful Paint",
+          "description": "First Contentful Paint marks the time at which the first text or image is painted. [Learn more about the First Contentful Paint metric](https://developer.chrome.com/docs/lighthouse/performance/first-contentful-paint/).",
+          "score": 0.9,
+          "pages": [
+            "/chat"
+          ]
+        },
+        {
+          "category": "performance",
+          "severity": "high",
+          "title": "Largest Contentful Paint",
+          "description": "Largest Contentful Paint marks the time at which the largest text or image is painted. [Learn more about the Largest Contentful Paint metric](https://developer.chrome.com/docs/lighthouse/performance/lighthouse-largest-contentful-paint/)",
+          "score": 0.52,
+          "pages": [
+            "/chat"
+          ]
+        },
+        {
+          "category": "performance",
+          "severity": "medium",
+          "title": "Speed Index",
+          "description": "Speed Index shows how quickly the contents of a page are visibly populated. [Learn more about the Speed Index metric](https://developer.chrome.com/docs/lighthouse/performance/speed-index/).",
+          "score": 0.81,
+          "pages": [
+            "/chat"
+          ]
+        },
+        {
+          "category": "performance",
+          "severity": "low",
+          "title": "Max Potential First Input Delay",
+          "description": "The maximum potential First Input Delay that your users could experience is the duration of the longest task. [Learn more about the Maximum Potential First Input Delay metric](https://developer.chrome.com/docs/lighthouse/performance/lighthouse-max-potential-fid/).",
+          "score": 0.98,
+          "pages": [
+            "/chat"
+          ]
+        },
+        {
+          "category": "performance",
+          "severity": "low",
+          "title": "Time to Interactive",
+          "description": "Time to Interactive is the amount of time it takes for the page to become fully interactive. [Learn more about the Time to Interactive metric](https://developer.chrome.com/docs/lighthouse/performance/interactive/).",
+          "score": 0.92,
+          "pages": [
+            "/chat"
+          ]
+        },
+        {
+          "category": "performance",
+          "severity": "critical",
+          "title": "Largest Contentful Paint element",
+          "description": "This is the largest contentful element painted within the viewport. [Learn more about the Largest Contentful Paint element](https://developer.chrome.com/docs/lighthouse/performance/lighthouse-largest-contentful-paint/)",
+          "score": 0,
+          "pages": [
+            "/chat"
+          ]
+        },
+        {
+          "category": "accessibility",
+          "severity": "critical",
+          "title": "Buttons do not have an accessible name",
+          "description": "When a button doesn't have an accessible name, screen readers announce it as \"button\", making it unusable for users who rely on screen readers. [Learn how to make buttons more accessible](https://dequeuniversity.com/rules/axe/4.10/button-name).",
+          "score": 0,
+          "pages": [
+            "/chat"
+          ]
+        },
+        {
+          "category": "accessibility",
+          "severity": "critical",
+          "title": "Background and foreground colors do not have a sufficient contrast ratio.",
+          "description": "Low-contrast text is difficult or impossible for many users to read. [Learn how to provide sufficient color contrast](https://dequeuniversity.com/rules/axe/4.10/color-contrast).",
+          "score": 0,
+          "pages": [
+            "/chat"
+          ]
+        },
+        {
+          "category": "performance",
+          "severity": "high",
+          "title": "Eliminate render-blocking resources",
+          "description": "Resources are blocking the first paint of your page. Consider delivering critical JS/CSS inline and deferring all non-critical JS/styles. [Learn how to eliminate render-blocking resources](https://developer.chrome.com/docs/lighthouse/performance/render-blocking-resources/).",
+          "score": 0.5,
+          "pages": [
+            "/chat"
+          ]
+        },
+        {
+          "category": "performance",
+          "severity": "critical",
+          "title": "Reduce unused JavaScript",
+          "description": "Reduce unused JavaScript and defer loading scripts until they are required to decrease bytes consumed by network activity. [Learn how to reduce unused JavaScript](https://developer.chrome.com/docs/lighthouse/performance/unused-javascript/).",
+          "score": 0,
+          "pages": [
+            "/chat"
+          ]
+        },
+        {
+          "category": "performance",
+          "severity": "critical",
+          "title": "Avoid serving legacy JavaScript to modern browsers",
+          "description": "Polyfills and transforms enable legacy browsers to use new JavaScript features. However, many aren't necessary for modern browsers. Consider modifying your JavaScript build process to not transpile [Baseline](https://web.dev/baseline) features, unless you know you must support legacy browsers. [Learn why most sites can deploy ES6+ code without transpiling](https://philipwalton.com/articles/the-state-of-es5-on-the-web/)",
+          "score": 0,
+          "pages": [
+            "/chat"
+          ]
+        },
+        {
+          "category": "performance",
+          "severity": "critical",
+          "title": "Forced reflow",
+          "description": "A forced reflow occurs when JavaScript queries geometric properties (such as offsetWidth) after styles have been invalidated by a change to the DOM state. This can result in poor performance. Learn more about [forced reflows](https://developers.google.com/web/fundamentals/performance/rendering/avoid-large-complex-layouts-and-layout-thrashing#avoid-forced-synchronous-layouts) and possible mitigations.",
+          "score": 0,
+          "pages": [
+            "/chat"
+          ]
+        },
+        {
+          "category": "performance",
+          "severity": "critical",
+          "title": "Legacy JavaScript",
+          "description": "Polyfills and transforms enable older browsers to use new JavaScript features. However, many aren't necessary for modern browsers. Consider modifying your JavaScript build process to not transpile [Baseline](https://web.dev/articles/baseline-and-polyfills) features, unless you know you must support older browsers. [Learn why most sites can deploy ES6+ code without transpiling](https://philipwalton.com/articles/the-state-of-es5-on-the-web/)",
+          "score": 0,
+          "pages": [
+            "/chat"
+          ]
+        },
+        {
+          "category": "performance",
+          "severity": "critical",
+          "title": "Network dependency tree",
+          "description": "[Avoid chaining critical requests](https://developer.chrome.com/docs/lighthouse/performance/critical-request-chains) by reducing the length of chains, reducing the download size of resources, or deferring the download of unnecessary resources to improve page load.",
+          "score": 0,
+          "pages": [
+            "/chat"
+          ]
+        },
+        {
+          "category": "performance",
+          "severity": "critical",
+          "title": "Render blocking requests",
+          "description": "Requests are blocking the page's initial render, which may delay LCP. [Deferring or inlining](https://web.dev/learn/performance/understanding-the-critical-path#render-blocking_resources) can move these network requests out of the critical path.",
+          "score": 0,
+          "pages": [
+            "/chat"
+          ]
+        }
+      ]
+    }
+  ],
+  "issues": [
+    {
+      "category": "performance",
+      "severity": "critical",
+      "title": "Largest Contentful Paint element",
+      "description": "This is the largest contentful element painted within the viewport. [Learn more about the Largest Contentful Paint element](https://developer.chrome.com/docs/lighthouse/performance/lighthouse-largest-contentful-paint/)",
+      "score": 0,
+      "pages": [
+        "/",
+        "/wiki",
+        "/wiki/wiki/04-deliverables",
+        "/wiki/wiki/03-requirements",
+        "/wiki/wiki/02-process",
+        "/wiki/wiki/01-funding-areas",
+        "/wiki/wiki/00-overview",
+        "/wiki/raw/richtlinien-beratungsauftraege",
+        "/wiki/raw/richtlinie-beratungsfoerderung",
+        "/wiki/raw/honorarrichtlinien",
+        "/wiki/raw/checkliste-digitalisierung",
+        "/wiki/raw/beratungsablauf",
+        "/wiki/downloads",
+        "/chat"
+      ]
+    },
+    {
+      "category": "accessibility",
+      "severity": "critical",
+      "title": "Background and foreground colors do not have a sufficient contrast ratio.",
+      "description": "Low-contrast text is difficult or impossible for many users to read. [Learn how to provide sufficient color contrast](https://dequeuniversity.com/rules/axe/4.10/color-contrast).",
+      "score": 0,
+      "pages": [
+        "/",
+        "/wiki",
+        "/wiki/wiki/04-deliverables",
+        "/wiki/wiki/03-requirements",
+        "/wiki/wiki/02-process",
+        "/wiki/wiki/01-funding-areas",
+        "/wiki/wiki/00-overview",
+        "/wiki/raw/richtlinien-beratungsauftraege",
+        "/wiki/raw/richtlinie-beratungsfoerderung",
+        "/wiki/raw/honorarrichtlinien",
+        "/wiki/raw/checkliste-digitalisierung",
+        "/wiki/raw/beratungsablauf",
+        "/wiki/downloads",
+        "/chat"
+      ]
+    },
+    {
+      "category": "accessibility",
+      "severity": "critical",
+      "title": "Heading elements are not in a sequentially-descending order",
+      "description": "Properly ordered headings that do not skip levels convey the semantic structure of the page, making it easier to navigate and understand when using assistive technologies. [Learn more about heading order](https://dequeuniversity.com/rules/axe/4.10/heading-order).",
+      "score": 0,
+      "pages": [
+        "/"
+      ]
+    },
+    {
+      "category": "performance",
+      "severity": "critical",
+      "title": "Reduce unused JavaScript",
+      "description": "Reduce unused JavaScript and defer loading scripts until they are required to decrease bytes consumed by network activity. [Learn how to reduce unused JavaScript](https://developer.chrome.com/docs/lighthouse/performance/unused-javascript/).",
+      "score": 0,
+      "pages": [
+        "/",
+        "/wiki",
+        "/wiki/wiki/04-deliverables",
+        "/wiki/wiki/03-requirements",
+        "/wiki/wiki/02-process",
+        "/wiki/wiki/01-funding-areas",
+        "/wiki/wiki/00-overview",
+        "/wiki/raw/richtlinien-beratungsauftraege",
+        "/wiki/raw/richtlinie-beratungsfoerderung",
+        "/wiki/raw/honorarrichtlinien",
+        "/wiki/raw/checkliste-digitalisierung",
+        "/wiki/raw/beratungsablauf",
+        "/wiki/downloads",
+        "/chat"
+      ]
+    },
+    {
+      "category": "performance",
+      "severity": "critical",
+      "title": "Avoid serving legacy JavaScript to modern browsers",
+      "description": "Polyfills and transforms enable legacy browsers to use new JavaScript features. However, many aren't necessary for modern browsers. Consider modifying your JavaScript build process to not transpile [Baseline](https://web.dev/baseline) features, unless you know you must support legacy browsers. [Learn why most sites can deploy ES6+ code without transpiling](https://philipwalton.com/articles/the-state-of-es5-on-the-web/)",
+      "score": 0,
+      "pages": [
+        "/",
+        "/wiki",
+        "/wiki/wiki/04-deliverables",
+        "/wiki/wiki/03-requirements",
+        "/wiki/wiki/02-process",
+        "/wiki/wiki/01-funding-areas",
+        "/wiki/wiki/00-overview",
+        "/wiki/raw/richtlinien-beratungsauftraege",
+        "/wiki/raw/richtlinie-beratungsfoerderung",
+        "/wiki/raw/honorarrichtlinien",
+        "/wiki/raw/checkliste-digitalisierung",
+        "/wiki/raw/beratungsablauf",
+        "/wiki/downloads",
+        "/chat"
+      ]
+    },
+    {
+      "category": "performance",
+      "severity": "critical",
+      "title": "Forced reflow",
+      "description": "A forced reflow occurs when JavaScript queries geometric properties (such as offsetWidth) after styles have been invalidated by a change to the DOM state. This can result in poor performance. Learn more about [forced reflows](https://developers.google.com/web/fundamentals/performance/rendering/avoid-large-complex-layouts-and-layout-thrashing#avoid-forced-synchronous-layouts) and possible mitigations.",
+      "score": 0,
+      "pages": [
+        "/",
+        "/wiki",
+        "/wiki/wiki/04-deliverables",
+        "/wiki/raw/honorarrichtlinien",
+        "/wiki/raw/checkliste-digitalisierung",
+        "/wiki/raw/beratungsablauf",
+        "/wiki/downloads",
+        "/chat"
+      ]
+    },
+    {
+      "category": "performance",
+      "severity": "critical",
+      "title": "Legacy JavaScript",
+      "description": "Polyfills and transforms enable older browsers to use new JavaScript features. However, many aren't necessary for modern browsers. Consider modifying your JavaScript build process to not transpile [Baseline](https://web.dev/articles/baseline-and-polyfills) features, unless you know you must support older browsers. [Learn why most sites can deploy ES6+ code without transpiling](https://philipwalton.com/articles/the-state-of-es5-on-the-web/)",
+      "score": 0,
+      "pages": [
+        "/",
+        "/wiki",
+        "/wiki/wiki/04-deliverables",
+        "/wiki/wiki/03-requirements",
+        "/wiki/wiki/02-process",
+        "/wiki/wiki/01-funding-areas",
+        "/wiki/wiki/00-overview",
+        "/wiki/raw/richtlinien-beratungsauftraege",
+        "/wiki/raw/richtlinie-beratungsfoerderung",
+        "/wiki/raw/honorarrichtlinien",
+        "/wiki/raw/checkliste-digitalisierung",
+        "/wiki/raw/beratungsablauf",
+        "/wiki/downloads",
+        "/chat"
+      ]
+    },
+    {
+      "category": "performance",
+      "severity": "critical",
+      "title": "Network dependency tree",
+      "description": "[Avoid chaining critical requests](https://developer.chrome.com/docs/lighthouse/performance/critical-request-chains) by reducing the length of chains, reducing the download size of resources, or deferring the download of unnecessary resources to improve page load.",
+      "score": 0,
+      "pages": [
+        "/",
+        "/wiki",
+        "/wiki/wiki/04-deliverables",
+        "/wiki/wiki/03-requirements",
+        "/wiki/wiki/02-process",
+        "/wiki/wiki/01-funding-areas",
+        "/wiki/wiki/00-overview",
+        "/wiki/raw/richtlinien-beratungsauftraege",
+        "/wiki/raw/richtlinie-beratungsfoerderung",
+        "/wiki/raw/honorarrichtlinien",
+        "/wiki/raw/checkliste-digitalisierung",
+        "/wiki/raw/beratungsablauf",
+        "/wiki/downloads",
+        "/chat"
+      ]
+    },
+    {
+      "category": "performance",
+      "severity": "critical",
+      "title": "Render blocking requests",
+      "description": "Requests are blocking the page's initial render, which may delay LCP. [Deferring or inlining](https://web.dev/learn/performance/understanding-the-critical-path#render-blocking_resources) can move these network requests out of the critical path.",
+      "score": 0,
+      "pages": [
+        "/",
+        "/wiki",
+        "/wiki/wiki/04-deliverables",
+        "/wiki/wiki/03-requirements",
+        "/wiki/wiki/02-process",
+        "/wiki/wiki/01-funding-areas",
+        "/wiki/wiki/00-overview",
+        "/wiki/raw/richtlinien-beratungsauftraege",
+        "/wiki/raw/richtlinie-beratungsfoerderung",
+        "/wiki/raw/honorarrichtlinien",
+        "/wiki/raw/checkliste-digitalisierung",
+        "/wiki/raw/beratungsablauf",
+        "/wiki/downloads",
+        "/chat"
+      ]
+    },
+    {
+      "category": "accessibility",
+      "severity": "critical",
+      "title": "Form elements do not have associated labels",
+      "description": "Labels ensure that form controls are announced properly by assistive technologies, like screen readers. [Learn more about form element labels](https://dequeuniversity.com/rules/axe/4.10/label).",
+      "score": 0,
+      "pages": [
+        "/wiki/wiki/04-deliverables",
+        "/wiki/wiki/02-process",
+        "/wiki/raw/checkliste-digitalisierung"
+      ]
+    },
+    {
+      "category": "accessibility",
+      "severity": "critical",
+      "title": "Buttons do not have an accessible name",
+      "description": "When a button doesn't have an accessible name, screen readers announce it as \"button\", making it unusable for users who rely on screen readers. [Learn how to make buttons more accessible](https://dequeuniversity.com/rules/axe/4.10/button-name).",
+      "score": 0,
+      "pages": [
+        "/chat"
+      ]
+    },
+    {
+      "category": "performance",
+      "severity": "high",
+      "title": "Largest Contentful Paint",
+      "description": "Largest Contentful Paint marks the time at which the largest text or image is painted. [Learn more about the Largest Contentful Paint metric](https://developer.chrome.com/docs/lighthouse/performance/lighthouse-largest-contentful-paint/)",
+      "score": 0.59,
+      "pages": [
+        "/",
+        "/wiki",
+        "/wiki/wiki/04-deliverables",
+        "/wiki/wiki/03-requirements",
+        "/wiki/wiki/02-process",
+        "/wiki/wiki/01-funding-areas",
+        "/wiki/wiki/00-overview",
+        "/wiki/raw/richtlinien-beratungsauftraege",
+        "/wiki/raw/richtlinie-beratungsfoerderung",
+        "/wiki/raw/honorarrichtlinien",
+        "/wiki/raw/checkliste-digitalisierung",
+        "/wiki/raw/beratungsablauf",
+        "/wiki/downloads",
+        "/chat"
+      ]
+    },
+    {
+      "category": "performance",
+      "severity": "high",
+      "title": "Max Potential First Input Delay",
+      "description": "The maximum potential First Input Delay that your users could experience is the duration of the longest task. [Learn more about the Maximum Potential First Input Delay metric](https://developer.chrome.com/docs/lighthouse/performance/lighthouse-max-potential-fid/).",
+      "score": 0.5,
+      "pages": [
+        "/",
+        "/wiki",
+        "/wiki/raw/richtlinien-beratungsauftraege",
+        "/wiki/raw/richtlinie-beratungsfoerderung",
+        "/wiki/raw/honorarrichtlinien",
+        "/wiki/raw/beratungsablauf",
+        "/wiki/downloads",
+        "/chat"
+      ]
+    },
+    {
+      "category": "performance",
+      "severity": "high",
+      "title": "Eliminate render-blocking resources",
+      "description": "Resources are blocking the first paint of your page. Consider delivering critical JS/CSS inline and deferring all non-critical JS/styles. [Learn how to eliminate render-blocking resources](https://developer.chrome.com/docs/lighthouse/performance/render-blocking-resources/).",
+      "score": 0.5,
+      "pages": [
+        "/",
+        "/wiki",
+        "/wiki/wiki/04-deliverables",
+        "/wiki/wiki/03-requirements",
+        "/wiki/wiki/02-process",
+        "/wiki/wiki/01-funding-areas",
+        "/wiki/wiki/00-overview",
+        "/wiki/raw/richtlinie-beratungsfoerderung",
+        "/wiki/raw/honorarrichtlinien",
+        "/wiki/raw/checkliste-digitalisierung",
+        "/wiki/raw/beratungsablauf",
+        "/wiki/downloads",
+        "/chat"
+      ]
+    },
+    {
+      "category": "performance",
+      "severity": "medium",
+      "title": "Speed Index",
+      "description": "Speed Index shows how quickly the contents of a page are visibly populated. [Learn more about the Speed Index metric](https://developer.chrome.com/docs/lighthouse/performance/speed-index/).",
+      "score": 0.74,
+      "pages": [
+        "/",
+        "/wiki",
+        "/wiki/wiki/04-deliverables",
+        "/wiki/wiki/03-requirements",
+        "/wiki/wiki/02-process",
+        "/wiki/wiki/01-funding-areas",
+        "/wiki/wiki/00-overview",
+        "/wiki/raw/richtlinien-beratungsauftraege",
+        "/wiki/raw/richtlinie-beratungsfoerderung",
+        "/wiki/raw/honorarrichtlinien",
+        "/wiki/raw/checkliste-digitalisierung",
+        "/wiki/raw/beratungsablauf",
+        "/wiki/downloads",
+        "/chat"
+      ]
+    },
+    {
+      "category": "performance",
+      "severity": "medium",
+      "title": "Total Blocking Time",
+      "description": "Sum of all time periods between FCP and Time to Interactive, when task length exceeded 50ms, expressed in milliseconds. [Learn more about the Total Blocking Time metric](https://developer.chrome.com/docs/lighthouse/performance/lighthouse-total-blocking-time/).",
+      "score": 0.8,
+      "pages": [
+        "/"
+      ]
+    },
+    {
+      "category": "performance",
+      "severity": "low",
+      "title": "First Contentful Paint",
+      "description": "First Contentful Paint marks the time at which the first text or image is painted. [Learn more about the First Contentful Paint metric](https://developer.chrome.com/docs/lighthouse/performance/first-contentful-paint/).",
+      "score": 0.9,
+      "pages": [
+        "/",
+        "/wiki",
+        "/wiki/wiki/04-deliverables",
+        "/wiki/wiki/03-requirements",
+        "/wiki/wiki/02-process",
+        "/wiki/wiki/01-funding-areas",
+        "/wiki/wiki/00-overview",
+        "/wiki/raw/richtlinien-beratungsauftraege",
+        "/wiki/raw/richtlinie-beratungsfoerderung",
+        "/wiki/raw/honorarrichtlinien",
+        "/wiki/raw/checkliste-digitalisierung",
+        "/wiki/raw/beratungsablauf",
+        "/wiki/downloads",
+        "/chat"
+      ]
+    },
+    {
+      "category": "performance",
+      "severity": "low",
+      "title": "Time to Interactive",
+      "description": "Time to Interactive is the amount of time it takes for the page to become fully interactive. [Learn more about the Time to Interactive metric](https://developer.chrome.com/docs/lighthouse/performance/interactive/).",
+      "score": 0.94,
+      "pages": [
+        "/",
+        "/wiki",
+        "/wiki/wiki/04-deliverables",
+        "/wiki/wiki/03-requirements",
+        "/wiki/wiki/02-process",
+        "/wiki/wiki/01-funding-areas",
+        "/wiki/wiki/00-overview",
+        "/wiki/raw/richtlinien-beratungsauftraege",
+        "/wiki/raw/richtlinie-beratungsfoerderung",
+        "/wiki/raw/honorarrichtlinien",
+        "/wiki/raw/checkliste-digitalisierung",
+        "/wiki/raw/beratungsablauf",
+        "/wiki/downloads",
+        "/chat"
+      ]
+    }
+  ],
+  "recommendations": [
+    "Address 11 critical issues immediately to prevent significant negative impact.",
+    "Reduce JavaScript execution time and eliminate render-blocking scripts."
+  ]
+}

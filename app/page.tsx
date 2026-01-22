@@ -55,7 +55,7 @@ export default function HomePage() {
       {/* Hero Section */}
       <section className="relative flex-1 bg-gradient-to-br from-stone-50 via-white to-orange-50/30 overflow-hidden">
         {/* Layered glow system */}
-        <div className="absolute inset-0 pointer-events-none">
+        <div className="absolute inset-0 pointer-events-none z-0">
           {/* Primary orange glow - top right */}
           <div className="absolute -top-32 right-[10%] w-[600px] h-[600px] bg-orange-400/12 rounded-full blur-3xl" />
           {/* Secondary stone glow - bottom left */}
@@ -83,7 +83,7 @@ export default function HomePage() {
           <div className="absolute top-0 left-0 right-0 h-[1px] bg-gradient-to-r from-transparent via-orange-400/25 to-transparent" />
         </div>
 
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 pb-24">
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 pb-24">
           <div className="text-center max-w-4xl mx-auto">
             {/* Badge */}
             <div className="inline-flex items-center gap-2 bg-orange-100 text-orange-800 px-4 py-2 rounded-full text-sm font-medium mb-8">
@@ -126,7 +126,7 @@ export default function HomePage() {
       {/* Features Section */}
       <section id="features" className="relative py-16 sm:py-20 bg-gradient-to-b from-white via-stone-50/40 to-stone-100/50 overflow-hidden">
         {/* Background accents */}
-        <div className="absolute inset-0 pointer-events-none">
+        <div className="absolute inset-0 pointer-events-none z-0">
           {/* Subtle dot pattern */}
           <div
             className="absolute inset-0 opacity-[0.025]"
@@ -146,7 +146,7 @@ export default function HomePage() {
           />
         </div>
 
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
             {features.map((feature, idx) => (
               <div
@@ -171,7 +171,7 @@ export default function HomePage() {
       {/* Client Guide Promotion */}
       <section className="relative py-16 bg-gradient-to-br from-stone-100 via-stone-50 to-orange-50/20 overflow-hidden">
         {/* Background accents */}
-        <div className="absolute inset-0 pointer-events-none">
+        <div className="absolute inset-0 pointer-events-none z-0">
           <div className="absolute top-1/2 right-[10%] -translate-y-1/2 w-[450px] h-[450px] bg-orange-200/15 rounded-full blur-3xl" />
           <div className="absolute top-0 left-[20%] w-[250px] h-[250px] bg-stone-300/10 rounded-full blur-2xl" />
 
@@ -186,7 +186,7 @@ export default function HomePage() {
           />
         </div>
 
-        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="bg-white/70 backdrop-blur-sm rounded-2xl border border-stone-200/70 p-8 md:p-10 flex flex-col md:flex-row items-center gap-8 shadow-sm">
             <div className="flex-shrink-0">
               <div className="w-16 h-16 bg-orange-100 rounded-xl flex items-center justify-center">

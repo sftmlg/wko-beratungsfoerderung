@@ -146,9 +146,12 @@ const documentCategories: DocumentCategory[] = [
 ];
 
 export function DownloadAccordion() {
-  // First category open by default
+  // All categories open by default
   const [openCategories, setOpenCategories] = useState<Record<string, boolean>>({
     foerderprogramm: true,
+    antrag: true,
+    registrierung: true,
+    abrechnung: true,
   });
 
   const toggleCategory = (id: string) => {

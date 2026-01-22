@@ -12,6 +12,11 @@
   --radius: 0.5rem;
 }
 
+/* Custom gradient utilities for sophisticated backgrounds */
+.bg-gradient-radial {
+  background-image: radial-gradient(var(--tw-gradient-stops));
+}
+
 @keyframes fadeIn {
   from { opacity: 0; }
   to { opacity: 1; }

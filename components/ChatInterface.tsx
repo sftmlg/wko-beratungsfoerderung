@@ -234,7 +234,7 @@ export default function ChatInterface() {
               type="submit"
               disabled={!input.trim() || isLoading}
               aria-label={isLoading ? 'Nachricht wird gesendet' : 'Nachricht senden'}
-              className="absolute right-3 bottom-3 flex items-center justify-center w-10 h-10 bg-orange-500 hover:bg-orange-600 text-white rounded-xl disabled:opacity-40 disabled:cursor-not-allowed transition-all duration-200 shadow-sm hover:shadow-md disabled:hover:shadow-sm"
+              className="absolute right-3 bottom-3 flex items-center justify-center w-10 h-10 bg-orange-700 hover:bg-orange-800 text-white rounded-xl disabled:opacity-40 disabled:cursor-not-allowed transition-all duration-200 shadow-sm hover:shadow-md disabled:hover:shadow-sm"
             >
               {isLoading ? (
                 <Loader2 className="w-5 h-5 animate-spin" />

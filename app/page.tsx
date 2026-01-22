@@ -107,7 +107,7 @@ export default function HomePage() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <Link
                 href="/chat"
-                className="group inline-flex items-center gap-3 px-8 py-4 bg-orange-500 hover:bg-orange-600 text-white text-lg font-semibold rounded-full shadow-lg hover:shadow-xl transition-all duration-200"
+                className="group inline-flex items-center gap-3 px-8 py-4 bg-orange-700 hover:bg-orange-800 text-white text-lg font-semibold rounded-full shadow-lg hover:shadow-xl transition-all duration-200"
               >
                 Assistent starten
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-200" />
@@ -311,7 +311,7 @@ export default function HomePage() {
                 key={idx}
                 className="group flex items-center gap-4 bg-white/70 backdrop-blur-sm hover:bg-orange-50/80 rounded-xl p-5 border border-stone-200/60 hover:border-orange-300 transition-all duration-200"
               >
-                <div className="flex-shrink-0 w-10 h-10 bg-stone-200 group-hover:bg-orange-500 text-slate-700 group-hover:text-white rounded-full flex items-center justify-center font-semibold transition-all duration-200">
+                <div className="flex-shrink-0 w-10 h-10 bg-stone-200 group-hover:bg-orange-700 text-slate-700 group-hover:text-white rounded-full flex items-center justify-center font-semibold transition-all duration-200">
                   {idx + 1}
                 </div>
                 <p className="text-slate-800 group-hover:text-slate-900 font-medium transition-colors duration-200">

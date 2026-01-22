@@ -58,7 +58,7 @@ export default function Header() {
               href="/chat"
               className={`px-4 py-2 rounded-full text-sm font-medium transition-all duration-200 ${
                 isChat
-                  ? 'bg-orange-500 text-white shadow-sm'
+                  ? 'bg-orange-100 text-orange-900 shadow-sm'
                   : 'text-neutral-600 hover:text-slate-900 hover:bg-slate-50'
               }`}
             >
@@ -111,7 +111,7 @@ export default function Header() {
                 onClick={() => setMobileMenuOpen(false)}
                 className={`px-4 py-3 rounded-lg text-sm font-medium transition-all duration-200 ${
                   isChat
-                    ? 'bg-orange-500 text-white'
+                    ? 'bg-orange-100 text-orange-900'
                     : 'text-neutral-600 hover:text-slate-900 hover:bg-slate-50'
                 }`}
               >

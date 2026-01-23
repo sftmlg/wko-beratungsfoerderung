@@ -169,7 +169,7 @@ export default function WikiIndexPage() {
                 {categoryArticles.map((article) => (
                   <Link
                     key={article.slug}
-                    href={`/wiki/${article.category}/${article.slug}`}
+                    href={`/beratungsbonus/wiki/${article.category}/${article.slug}`}
                     className="group block bg-white hover:bg-stone-50 rounded-xl p-5 border border-stone-200 hover:border-stone-300 transition-all duration-200"
                   >
                     <div className="flex items-start justify-between gap-4">
@@ -196,7 +196,7 @@ export default function WikiIndexPage() {
         {/* Downloads - Subtle link */}
         <section className="relative z-10 mb-16">
           <Link
-            href="/wiki/downloads"
+            href="/beratungsbonus/wiki/downloads"
             className="group flex items-center justify-between p-6 bg-white rounded-xl border border-stone-200 hover:border-stone-300 hover:shadow-lg transition-all duration-300"
           >
             <div className="flex items-center gap-4">
@@ -236,7 +236,7 @@ export default function WikiIndexPage() {
               Der KI-Assistent durchsucht alle Dokumente.
             </p>
             <Link
-              href="/chat"
+              href="/beratungsbonus/chat"
               className="relative inline-flex items-center gap-2 bg-white hover:bg-stone-50 text-stone-900 px-6 py-3 rounded-xl font-medium transition-all hover:shadow-lg"
             >
               Zum Chat

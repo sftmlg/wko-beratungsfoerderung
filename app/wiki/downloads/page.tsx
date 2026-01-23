@@ -54,7 +54,7 @@ export default function DownloadsPage() {
         </div>
         <div className="max-w-4xl mx-auto px-6 py-12 relative z-10">
           <nav className="flex items-center gap-2 text-sm text-stone-500 mb-6">
-            <Link href="/wiki" className="hover:text-white transition-colors">
+            <Link href="/beratungsbonus/wiki" className="hover:text-white transition-colors">
               Wissensdatenbank
             </Link>
             <span>/</span>
@@ -173,7 +173,7 @@ export default function DownloadsPage() {
         {/* Back Link */}
         <div className="relative z-10 mt-10">
           <Link
-            href="/wiki"
+            href="/beratungsbonus/wiki"
             className="inline-flex items-center gap-2 text-stone-500 hover:text-orange-600 transition-colors text-sm font-medium"
           >
             <ArrowLeft className="w-4 h-4" />

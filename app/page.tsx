@@ -106,7 +106,7 @@ export default function HomePage() {
             {/* CTA */}
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <Link
-                href="/chat"
+                href="/beratungsbonus/chat"
                 className="group inline-flex items-center gap-3 px-8 py-4 bg-orange-700 hover:bg-orange-800 text-white text-lg font-semibold rounded-full shadow-lg hover:shadow-xl transition-all duration-200"
               >
                 Assistent starten
@@ -353,7 +353,7 @@ export default function HomePage() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
             {/* Knowledge Base */}
             <Link
-              href="/wiki"
+              href="/beratungsbonus/wiki"
               className="group bg-white/80 backdrop-blur-sm rounded-xl border border-stone-200/70 p-6 hover:border-stone-300 hover:shadow-md transition-all"
             >
               <div className="flex items-start gap-4">
@@ -377,7 +377,7 @@ export default function HomePage() {
 
             {/* Downloads */}
             <Link
-              href="/wiki/downloads"
+              href="/beratungsbonus/wiki/downloads"
               className="group bg-white/80 backdrop-blur-sm rounded-xl border border-stone-200/70 p-6 hover:border-stone-300 hover:shadow-md transition-all"
             >
               <div className="flex items-start gap-4">
@@ -434,7 +434,7 @@ export default function HomePage() {
             Fragen Sie den KI-Assistenten zu Förderrichtlinien, Anforderungen und dem Beratungsprozess.
           </p>
           <Link
-            href="/chat"
+            href="/beratungsbonus/chat"
             className="group inline-flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white text-lg font-semibold rounded-full shadow-lg hover:shadow-xl transition-all duration-200"
           >
             Jetzt Assistent starten

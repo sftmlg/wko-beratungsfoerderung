@@ -6,6 +6,8 @@ const nextConfig: NextConfig = {
   typescript: {
     ignoreBuildErrors: false,
   },
+  // Assets served from subdomain for proxied access
+  assetPrefix: "https://beratungsbonus.kiautomatisierung.info",
 };
 
 export default nextConfig;

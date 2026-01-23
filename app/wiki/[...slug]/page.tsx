@@ -84,11 +84,11 @@ export default async function WikiArticlePage({ params }: WikiPageProps) {
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
           {/* Breadcrumb */}
           <nav className="flex items-center gap-2 text-sm text-slate-400 mb-8">
-            <Link href="/" className="hover:text-white transition-colors">
+            <Link href="/beratungsbonus" className="hover:text-white transition-colors">
               Start
             </Link>
             <ChevronRight className="w-4 h-4" />
-            <Link href="/wiki" className="hover:text-white transition-colors">
+            <Link href="/beratungsbonus/wiki" className="hover:text-white transition-colors">
               Wissensdatenbank
             </Link>
             <ChevronRight className="w-4 h-4" />
@@ -201,7 +201,7 @@ export default async function WikiArticlePage({ params }: WikiPageProps) {
             {/* Back Button */}
             <div className="mt-8">
               <Link
-                href="/wiki"
+                href="/beratungsbonus/wiki"
                 className="inline-flex items-center gap-2 text-slate-600 hover:text-orange-600 transition-colors font-medium"
               >
                 <ArrowLeft className="w-4 h-4" />
@@ -218,14 +218,14 @@ export default async function WikiArticlePage({ params }: WikiPageProps) {
                 <h3 className="font-semibold text-slate-900 mb-4">Schnellzugriff</h3>
                 <div className="space-y-2">
                   <Link
-                    href="/chat"
+                    href="/beratungsbonus/chat"
                     className="flex items-center gap-2 text-sm text-slate-600 hover:text-orange-600 transition-colors p-2 rounded-lg hover:bg-orange-50"
                   >
                     <span className="w-2 h-2 bg-orange-500 rounded-full" />
                     Frage im Chat stellen
                   </Link>
                   <Link
-                    href="/wiki"
+                    href="/beratungsbonus/wiki"
                     className="flex items-center gap-2 text-sm text-slate-600 hover:text-orange-600 transition-colors p-2 rounded-lg hover:bg-orange-50"
                   >
                     <span className="w-2 h-2 bg-slate-400 rounded-full" />
@@ -242,7 +242,7 @@ export default async function WikiArticlePage({ params }: WikiPageProps) {
                     {relatedArticles.map((article) => (
                       <Link
                         key={`${article.category}-${article.slug}`}
-                        href={`/wiki/${article.category}/${article.slug}`}
+                        href={`/beratungsbonus/wiki/${article.category}/${article.slug}`}
                         className="block text-sm text-slate-600 hover:text-orange-600 transition-colors"
                       >
                         {article.title}
@@ -259,7 +259,7 @@ export default async function WikiArticlePage({ params }: WikiPageProps) {
                   Nutzen Sie unseren KI-Assistenten für schnelle Antworten.
                 </p>
                 <Link
-                  href="/chat"
+                  href="/beratungsbonus/chat"
                   className="inline-block bg-white text-orange-700 px-4 py-2 rounded-lg text-sm font-medium hover:bg-orange-50 transition-colors"
                 >
                   Zum Chat
